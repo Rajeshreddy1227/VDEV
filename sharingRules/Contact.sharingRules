@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Corporate_Contacts</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Corporate Contacts</label>
+        <sharedTo>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>FleetSeek,D&amp;B</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Corporate_Contacts_Internally</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Corporate Contacts Internally</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>FleetSeek,D&amp;B</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

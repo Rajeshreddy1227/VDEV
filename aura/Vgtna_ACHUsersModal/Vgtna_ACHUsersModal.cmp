@@ -1,0 +1,58 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="Vgtna_FetchDealerACHUsers">
+	<aura:attribute name="srOptions" type="LIST"/>
+    <aura:attribute name="selectedRecs" type="String[]"/>
+    <aura:attribute name="allUnassignAcctIds" type="String[]"/>
+    <aura:attribute name="allTerrAccIds" type="String[]"/>
+    <aura:attribute name="dealerCode" type="String"/>
+    <aura:attribute name="salesRepFilter" type="String"/>
+    <aura:attribute name="cityFilter" type="String"/>
+    <aura:attribute name="countyFilter" type="String"/>
+    <aura:attribute name="zipcodeFilter" type="String"/>
+    <aura:attribute name="AccFilter" type="String"/>
+    <aura:attribute name="openModal" type="Boolean"/>
+    <aura:attribute name="newASR" type="Boolean"/>
+    <aura:attribute name="selectAllRecs" type="Boolean"/>
+    <aura:attribute name="selectedRep" type="String" />
+    <!--<aura:registerEvent name="refreshParent" type="c:Vgtna_Ltng_RefreshParent"/>-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"></aura:handler>
+    <aura:if isTrue="{!v.openModal}">
+        <div class="demo-only" style="height: 2000px;">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_small">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick="{!c.closeModal}">
+                            <lightning:icon icon-name="utility:close" size="medium">
+                            </lightning:icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Sales Rep</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_large" id="modal-content-id-1">
+                        <center>
+                                                              <lightning:select name="salesreps" label="Select A Sales Rep" aura:id="salesreps" value="{!v.selectedRep}">
+                                    <aura:iteration items="{!v.srOptions}" var="salesRep">
+                                        <option text="{!salesRep.label}" value="{!salesRep.id}"></option>
+                                      </aura:iteration>
+                                  </lightning:select>
+                            
+                                
+                            <!--<lightning:combobox
+                                    name="progress"
+                                    label="Status"
+                                    value="{!selectedSalesRep}"
+                                    placeholder="Select Sales Rep"
+                                    options="{!salesRepOptions}"
+                                    onchange="{!handleSRChange}"
+                            ></lightning:combobox>-->
+                        </center>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning:button label="Cancel" variant="neutral" onclick="{!c.closeModal}"></lightning:button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <lightning:button variant="brand" label="Assign" title="Assign" onclick="{!c.assignSR}"></lightning:button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </aura:if>
+</aura:component>

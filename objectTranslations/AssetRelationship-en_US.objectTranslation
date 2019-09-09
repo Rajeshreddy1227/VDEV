@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>VDA Asset Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>VDA Asset Relationships</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset</value>
+        </caseValues>
+        <name>assetrelationship_asset</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Relationship History</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset Relationship Histories</value>
+        </caseValues>
+        <name>assetrelationship_history</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Relationship ID</value>
+        </caseValues>
+        <name>assetrelationship_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Relationship Number</value>
+        </caseValues>
+        <name>assetrelationship_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Related VDA Asset</value>
+        </caseValues>
+        <name>assetrelationship_relatedasset</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Related VDA Asset</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Related VDA Assets</value>
+        </caseValues>
+        <name>assetrelationship_rl1</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary VDA Asset</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Primary VDA Assets</value>
+        </caseValues>
+        <name>assetrelationship_rl2</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <layouts>
+        <layout>Asset Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

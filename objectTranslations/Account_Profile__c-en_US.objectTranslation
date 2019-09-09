@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Profiles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account Profiles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of Company --></label>
+        <name>Age_of_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agriculture/Farm --></label>
+        <name>Agriculture_farm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Miles Per Year --></label>
+        <name>Annual_miles_per_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Armored --></label>
+        <name>Armored__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autocar --></label>
+        <name>Autocar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autorack --></label>
+        <name>Autorack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beverage --></label>
+        <name>Beverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beverage Processing &amp; Distribution --></label>
+        <name>Beverage_processing_distribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Affinity --></label>
+        <name>Brand_Affinity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bus Transportation --></label>
+        <name>Bus_transportation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Ownership --></label>
+        <name>Business_Ownership__c</name>
+        <picklistValues>
+            <masterLabel>For-Hire</masterLabel>
+            <translation><!-- For-Hire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner Operator</masterLabel>
+            <translation><!-- Owner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CST&lt;10 --></label>
+        <name>CST_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- CST&gt;10 --></label>
+        <name>CST_GT_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell Phone --></label>
+        <name>Cell_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cement --></label>
+        <name>Cement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chassis --></label>
+        <name>Chassis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction --></label>
+        <name>Construction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Address --></label>
+        <name>Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Maintenance --></label>
+        <name>Cost_of_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crane Carrier --></label>
+        <name>Crane_carrier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Business Needs --></label>
+        <name>Current_Business_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Average Fuel Efficiency --></label>
+        <name>Current_average_fuel_efficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- DM/RFM/NAM --></label>
+        <name>DM_RFM_NAM__c</name>
+        <relationshipLabel><!-- Account Profiles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deal Type --></label>
+        <name>Deal_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Sales --></label>
+        <name>Dealer_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Making Roles --></label>
+        <name>Decision_making_roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- If so, Provide Demo Details --></label>
+        <name>Demo_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Needed? --></label>
+        <name>Demo_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desk Phone Number --></label>
+        <name>Desk_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Mail --></label>
+        <name>Direct_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driver Retention --></label>
+        <name>Driver_Retention__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dump --></label>
+        <name>Dump__c</name>
+    </fields>
+    <fields>
+        <label><!-- Durability --></label>
+        <name>Durability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Vehicles --></label>
+        <name>Emergency_vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine(s) --></label>
+        <name>Engine_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Summary --></label>
+        <name>Executive_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- F2F --></label>
+        <name>F2F__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMV --></label>
+        <name>FMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financing --></label>
+        <name>Financing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flatbed --></label>
+        <name>Flatbed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Brands --></label>
+        <name>Fleet_Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Preferred Account --></label>
+        <name>Fleet_Preferred_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Processing &amp; Distribution --></label>
+        <name>Food_processing_distribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forestry/Lumber Products --></label>
+        <name>Forestry_lumber_products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freightliner --></label>
+        <name>Freightliner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fuel Efficiency --></label>
+        <name>Fuel_Efficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Service Lease --></label>
+        <name>Full_Service_Lease_DT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Service Leasing --></label>
+        <name>Full_Service_Leasing__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Contact Notes --></label>
+        <name>General_Contact_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Freight --></label>
+        <name>General_freight__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Freight/Hazardous Materials --></label>
+        <name>General_freight_hazardous_materials__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Notes --></label>
+        <name>General_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Government/Miscellaneous --></label>
+        <name>Government_miscellaneous__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hazardous Materials --></label>
+        <name>Hazardous_materials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Heavy Spec --></label>
+        <name>HeavySpec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hopper --></label>
+        <name>Hopper__c</name>
+    </fields>
+    <fields>
+        <label><!-- Horse Van --></label>
+        <name>HorseVan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Decision Details --></label>
+        <name>How_Customer_makes_Purchase_Decissions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual --></label>
+        <name>Individual__c</name>
+    </fields>
+    <fields>
+        <label><!-- International --></label>
+        <name>International__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kenworth --></label>
+        <name>Kenworth__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCOE --></label>
+        <name>LCOE__c</name>
+    </fields>
+    <fields>
+        <label><!-- LH --></label>
+        <name>LH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landscaping/Horticulture --></label>
+        <name>Landscaping_horticulture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visit Date --></label>
+        <name>Last_Visit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease/Finance --></label>
+        <name>Lease_finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease/Manufacturer Sponsored --></label>
+        <name>Lease_manufacturer_sponsored__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease/Rental --></label>
+        <name>Lease_rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Livestock --></label>
+        <name>Livestock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logging --></label>
+        <name>Logging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lowboy --></label>
+        <name>Lowboy__c</name>
+    </fields>
+    <fields>
+        <label><!-- MFS --></label>
+        <name>MFS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mack --></label>
+        <name>Mack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturing --></label>
+        <name>Manufacturing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mining/Quarrying --></label>
+        <name>Mining_quarrying__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous --></label>
+        <name>Miscellaneous__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model(s) --></label>
+        <name>Model_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Moving and Storage --></label>
+        <name>Moving_and_storage__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPS Survey Score --></label>
+        <name>NPS_Survey_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Employees --></label>
+        <name>Num_of_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Tractors/Trucks --></label>
+        <name>Number_of_Tractors_Trucks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online --></label>
+        <name>Online__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Service Information --></label>
+        <name>Open_Service_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Top --></label>
+        <name>Opentop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other_Brand_Aff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other_Otype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other_Pref_Con_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other_TT_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other_Values_Imp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owned/Leasing Information --></label>
+        <name>Owned_Leasing_information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts Account --></label>
+        <name>Parts_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party ID --></label>
+        <name>Party_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peterbilt --></label>
+        <name>Peterbilt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Petroleum --></label>
+        <name>Petroleum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Petroleum/Hazardous Material --></label>
+        <name>Petroleum_hazardous_material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pneumatic --></label>
+        <name>Pneumatic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Growth Opportunity --></label>
+        <name>Potential_Growth_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Issues With Mack Trucks --></label>
+        <name>Potential_issues_with_Mack_Trucks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this for Hiding Field History in Printable View. Uncheck it Back to see Field History tracking. --></help>
+        <label><!-- Printable View Mode --></label>
+        <name>Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Fit --></label>
+        <name>Product_Fit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Purchase(s) --></label>
+        <name>Projected_Purchase_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Cycle --></label>
+        <name>Purchase_Cycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Is This Customer&apos;s Selling Dealer? --></label>
+        <name>Purchase_Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Start Date --></label>
+        <name>Purchase_History_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualified Parts Purchased By Year --></label>
+        <name>Qualified_parts_purchased_by_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- RH --></label>
+        <name>RH__c</name>
+    </fields>
+    <fields>
+        <label><!-- RVP --></label>
+        <name>RVP_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- RVP --></label>
+        <name>RVP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recent Purchases(s) --></label>
+        <name>Recent_Purchases_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer --></label>
+        <name>Reefer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resale Value --></label>
+        <name>Resale_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail --></label>
+        <name>Retail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road/Highway Maintenance --></label>
+        <name>Road_highway_maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll Off --></label>
+        <name>Roll_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Safety --></label>
+        <name>Safety__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanitation/Hazardous Material --></label>
+        <name>Sanitation_hazardous_material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanitation/Refuse --></label>
+        <name>Sanitation_refuse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Is This Customer&apos;s Service Dealer? --></label>
+        <name>Service_Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services --></label>
+        <name>Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialized/Heavy Hauling --></label>
+        <name>Specialized_heavy_hauling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Deck --></label>
+        <name>Stepdeck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tank --></label>
+        <name>Tank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telematics --></label>
+        <name>Telematics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost of Ownership --></label>
+        <name>Total_Cost_of_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Fleet Size --></label>
+        <name>Total_Fleet_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch Points / Open Discussion Items --></label>
+        <name>Touch_Points_Open_Discussion_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tow Truck --></label>
+        <name>Tow_Truck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Back --></label>
+        <name>Trade_Back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Shows --></label>
+        <name>Trade_Shows__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trades --></label>
+        <name>Trades__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transmission(s) --></label>
+        <name>Transmission_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unclassified --></label>
+        <name>Unclassified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uptime --></label>
+        <name>Uptime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utility --></label>
+        <name>Utility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utility/Hazardous Material --></label>
+        <name>Utility_hazardous_material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utility services --></label>
+        <name>Utility_services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Van --></label>
+        <name>Van__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Transporter --></label>
+        <name>Vehicle_transporter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vocation --></label>
+        <name>Vocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volvo --></label>
+        <name>Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Western Star --></label>
+        <name>Western_star__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wholesale/Retail --></label>
+        <name>Wholesale_retail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Challenges To Be Aware Of --></label>
+        <name>challenges_to_be_aware_of_with_this_Cust__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>e_Mail__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Profile Layout</layout>
+        <sections>
+            <label><!-- Brand Affinity --></label>
+            <section>Brand Affinity</section>
+        </sections>
+        <sections>
+            <label><!-- Company Details --></label>
+            <section>Company Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Segment(s) --></label>
+            <section>Customer Segment(s)</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet Information --></label>
+            <section>Fleet Information</section>
+        </sections>
+        <sections>
+            <label><!-- Key Person At The Company --></label>
+            <section>Key Person At The Company</section>
+        </sections>
+        <sections>
+            <label><!-- Mack Related Fields --></label>
+            <section>Mack Related Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Type (Vocation) --></label>
+            <section>Operating Type (Vocation)</section>
+        </sections>
+        <sections>
+            <label><!-- Preferred Contact Method --></label>
+            <section>Preferred Contact Method</section>
+        </sections>
+        <sections>
+            <label><!-- Profile History --></label>
+            <section>Profile History</section>
+        </sections>
+        <sections>
+            <label><!-- Select All With Customer Participation --></label>
+            <section>Select All With Customer Participation</section>
+        </sections>
+        <sections>
+            <label><!-- Trailor Types Used --></label>
+            <section>Trailor Types Used</section>
+        </sections>
+        <sections>
+            <label><!-- What Is This Customer&apos;s Deal Type? --></label>
+            <section>What Is This Customer&apos;s Deal Type?</section>
+        </sections>
+        <sections>
+            <label><!-- What Values Are Important To The Customer? --></label>
+            <section>What Values Are Important To The Customer?</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Profile With Field History</layout>
+        <sections>
+            <label><!-- Brand Affinity --></label>
+            <section>Brand Affinity</section>
+        </sections>
+        <sections>
+            <label><!-- Company Details --></label>
+            <section>Company Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Segment(s) --></label>
+            <section>Customer Segment(s)</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet Information --></label>
+            <section>Fleet Information</section>
+        </sections>
+        <sections>
+            <label><!-- Key Person At The Company --></label>
+            <section>Key Person At The Company</section>
+        </sections>
+        <sections>
+            <label><!-- Mack Related Fields --></label>
+            <section>Mack Related Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Type (Vocation) --></label>
+            <section>Operating Type (Vocation)</section>
+        </sections>
+        <sections>
+            <label><!-- Preferred Contact Method --></label>
+            <section>Preferred Contact Method</section>
+        </sections>
+        <sections>
+            <label><!-- Profile History --></label>
+            <section>Profile History</section>
+        </sections>
+        <sections>
+            <label><!-- Select All With Customer Participation --></label>
+            <section>Select All With Customer Participation</section>
+        </sections>
+        <sections>
+            <label><!-- Trailor Types Used --></label>
+            <section>Trailor Types Used</section>
+        </sections>
+        <sections>
+            <label><!-- What Is This Customer&apos;s Deal Type? --></label>
+            <section>What Is This Customer&apos;s Deal Type?</section>
+        </sections>
+        <sections>
+            <label><!-- What Values Are Important To The Customer? --></label>
+            <section>What Values Are Important To The Customer?</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Normal Layout --></label>
+        <name>Normal_Layout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Print Layout --></label>
+        <name>Print_Layout</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

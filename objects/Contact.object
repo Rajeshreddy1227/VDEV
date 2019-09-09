@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>QuickStartLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>QuickStartLayout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>AccountId</fields>
+        <fields>Phone</fields>
+        <fields>Extension__c</fields>
+        <fields>Email</fields>
+        <fields>MobilePhone</fields>
+        <fields>OwnerId</fields>
+        <label>Quick Start Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Customer</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Dealer</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.MergeStatus__c</field>
+                <operation>notEqual</operation>
+                <value>Merged</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>Comment on Contact</description>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Corporate Lookup</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Source__c</field>
+                <operation>equals</operation>
+                <value>FleetSeek, D&amp;B</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Corporate Contacts</relationshipLabel>
+        <relationshipName>Corporate_Contacts</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>Extension__c</fullName>
+        <externalId>false</externalId>
+        <label>Extension</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+    </fields>
+    <fields>
+        <fullName>IndividualId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadBrand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadIndustry__c</fullName>
+        <externalId>false</externalId>
+        <label>Industry</label>
+        <length>250</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadSegment__c</fullName>
+        <externalId>false</externalId>
+        <label>Segment</label>
+        <length>250</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Attended_Trade_Show_Event__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Attended Trade Show Event</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Attended_Webinar__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Attended Webinar</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Product_Interest__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Interest</label>
+        <length>250</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Truck_Configuration_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Truck Configuration URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Lead_User_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>User Comments</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>Non_Corporate_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Non Corporate Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Source__c</field>
+                <operation>equals</operation>
+                <value>Dealer, Corporate User</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>My Contacts</relationshipLabel>
+        <relationshipName>Non_3rd_Party_Contacts</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Primary</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Responsibilities__c</fullName>
+        <description>Contact&apos;s job role/responsibility</description>
+        <externalId>false</externalId>
+        <label>Responsibilities</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administrative Assistant</fullName>
+                    <default>false</default>
+                    <label>Administrative Assistant</label>
+                </value>
+                <value>
+                    <fullName>Business Manager</fullName>
+                    <default>false</default>
+                    <label>Business Manager</label>
+                </value>
+                <value>
+                    <fullName>Business Plan Contact</fullName>
+                    <default>false</default>
+                    <label>Business Plan Contact</label>
+                </value>
+                <value>
+                    <fullName>Business/Finance</fullName>
+                    <default>false</default>
+                    <label>Business/Finance</label>
+                </value>
+                <value>
+                    <fullName>Chief Executive Officer</fullName>
+                    <default>false</default>
+                    <label>Chief Executive Officer</label>
+                </value>
+                <value>
+                    <fullName>Corporate Manager</fullName>
+                    <default>false</default>
+                    <label>Corporate Manager</label>
+                </value>
+                <value>
+                    <fullName>Cust Support</fullName>
+                    <default>false</default>
+                    <label>Cust Support</label>
+                </value>
+                <value>
+                    <fullName>Dealer Development Support</fullName>
+                    <default>false</default>
+                    <label>Dealer Development Support</label>
+                </value>
+                <value>
+                    <fullName>Dealer Principal</fullName>
+                    <default>false</default>
+                    <label>Dealer Principal</label>
+                </value>
+                <value>
+                    <fullName>Dealer System Administrator</fullName>
+                    <default>false</default>
+                    <label>Dealer System Administrator</label>
+                </value>
+                <value>
+                    <fullName>District Sales Manager</fullName>
+                    <default>false</default>
+                    <label>District Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Executive Mgmt</fullName>
+                    <default>false</default>
+                    <label>Executive Mgmt</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>Fleet General</fullName>
+                    <default>false</default>
+                    <label>Fleet General</label>
+                </value>
+                <value>
+                    <fullName>General Manager</fullName>
+                    <default>false</default>
+                    <label>General Manager</label>
+                </value>
+                <value>
+                    <fullName>Internal - General</fullName>
+                    <default>false</default>
+                    <label>Internal - General</label>
+                </value>
+                <value>
+                    <fullName>Lease and Rental Manager</fullName>
+                    <default>false</default>
+                    <label>Lease and Rental Manager</label>
+                </value>
+                <value>
+                    <fullName>Lease and Rental Ops Dir/Mgr</fullName>
+                    <default>false</default>
+                    <label>Lease and Rental Ops Dir/Mgr</label>
+                </value>
+                <value>
+                    <fullName>Leasing Salesperson</fullName>
+                    <default>false</default>
+                    <label>Leasing Salesperson</label>
+                </value>
+                <value>
+                    <fullName>Leasing Technician</fullName>
+                    <default>false</default>
+                    <label>Leasing Technician</label>
+                </value>
+                <value>
+                    <fullName>Manager Account</fullName>
+                    <default>false</default>
+                    <label>Manager Account</label>
+                </value>
+                <value>
+                    <fullName>Marketing Manager</fullName>
+                    <default>false</default>
+                    <label>Marketing Manager</label>
+                </value>
+                <value>
+                    <fullName>Mktg, New Truck</fullName>
+                    <default>false</default>
+                    <label>Mktg, New Truck</label>
+                </value>
+                <value>
+                    <fullName>Mktg, Used Truck</fullName>
+                    <default>false</default>
+                    <label>Mktg, Used Truck</label>
+                </value>
+                <value>
+                    <fullName>National Sales Manager</fullName>
+                    <default>false</default>
+                    <label>National Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>New Vehicle Operations Dir/Mgr</fullName>
+                    <default>false</default>
+                    <label>New Vehicle Operations Dir/Mgr</label>
+                </value>
+                <value>
+                    <fullName>New Vehicle Sales Coordinator</fullName>
+                    <default>false</default>
+                    <label>New Vehicle Sales Coordinator</label>
+                </value>
+                <value>
+                    <fullName>New Vehicle Sales Manager</fullName>
+                    <default>false</default>
+                    <label>New Vehicle Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>New Vehicle Salesperson</fullName>
+                    <default>false</default>
+                    <label>New Vehicle Salesperson</label>
+                </value>
+                <value>
+                    <fullName>Office Manager</fullName>
+                    <default>false</default>
+                    <label>Office Manager</label>
+                </value>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                    <label>Owner</label>
+                </value>
+                <value>
+                    <fullName>President</fullName>
+                    <default>false</default>
+                    <label>President</label>
+                </value>
+                <value>
+                    <fullName>Primary Contact</fullName>
+                    <default>false</default>
+                    <label>Primary Contact</label>
+                </value>
+                <value>
+                    <fullName>Primary Purchase Decision</fullName>
+                    <default>false</default>
+                    <label>Primary Purchase Decision</label>
+                </value>
+                <value>
+                    <fullName>Purchase Decision Maker</fullName>
+                    <default>false</default>
+                    <label>Purchase Decision Maker</label>
+                </value>
+                <value>
+                    <fullName>Purchasing</fullName>
+                    <default>false</default>
+                    <label>Purchasing</label>
+                </value>
+                <value>
+                    <fullName>RDDD - Reg Dlr Dev Director</fullName>
+                    <default>false</default>
+                    <label>RDDD - Reg Dlr Dev Director</label>
+                </value>
+                <value>
+                    <fullName>Regional Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Regional Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Rental Salesperson</fullName>
+                    <default>false</default>
+                    <label>Rental Salesperson</label>
+                </value>
+                <value>
+                    <fullName>Sales Administration</fullName>
+                    <default>false</default>
+                    <label>Sales Administration</label>
+                </value>
+                <value>
+                    <fullName>Sales, New Truck</fullName>
+                    <default>false</default>
+                    <label>Sales, New Truck</label>
+                </value>
+                <value>
+                    <fullName>Sales, Used Truck</fullName>
+                    <default>false</default>
+                    <label>Sales, Used Truck</label>
+                </value>
+                <value>
+                    <fullName>Senior Management</fullName>
+                    <default>false</default>
+                    <label>Senior Management</label>
+                </value>
+                <value>
+                    <fullName>Senior Officer</fullName>
+                    <default>false</default>
+                    <label>Senior Officer</label>
+                </value>
+                <value>
+                    <fullName>Used Vehicle Oper Dir/Mgr</fullName>
+                    <default>false</default>
+                    <label>Used Vehicle Oper Dir/Mgr</label>
+                </value>
+                <value>
+                    <fullName>Used Vehicle Sales Coordinator</fullName>
+                    <default>false</default>
+                    <label>Used Vehicle Sales Coordinator</label>
+                </value>
+                <value>
+                    <fullName>Used Vehicle Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Used Vehicle Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Used Vehicle Salesperson</fullName>
+                    <default>false</default>
+                    <label>Used Vehicle Salesperson</label>
+                </value>
+                <value>
+                    <fullName>Vice President</fullName>
+                    <default>false</default>
+                    <label>Vice President</label>
+                </value>
+                <value>
+                    <fullName>Volvo Components</fullName>
+                    <default>false</default>
+                    <label>Volvo Components</label>
+                </value>
+                <value>
+                    <fullName>Volvo IT -- NA</fullName>
+                    <default>false</default>
+                    <label>Volvo IT -- NA</label>
+                </value>
+                <value>
+                    <fullName>Warranty Administrator</fullName>
+                    <default>false</default>
+                    <label>Warranty Administrator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <description>Source for the Contact data</description>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>true</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>FleetSeek</fullName>
+                    <default>false</default>
+                    <label>FleetSeek</label>
+                </value>
+                <value>
+                    <fullName>D&amp;B</fullName>
+                    <default>false</default>
+                    <label>D&amp;B</label>
+                </value>
+                <value>
+                    <fullName>Corporate_User</fullName>
+                    <default>false</default>
+                    <label>Corporate User</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+    </fields>
+    <listViews>
+        <fullName>Corporate_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>FleetSeek,D&amp;B</value>
+        </filters>
+        <label>Corporate Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>Extension__c</columns>
+        <columns>CONTACT.PHONE3</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>Comments__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+        <language>en_US</language>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>AddToCampaign</excludedStandardButtons>
+        <excludedStandardButtons>SendListEmailAction</excludedStandardButtons>
+        <excludedStandardButtons>CreateCallList</excludedStandardButtons>
+        <excludedStandardButtons>MassAddToCampaign</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CONTACT.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.LAST_NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE1</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE3</searchFilterFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE3</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Comments__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Account_Merge</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+Account.MergeStatus__c = &apos;Merged&apos;, 
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$User.CommunityNickname &lt;&gt; &apos;DealerSiteGuestUser&apos;, 
+$Profile.Name &lt;&gt; $Label.Vgtna_System_Integrator_Profile_Name 
+)</errorConditionFormula>
+        <errorMessage>Merged Account - Unable to Save (Cancel).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Contact_Email_Phone_or_Mobile_Validation</fullName>
+        <active>true</active>
+        <description>User must not be able to save a Contact record without having at least one of the following fields complete: Email, Phone or Mobile</description>
+        <errorConditionFormula>AND(ISBLANK(Email),ISBLANK(Phone),ISBLANK( MobilePhone))</errorConditionFormula>
+        <errorMessage>You must provide at-least one of the following information - Email, Phone or Mobile.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+</CustomObject>

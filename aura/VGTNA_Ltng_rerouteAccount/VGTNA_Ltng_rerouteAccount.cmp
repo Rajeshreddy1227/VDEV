@@ -1,0 +1,67 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,forceCommunity:layout" access="global" controller="VGTNA_rerouteAccountController">
+    <aura:attribute name = "SurvivorId" type ="Id"/>
+    <aura:attribute name = "SurvivorAccName" type ="string" default = "null"/>
+    <aura:attribute name = "isOpen" type ="boolean" default = "false"/>
+    <aura:attribute name = "SurAccPartyId" type ="string" />
+    <aura:attribute name = "surAccRec" type = "Account" />
+    <aura:attribute name = "browser"  type = "boolean" default="true"/>
+    
+     <aura:handler name="init" value="{! this }" action="{! c.init }"></aura:handler>
+    
+    
+        <aura:if isTrue="{!v.isOpen}">
+         <aura:if isTrue = "{!v.browser}">   
+            <!--###### MODAL BOX Start######--> 
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- ###### MODAL BOX HEADER Start ######-->
+                    <header class="slds-modal__header">
+             <!--           <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.closeModel }"
+                                              alternativeText="close"
+                                              variant="bare-inverse"
+                                              class="slds-modal__close"/>				-->
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">This Account Has Been Identified as a Duplicate.</h2>
+                    </header>
+                    <!--###### MODAL BOX BODY Part Start######-->
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <p>The party ID you searched for has been identified as a duplicate and merged with</p>
+                        <p> {!v.SurAccPartyId} - {!v.SurvivorAccName}. All data created against this merged Party ID  has been preserved and migrated. Please click OK and you will be redirected to the new account.</p><br></br>
+                        <p>Questions? Please contact <a>CustomerUpdates@volvo.com</a></p>
+                    </div>
+                    <!--###### MODAL BOX FOOTER Part Start ######-->
+                    <lightning:navigation aura:id="navLink"/>
+                    <footer class="slds-modal__footer">
+         
+                        <lightning:button variant="brand" 
+                                          label="OK"
+                                          title="OK"
+                                          onclick="{! c.Go }"/>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+            <!--###### MODAL BOX Part END Here ######-->
+             <aura:set attribute="else">
+                 <!-- <p>This party ID you searched for has been identified as a duplicate and merged with  {!v.SurAccPartyId} - {!v.SurvivorAccName}</p> -->
+                 <div style="color:red"><h3 ><B>*ACCOUNT MERGED! <u>PLEASE CLICK HERE</u>* </B> </h3></div>
+                 <p>The party ID you searched for has been identified as a duplicate and merged with</p>
+                 <p> {!v.SurAccPartyId} - {!v.SurvivorAccName}. All data created against this merged Party ID  has been preserved and migrated.<br> </br>
+                    <div style="color:red"> <b>Please click OK and you will be redirected to the new account.<br></br>
+                        Questions? Please contact <a>CustomerUpdates@volvo.com</a></b></div></p><br></br>
+                 <lightning:navigation aura:id="navLink"/>
+                 <lightning:button variant="brand" 
+                                   label="OK"
+                                   title="OK"
+                                   onclick="{! c.GoMobile }"/>
+                 
+          <!---->   
+    
+                 
+           <!---->       
+                 
+             </aura:set>           
+        </aura:if>
+</aura:if>
+    
+</aura:component>

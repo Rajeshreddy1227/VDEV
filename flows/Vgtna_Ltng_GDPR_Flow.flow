@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>I_Accept</name>
+        <choiceText>I Accept</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <decisions>
+        <name>Acknowledgement_accepted</name>
+        <label>Acknowledgement accepted?</label>
+        <locationX>122</locationX>
+        <locationY>145</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>No_Send_To_Acknowledgment</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>TotalDaysSinceAcknowledged</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>90.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>User.GDPR_Acknowledgement_Last_Accepted__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GDPR_Screen</targetReference>
+            </connector>
+            <label>No - Send to Acknowledgement</label>
+        </rules>
+    </decisions>
+    <description>GDPR - Notification and Acknowledgement</description>
+    <formulas>
+        <name>TotalDaysSinceAcknowledged</name>
+        <dataType>Number</dataType>
+        <expression>{!$Flow.CurrentDate}-{!User.GDPR_Acknowledgement_Last_Accepted__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Vgtna_Ltng_GDPR_Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Vgtna_Ltng_GDPR_Flow</label>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Find_User</name>
+        <label>Find User</label>
+        <locationX>48</locationX>
+        <locationY>39</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Acknowledgement_accepted</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LoginFlow_UserId</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputReference>User</outputReference>
+        <queriedFields>GDPR_Acknowledgement_Last_Accepted__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_User</name>
+        <label>Update User</label>
+        <locationX>334</locationX>
+        <locationY>213</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LoginFlow_UserId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>GDPR_Acknowledgement_Last_Accepted__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User</object>
+    </recordUpdates>
+    <screens>
+        <name>GDPR_Screen</name>
+        <label>GDPR Screen</label>
+        <locationX>321</locationX>
+        <locationY>65</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_User</targetReference>
+        </connector>
+        <fields>
+            <name>GDPRAcknowledgment</name>
+            <fieldText>Please be advised that care should be taken when entering any information in free text fields. Any information relating to an identified or identifiable person should be limited to factual notes that are directly related to and necessary for the intended purposes which have been communicated to that person in accordance with the Volvo Group Data Protection Compliance Program. Furthermore, you should comply with the following principles:
+
+1. You should feel comfortable in disclosing all information in the free text field to the individual to whom the information relates.
+
+2. Information containing statements of opinion and/or value judgments regarding individuals should be avoided.
+
+3. Without prior consent from [the DPO or Compliance Officer] you should not enter information into a free text field that could constitute sensitive personal data (i.e. information as to (a) the racial or ethnic origin of an individual, (b) their political opinions, (c) their philosophical or religious beliefs, (d) whether they are a member of a trade union, (e) genetic and biometric data, (f) their physical or mental health, and (g) their sexual life.) or information about criminal offences.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>I_Accept_Field</name>
+            <choiceReferences>I_Accept</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>MultiSelectCheckboxes</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Find_User</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>LoginFlow_UserId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>User</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+</Flow>

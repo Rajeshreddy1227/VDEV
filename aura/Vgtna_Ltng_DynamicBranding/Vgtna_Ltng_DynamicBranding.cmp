@@ -1,0 +1,41 @@
+<aura:component controller="Vgtna_CustomLoginController" implements="forceCommunity:availableForAllPageTypes" access="global" >
+	<span class="crayon-i "> </span><span class="crayon-c"><!-- init handler event call "doInit" function on component load and fetch current user information --></span> 
+ <aura:handler name="init" value="this" action="{!c.doInit}"/>
+  
+    <aura:attribute name="userInfo" type="user"/>  
+
+    <aura:if isTrue="{!v.userInfo.Dealer_Brand__c == 'Both'}">
+         <div>
+    	<img src="{!$Resource.Volvo_Brand}" width="850"/>
+
+   		 </div>
+      
+    <aura:set attribute="else">
+        <aura:if isTrue="{!v.userInfo.Dealer_Brand__c == 'Volvo'}">
+           			<div>
+    					<!--<img src="https://s3.caradvice.com.au/wp-content/uploads/2017/12/volvo-trucks-fh16-750.jpg" width="850"/>-->
+                        <img src="https://fleetimages.bobitstudios.com/upload/truckinginfo/content/photogallery/_migrated/Volvo-Trucks-Unveils-Highly-Anticipated-New-VNL-Series-1-__-1175x784-a.jpg" width="850"/>
+   					</div>
+                     
+            <aura:set attribute="else">
+                <aura:if isTrue="{!v.userInfo.Dealer_Brand__c == 'Mack'}">
+                       <div>
+    						<!--<img src="https://cdn1.commercialtrucktrader.com/v1/media/5b7967ed7445d253913f51e8.jpg" width="850"/>-->
+                           <img src="https://www.macktrucks.com/-/media/images/hero-images/alternative-hero-images/mack_hero_cards_desktop2.png" width="850"/>
+                           
+   					   </div>
+                    	           
+                        <aura:set attribute="else">
+                            <div>
+    						<!--<img src="https://s3.caradvice.com.au/wp-content/uploads/2017/12/volvo-trucks-fh16-750.jpg" width="850"/>-->
+   							</div>
+                        </aura:set>
+                    </aura:if>
+            </aura:set>
+		</aura:if>
+    </aura:set>
+</aura:if>   
+    
+    
+    
+</aura:component>

@@ -1,0 +1,53 @@
+<aura:component controller="Vgtna_GenericDataTableCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="mydata" type="Object"/>
+    <aura:attribute name="mycolumns" type="List"/>
+    <aura:attribute name="ObjectName" type="String"/>
+    <aura:attribute name="title" type="String"/>
+    <aura:attribute name="FieldSetName" type="String"/>
+    <aura:attribute name="newDefVal" type="String" default="Account__c"/>
+    <aura:attribute name="dealerCode" type="String"/>
+    <aura:attribute name="accountField" type="String"/>
+    <aura:attribute name="dealerBrand" type="String"/>
+    <aura:attribute name="newButton" type="Boolean"/>
+    <aura:attribute name="editButton" type="Boolean"/>
+    <aura:attribute name="deleteButton" type="Boolean"/>
+    <aura:attribute name="viewAllButton" type="Boolean" default="false"/>
+    <aura:attribute name="viewAllInternal" type="Boolean" default="false"/>
+    <aura:attribute name="backToAccount" type="Boolean"/>
+    <aura:attribute name="recordsDisplayed" type="Integer"/>
+    <aura:attribute name="iconName" type="String"/>
+    <aura:attribute name="accId" type="String"/>
+    <aura:attribute name="loggedInUser" type="User"/>
+    <aura:attribute name="totalNumberOfRows" type="Integer" default="0"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="{!v.iconName}" size="small"/>
+            <span class="slds-p-left_x-small">
+            	{! v.title }({!v.totalNumberOfRows})
+            </span>
+        </aura:set>
+        <aura:if isTrue="{!!v.viewAllButton}">
+            <div class="slds-m-top_small slds-m-left_small">
+            	<a onclick="{!c.backToAccount}"><b>Back To Account</b></a>
+            </div>
+        </aura:if>
+        <aura:set attribute="actions">
+            <aura:if isTrue="{!v.newButton}">
+                <lightning:button variant="Neutral" label="New" onclick="{! c.createRecord }" />
+            </aura:if>
+        </aura:set>
+        <aura:set attribute="footer">
+            <aura:if isTrue="{!v.viewAllButton}">
+                <a onclick="{!c.viewAll}">View All</a>
+            </aura:if>
+        </aura:set>
+        <lightning:datatable data="{! v.mydata }" 
+            columns="{! v.mycolumns }" 
+            hideCheckboxColumn="true"
+            onrowaction="{!c.handleRowAction}"
+            keyField="Id"/>
+    </lightning:card>
+    	
+</aura:component>

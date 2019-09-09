@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Mack_Internal_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Mack Internal Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mack_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Dealer_Brand__c</field>
+            <operation>equals</operation>
+            <value>Mack</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>IsPartner__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>System_Admin_Mack_Internal_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>System Admin Mack Internal Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mack_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedBy_Profile__c</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>System_Admin_Volvo_Internal_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Give access to activities created by system admin to all volvo internal users</description>
+        <label>System Admin Volvo Internal Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Volvo_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedBy_Profile__c</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

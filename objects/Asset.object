@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>AssetRelatedList</fullName>
+        <description>This is used on the Customer Account record page</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Unit_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Marketing_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Retail_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>AssetRelatedList</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetLevel</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssetProvidedById</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetServicedById</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Axle_Configuration__c</fullName>
+        <description>Axle Configuration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Axle Configuration</inlineHelpText>
+        <label>Axle Configuration</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Volvo</fullName>
+                    <default>false</default>
+                    <label>Volvo</label>
+                </value>
+                <value>
+                    <fullName>Mack</fullName>
+                    <default>false</default>
+                    <label>Mack</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Buying_Customer_ID__c</fullName>
+        <description>Source Field: OWN_CUST_ID [IDCUST_BUY]</description>
+        <externalId>false</externalId>
+        <label>Buying Customer ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Buying_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Buying Customer</description>
+        <externalId>false</externalId>
+        <label>Buying Customer</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Customer</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Buying Customer</relationshipLabel>
+        <relationshipName>Buying_Customer</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CTD_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>CTD Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cab__c</fullName>
+        <externalId>false</externalId>
+        <label>Cab</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Chassis_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Chassis_Series__c + &quot; &quot; +  Chassis_Number__c</formula>
+        <label>Chassis ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Chassis_Number__c</fullName>
+        <description>Source Field: CHASSIS_NUM [IDCHASNR]</description>
+        <externalId>false</externalId>
+        <label>Chassis Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Chassis_Series__c</fullName>
+        <description>Source Field: CHASSIS_SERIE [IDCHNRS]</description>
+        <externalId>false</externalId>
+        <label>Chassis Series</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Operation__c</fullName>
+        <externalId>false</externalId>
+        <label>Country of Operation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>USA</fullName>
+                    <default>false</default>
+                    <label>USA</label>
+                </value>
+                <value>
+                    <fullName>CAN</fullName>
+                    <default>false</default>
+                    <label>CAN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Delivery_Date__c</fullName>
+        <description>Source Field: DELIVERY_DATE Delivery Date [TILEV_VAGNKUND]</description>
+        <externalId>false</externalId>
+        <label>Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Engine_Liters__c</fullName>
+        <description>Engine Liters</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Engine Liters</inlineHelpText>
+        <label>Engine Liters</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engine_Manufacturer__c</fullName>
+        <description>Engine Manufacturer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Engine Manufacturer</inlineHelpText>
+        <label>Engine Manufacturer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engine_Model__c</fullName>
+        <description>Engine Model</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Engine Model</inlineHelpText>
+        <label>Engine Model</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engine_Type__c</fullName>
+        <description>Engine Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Engine Type</inlineHelpText>
+        <label>Engine Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Front_Axle__c</fullName>
+        <description>Front Axle</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Front Axle</inlineHelpText>
+        <label>Front Axle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fuel__c</fullName>
+        <description>Fuel</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fuel</inlineHelpText>
+        <label>Fuel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InstallDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsCompetitorProduct</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsInternal</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Liters_Size_Over_Under__c</fullName>
+        <description>Liters Size Over Under</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Liters Size Over Under</inlineHelpText>
+        <label>Liters Size Over Under</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturer_GVW_Class__c</fullName>
+        <description>Manufacturer GVW Class</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manufacturer GVW Class</inlineHelpText>
+        <label>Manufacturer GVW Class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Type__c</fullName>
+        <description>Source Field: [BEMRKTYP]</description>
+        <externalId>false</externalId>
+        <label>Marketing Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Year__c</fullName>
+        <description>Model Year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Model Year</inlineHelpText>
+        <label>Model Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OEM__c</fullName>
+        <externalId>false</externalId>
+        <label>OEM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Volvo</fullName>
+                    <default>false</default>
+                    <label>Volvo</label>
+                </value>
+                <value>
+                    <fullName>Mack</fullName>
+                    <default>false</default>
+                    <label>Mack</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Price</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductDescription</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductFamily</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PurchaseDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Rear_Axle__c</fullName>
+        <description>Rear Axle</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rear Axle</inlineHelpText>
+        <label>Rear Axle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Report_Month__c</fullName>
+        <description>Report Month</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Report Month</inlineHelpText>
+        <label>Report Month</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Report_Year__c</fullName>
+        <description>Report Year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Report Year</inlineHelpText>
+        <label>Report Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retail_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Retail Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RootAssetId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Segment_No_Liters__c</fullName>
+        <description>Segment No Liters</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Segment No Liters</inlineHelpText>
+        <label>Segment No Liters</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segment__c</fullName>
+        <description>Segment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Segment</inlineHelpText>
+        <label>Segment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seller_Dealer_CTDI_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Seller Dealer CTDI ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seller_Dealer_Code__c</fullName>
+        <externalId>true</externalId>
+        <label>Seller Dealer Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SerialNumber</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Dealer_CTDI_ID__c</fullName>
+        <description>Source Field: SHIP_2_DLR CODE [IDAF_SHIP]</description>
+        <externalId>false</externalId>
+        <label>Ship To Dealer CTDI ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Dealer_Code__c</fullName>
+        <description>Ship To Dealer Code</description>
+        <externalId>false</externalId>
+        <label>Ship To Dealer Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Dealer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Ship To Dealer</description>
+        <externalId>false</externalId>
+        <label>Ship To Dealer</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Dealer</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Ship To Dealer (VDA Assets)</relationshipLabel>
+        <relationshipName>Ship_To_Dealer_VDA_Assets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StockKeepingUnit</fullName>
+    </fields>
+    <fields>
+        <fullName>Unit_Number__c</fullName>
+        <description>Source Field: UNIT_NUM [UNIT_NUM_VTNA]</description>
+        <externalId>false</externalId>
+        <label>Unit Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UsageEndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Using_Customer_ID__c</fullName>
+        <description>Source Field: USE_CUST_ID [IDCUST_USER]</description>
+        <externalId>false</externalId>
+        <label>Using Customer ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VDA_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VDA Flag</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VDA_Last_Updated_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Updated On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>VIN__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>VIN</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Make_Model__c</fullName>
+        <description>Vehicle Make Model</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vehicle Make Model</inlineHelpText>
+        <label>Vehicle Make Model</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Make__c</fullName>
+        <description>Vehicle Make</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vehicle Make</inlineHelpText>
+        <label>Vehicle Make</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Model__c</fullName>
+        <description>Vehicle Model</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vehicle Model</inlineHelpText>
+        <label>Vehicle Model</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Type__c</fullName>
+        <description>Vehicle Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vehicle Type</inlineHelpText>
+        <label>Vehicle Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Assets_by_Selling_Dealer</fullName>
+        <columns>ASSET.NAME</columns>
+        <columns>VIN__c</columns>
+        <columns>Segment__c</columns>
+        <columns>Vehicle_Model__c</columns>
+        <columns>Retail_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Assets by Selling Dealer</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedTo>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.SERIAL_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.INSTALL_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.SERIAL_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.INSTALL_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Purchase_Date_is_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( PurchaseDate )</errorConditionFormula>
+        <errorDisplayField>PurchaseDate</errorDisplayField>
+        <errorMessage>Purchase Date is Required</errorMessage>
+    </validationRules>
+</CustomObject>

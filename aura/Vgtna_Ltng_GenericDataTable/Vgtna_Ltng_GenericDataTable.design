@@ -1,0 +1,14 @@
+<design:component label="Generic Data Table">
+    <design:attribute name="ObjectName" label="Object Name" description="Populate the API name of the object" required="true"/>
+    <design:attribute name="title" label="Object Label" description="Populate the name of the object" />
+    <design:attribute name="FieldSetName" label="FieldSet Name" description="Populate the name of the fieldSet of the object to get the columns of the table" />
+    <design:attribute name="dealerCode" label="Dealer Code Filter" description="Populate the API Name of the Dealer Code field" />
+    <design:attribute name="dealerBrand" label="Dealer Brand Filter" description="Check if the table should be filtered with Dealer Brand" />
+    <design:attribute name="accountField" label="Account Field" description="Enter the parent account field" />
+    <design:attribute name="newButton" label="New Button" description="Check if New Button is required on the table" />
+    <design:attribute name="editButton" label="Edit Button" description="Check if Edit Button is required as the row action" />
+    <design:attribute name="deleteButton" label="Delete Button" description="Check if Delete Button is required as the row action" />
+    <design:attribute name="viewAllButton" label="View All Button" description="Check if View All is required on the table" />
+    <design:attribute name="recordsDisplayed" label="Number of Records Displayed" description="Give the number of records displayed primarily and we can see all records when VIEW ALL link is clicked" />
+    <design:attribute name="iconName" label="Table Icon Name" description="Populate the name of the table icon" />
+</design:component>

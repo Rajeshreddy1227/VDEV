@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Customer_Profile_External_User_Access_denied_Message</fullName>
+        <categories>Customer Profile</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Profile External User Access denied Message</shortDescription>
+        <value>Please ask your Dealer Admin to create a Customer Profile for your dealership.</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Profile_Internal_User_Message</fullName>
+        <categories>Customer Profile</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Profile Internal User Message</shortDescription>
+        <value>Please refer to Customer Profile Related List.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Account_Name</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Account Name</shortDescription>
+        <value>Account Name</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Callout_Status</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Callout Status</shortDescription>
+        <value>CDB Response for Callout status</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Cancel_Button</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Cancel Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_City</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Code_500</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Code 500</shortDescription>
+        <value>Internal Server Error. Something went wrong. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Community_Button</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Community Button</shortDescription>
+        <value>Create Customer Account</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Confirm_Box_Message</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Confirm Box Message</shortDescription>
+        <value>Are you sure you want to create a new Account?</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Country</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Duplicate_Message</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Duplicate Message</shortDescription>
+        <value>Potential duplicate(s) were found in our database. Please review the suggestions below and select either an existing record or proceed with the new account request by selecting the entry without the Party ID.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Error_returning_no_response</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Error returning no response</shortDescription>
+        <value>Error returning no response</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Form_Details_Header</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Form Details Header</shortDescription>
+        <value>Account Information</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Form_Header</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Form Header</shortDescription>
+        <value>New Account: Customer</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Form_Mandatory_Check</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Form Mandatory Check</shortDescription>
+        <value>Error: Please fill all mandatory fields.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Insufficient_Privilege_Error</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Insufficient Privilege Error</shortDescription>
+        <value>Insufficient privilege to create or edit this account.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_New_Account</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB New Account</shortDescription>
+        <value>New Account</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_New_Opportunity</fullName>
+        <categories>Create Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna_CDB_New_Opportunity</shortDescription>
+        <value>New Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Next_Button</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Next Button</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_PartyID</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB PartyID</shortDescription>
+        <value>Party ID</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Postal_Code</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Postal Code</shortDescription>
+        <value>Postal Code</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Previous_Button</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Previous Button</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_RT_Error</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB RT Error</shortDescription>
+        <value>Error: You must select a record type.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Save_Button</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Save Button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Select_RT</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Select RT</shortDescription>
+        <value>Select a Record Type</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_State</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB State</shortDescription>
+        <value>State</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_Street</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB Street</shortDescription>
+        <value>Street</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_CDB_force_record_selection</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna CDB force record selection</shortDescription>
+        <value>Error: Please make one selection.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Create_Lead_Community</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Create Lead Community</shortDescription>
+        <value>New Lead</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Customer_Account_RecorTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Customer Account RecorTypeId</shortDescription>
+        <value>012f200000122gBAAQ</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Dealer_Community_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Dealer Community URL</shortDescription>
+        <value>https://mycrm.volvo.com/s/</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Ignore_Errors_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Ignore Errors Button</shortDescription>
+        <value>Ignore Errors</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Mack_OEM</fullName>
+        <categories>Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna_Mack_OEM</shortDescription>
+        <value>Mack</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Master_RT</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Master RT</shortDescription>
+        <value>Master</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_New_Lead</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna New Lead</shortDescription>
+        <value>New Lead</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Oppo_Community_Button</fullName>
+        <categories>Create Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna_Oppo_Community_Button</shortDescription>
+        <value>Create Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Other_OEM</fullName>
+        <categories>Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna_Other_OEM</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Prod_Org_ID</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Prod Org ID</shortDescription>
+        <value>00Df200000166Z5</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Response_400_Code_1</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Response 400 Code 1</shortDescription>
+        <value>The city you entered does not exist in the USPS directory. Please double-check all input and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Response_400_Code_2</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Response 400 Code 2</shortDescription>
+        <value>The street name you entered does not exist in the USPS directory. Please double-check all input and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Response_400_Code_3</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Response 400 Code 3</shortDescription>
+        <value>The street number you entered does not exist on this street, as determined by the USPS directory. Please double-check all input and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Response_400_Code_4</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Response 400 Code 4</shortDescription>
+        <value>The highlighted field you entered is incorrect. Please double-check all input and try again. If you have confirmed the information that is provided, select “Ignore Errors”.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Response_400_Code_5</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Response 400 Code 5</shortDescription>
+        <value>The address you entered resulted in too many possible matches in the USPS directory. Please double-check all input and try again. If you have confirmed the information that is provided, select “Ignore Errors”.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Response_400_Code_6</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Response 400 Code 6</shortDescription>
+        <value>Unable to verify rural record information.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_System_Integrator_Profile_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna System Integrator Profile Name</shortDescription>
+        <value>System Integrator</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Toggle_Validation_Message</fullName>
+        <categories>Toggle</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Toggle Validation Message</shortDescription>
+        <value>You cannot toggle brand from here.</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Try_Again_Button</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Try Again Button</shortDescription>
+        <value>Try Again</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Unhandled_Error_Response</fullName>
+        <categories>Create Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Unhandled Error Response</shortDescription>
+        <value>Unhandled error encountered from CDB Webservice. Error Code:</value>
+    </labels>
+    <labels>
+        <fullName>Vgtna_Volvo_OEM</fullName>
+        <categories>Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vgtna Volvo OEM</shortDescription>
+        <value>Volvo</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,10 @@
+Hello, 
+A new lead from {!Lead.Brand__c} Trucks has been routed to {!Lead.DealerAccountName__c}. 
+
+Please log into the Salesforce Partner Community to view and follow up. 
+
+https://mycrm.volvo.com/{!Lead.Id}
+
+
+Thank you, 
+{!Lead.Brand__c} Trucks

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is created to add Opportunity Team Members across Dealer Mgmt Group</description>
+    <height>500</height>
+    <label>Add Opportunity Team</label>
+    <lightningComponent>Vgtna_Ltng_AddOptyTeam</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

@@ -1,0 +1,26 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" controller="Vgtna_FetchDealerUsers" >
+	    
+	<aura:attribute name="srOptions" type="LIST"/>    
+    <aura:attribute name="selectedRep" type="String" access="PRIVATE"/>
+   	<aura:handler name="init" value="{!this}" action="{!c.fetchUsers}"/>	
+   <lightning:card >
+      <!-- <aura:set attribute="actions">
+            <lightning:button label="Change Owner" variant="brand" onclick="{!c.Assign}"/>
+        </aura:set>  -->
+       <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--small" >Select User</h4>
+    </div>
+     
+     <lightning:select name="salesreps" label="Select a user below and click Change Owner button." aura:id="salesreps" value="{!v.selectedRep}">
+                                    <aura:iteration items="{!v.srOptions}" var="salesRep">
+                                        <option text="{!salesRep.label}" value="{!salesRep.id}"></option>
+                                      </aura:iteration>
+                                  </lightning:select>
+
+       <aura:set attribute="footer">
+           <lightning:button label="Assign" variant="brand" onclick="{!c.Assign}"/>
+           <lightning:button label="Cancel" variant="brand" onclick="{!c.Cancel}"/>
+    </aura:set>
+
+    </lightning:card> 
+</aura:component>

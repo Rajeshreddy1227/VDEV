@@ -1,0 +1,56 @@
+<aura:component controller="Vgtna_CustomLoginController" implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="userInfo" type="user"/> 
+    <aura:attribute name="acrInfo" type="List"/>
+     <aura:attribute name="selectedACR" type="string"/>
+    <aura:attribute name="toggleValue" type="boolean"/>  
+    <aura:attribute name="win" type="Integer" />
+     
+    
+    <aura:handler name="init" value="this" action="{!c.doInit}"/> 
+    
+    <div class="slds-grid slds-wrap">
+          <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12">
+           	<aura:if isTrue="{!v.userInfo.Dual_Branded__c}">
+                       <div class="slds-p-around_medium">
+                            <lightning:input name="toggleBrand"
+                                             label=""
+                                             type="toggle"
+                                             messageToggleActive="Mack"
+                                             messageToggleInactive="Volvo" 
+                                              checked="{!v.toggleValue}"
+                                              onchange="{!c.changeBrand}"/>
+                         
+                        <aura:set attribute="else">
+                            <div>
+                            </div>
+                        </aura:set>
+                         </div>
+   			 </aura:if>
+          </div>
+        <div class="slds-col slds-size_1-of-1 slds-large-size_9-of-12">
+           
+          </div>
+          <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-12">
+           <!-- <span>-->
+                
+             <aura:if isTrue="{! !empty(v.acrInfo)}"> 
+                <!-- <div class="slds-p-top_xsmall">--> <div class="slds-p-around_medium">      
+                 <lightning:select aura:id="ACR" value="{!v.selectedACR}" label="" onchange="{!c.updateDealerCode}">       
+                                               
+                            <aura:iteration items="{!v.acrInfo}" var="item">
+                                <option value="{!item.Account.Dealer_Code__c}">
+                                      {!item.Account.Dealer_Code__c} - {!item.Roles}
+                                </option>
+                            </aura:iteration>
+                        </lightning:select> 
+                         
+                      </div>
+                
+       		</aura:if>
+        	</div>  
+           <!-- </span>-->
+         
+	</div>
+
+     
+</aura:component>

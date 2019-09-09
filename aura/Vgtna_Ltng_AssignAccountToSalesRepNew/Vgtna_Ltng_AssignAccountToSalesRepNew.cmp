@@ -1,0 +1,143 @@
+<aura:component controller="Vgtna_FetchDealerAccountsNew" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<!--<aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>-->
+    <aura:attribute name="recordId" type="String"></aura:attribute>
+    <aura:attribute name="dealerCode" type="String"></aura:attribute>
+    <aura:attribute name="mydata" type="Vgtna_FetchDealerAccountsNew.wrapCustAcc[]"></aura:attribute>
+    <aura:attribute name="remainingRec" type="Vgtna_FetchDealerAccountsNew.wrapCustAcc[]"></aura:attribute>
+    <aura:attribute name="acctData" type="Vgtna_FetchDealerAccountsNew.wrapCustAcc[]"></aura:attribute>
+    <aura:attribute name="asrData" type="Vgtna_FetchDealerAccountsNew.wrapCustAcc[]"></aura:attribute>
+    <aura:attribute name="allAccResponse" type="Vgtna_FetchDealerAccountsNew.wrapResponse"></aura:attribute>
+    <aura:attribute name="mycolumns" type="List"></aura:attribute>
+    <aura:attribute name="srOptions" type="List"></aura:attribute>
+    <aura:attribute name="noResults" type="String"></aura:attribute>
+    <aura:attribute name="selectedRep" type="String"></aura:attribute>
+    <aura:attribute name="recSelected" type="Integer" default="0"></aura:attribute>
+    <aura:attribute name="loadMoreStatus" type="String"></aura:attribute>
+    <aura:attribute name="loadMore" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="keyfield" type="String" default="uniqfield"></aura:attribute>
+    <aura:attribute name="selectedAccts" type="String[]"></aura:attribute>
+    <aura:attribute name="reAssignUnAssignIds" type="String[]"></aura:attribute>
+    <aura:attribute name="initialRows" type="Integer" default="50"/>
+    <aura:attribute name="rowsToLoad" type="Integer" default="25"/>
+    <aura:attribute name="offsetRows" type="Integer"/>
+    <aura:attribute name="onLoad" type="Boolean" default="true"/>
+    <aura:attribute name="onPageLoad" type="Boolean"/>
+    <aura:attribute name="Spinner" type="Boolean" default="false"/>
+    <aura:attribute name="LoadedAllRecords" type="Boolean" default="false"/>
+    <aura:attribute name="noRecordsError" type="String"/>
+    <aura:attribute name="totalRecords" type="String" default="Loading..."/>
+    <aura:attribute name="totalNumberOfRows" type="Integer" default="0"/>
+    <aura:attribute name="loadedAsrSize" type="Integer" default="0"/>
+    <aura:attribute name="loadedAccSize" type="Integer" default="0"/>
+    <aura:attribute name="totAsr" type="Integer" default="0"/>
+    <aura:attribute name="totAcc" type="Integer" default="0"/>
+    <aura:attribute name="unassignAcctIds" type="String[]"/>
+    <aura:attribute name="allUnassignAcctIds" type="String[]"/>
+    <aura:attribute name="allTerrAccIds" type="String[]"/>
+    <aura:attribute name="accCreatedDt" type="DateTime"/>
+    <aura:attribute name="lastAccId" type="String"/>
+    <aura:attribute name="lastAsrId" type="String"/>
+    <aura:attribute name="asrCreatedDt" type="DateTime"/>
+    <aura:attribute name="loggedId" type="DateTime"/>
+    <aura:attribute name="isSalesRep" type="Boolean"/>
+    <aura:attribute name="restrictSalesRep" type="Boolean"/>
+    <aura:attribute name="onKeyUp" type="Boolean"/>
+    <aura:attribute name="selRows" type="List" />
+    <aura:attribute name="timeout" type="Integer" default="0"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"></aura:handler>
+    
+        <aura:if isTrue="{!v.Spinner}">
+        
+   <!-- <div aura:id="spinnerId" class="slds-spinner_container">
+       <div class="slds-spinner_brand  slds-spinner slds-spinner_large slds-is-relative" role="alert">
+         <span class="slds-assistive-text">Loading</span>
+         <div class="slds-spinner__dot-a"></div>
+         <div class="slds-spinner__dot-b"></div>
+       </div>
+    </div>-->
+        <lightning:spinner variant="brand" alternativeText="Loading" size="large" />
+ </aura:if>
+    <lightning:card title="My Dealer Accounts" iconName="custom:custom15" class="slds-scrollable_x">       
+        <aura:set attribute="title">
+            My Dealer Accounts({!v.totalNumberOfRows})
+            
+            
+        </aura:set>
+        
+        <aura:set attribute="actions">
+            <lightning:button variant="brand" label="Export" onclick="{!c.downloadCsv}"></lightning:button>
+            <lightning:button variant="brand" label="Assign Sales Rep" onclick="{!c.assignSalesRep}"></lightning:button>
+            <lightning:button variant="brand" label="ReAssign" onclick="{! c.reAssign }" />
+            <lightning:button variant="brand" label="UnAssign" onclick="{! c.unAssign }" />
+        </aura:set>
+            
+        <table>
+           <!-- <tr class="slds-float_right slds-p-right_small slds-p-bottom_small">
+            <lightning:button variant="brand" label="Assign Sales Rep" onclick="{!c.assignSalesRep}"></lightning:button>
+            <lightning:button variant="brand" label="ReAssign" onclick="{! c.reAssign }" />
+            <lightning:button variant="brand" label="UnAssign" onclick="{! c.unAssign }" />
+            </tr>-->
+            <tr>
+                <td>
+                   
+                <div>
+                    <lightning:input type="checkbox" class="slds-grid slds-size_1-of-9 slds-float_left slds-p-top_large slds-p-left_small slds-p-right_xxx-small" label="Select All" name="selectallrec" aura:id="selectallrec" onchange="{! c.handleSelectAll }"/> 
+                    <lightning:input class="slds-grid slds-size_1-of-9 slds-float_right slds-p-left_medium slds-p-right_xxx-small" name="input2" aura:id="zipcodename" label="Zipcode Filter" onkeyup ="{!c.zipcodeKeyChange}"
+           placeholder="Search"></lightning:input>
+                
+                    <lightning:input class="slds-grid slds-size_1-of-9 slds-float_right slds-p-left_medium slds-p-right_xxx-small" name="input3" aura:id="countyname" label="County Filter" onkeyup ="{!c.countyKeyChange}"
+           placeholder="Search"></lightning:input>
+                
+                    <lightning:input class="slds-grid slds-size_1-of-9 slds-p-left_medium slds-float_right slds-p-right_xxx-small" name="input1" label="City Filter" aura:id="cityname" onkeyup ="{!c.cityKeyChange}"
+                                     placeholder="Search"></lightning:input>
+                    
+                    <lightning:input class="slds-grid slds-size_1-of-9 slds-p-left_medium slds-float_right slds-p-right_xxx-small" name="AccFilter" label="Account Filter" aura:id="AccFilter" onkeyup ="{!c.accountNameChange}"
+                                     placeholder="Search"></lightning:input>
+                    
+                    <div class="slds-grid slds-size_1-of-9 slds-float_right slds-p-left_medium slds-p-right_xxx-small slds-p-top_xxx-small">
+                    
+                    <lightning:select name="salesreps" label="Sales Rep Filter" aura:id="salesreps" value="{!v.selectedRep}" onchange="{!c.onSalesRepChange}">
+                        <aura:iteration items="{!v.srOptions}" var="salesRep">
+                            <option text="{!salesRep.label}" value="{!salesRep.id}"></option>
+                        </aura:iteration>
+                    </lightning:select>
+                    </div>
+                                       </div>
+                    <!--slds-p-left_medium slds-p-right_xxx-small-->
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <aura:if isTrue="{!not(empty(v.mydata))}" >
+                        <div style="height: 640px">
+                            <div class="slds-grid slds-p-left_small">Records Selected: {!v.recSelected}</div>
+                        <lightning:datatable 	keyField="{!v.keyfield}"
+                                                data="{!v.mydata}"
+                                                columns="{!v.mycolumns}"
+                                                onrowselection="{!c.handleSelectedRows}"
+                                             	selectedRows="{! v.selRows }"
+                                             	enableInfiniteLoading="true"
+                                                sortable="false"
+                                             	showRowNumberColumn="true"
+                            					onloadmore="{!c.loadMoreData }">
+                                             </lightning:datatable>
+                                              <!--  enableInfiniteLoading="true"
+                                                onloadmore="{!c.loadMoreData }"
+                                                ></lightning:datatable>-->
+                        </div>
+                    </aura:if>
+                    
+                  <!--  <aura:if isTrue="{!v.Spinner}">-->
+                        <!--<aura:if isTrue="{!empty(v.mydata)}" >-->
+                        	<p>{!v.noRecordsError}</p>
+                           <!-- <p>An error occured: No records to display</p>-->
+                        
+                   <!-- </aura:if> -->
+                </td>
+            </tr>
+        </table>
+    </lightning:card>
+    <div aura:id="showSalesRepList" ></div>
+
+</aura:component>

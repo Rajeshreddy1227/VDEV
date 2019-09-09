@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Assigned_Sales_Reps__r$Management_Group__c</field>
+    </columns>
+    <columns>
+        <field>Account.Assigned_Sales_Reps__r$Sales_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Account$Dealer_Code__c</field>
+    </columns>
+    <columns>
+        <field>Account$Party_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$BillingAddress</field>
+    </columns>
+    <columns>
+        <field>Account$BillingCity</field>
+    </columns>
+    <columns>
+        <field>Account$BillingStateCode</field>
+    </columns>
+    <columns>
+        <field>Account$BillingPostalCode</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>New Accounts w/ASR Custom Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_w_ASR_Custom__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

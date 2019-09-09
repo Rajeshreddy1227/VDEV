@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Party_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$BillingAddress</field>
+    </columns>
+    <columns>
+        <field>Account$Fleet_Size__c</field>
+    </columns>
+    <columns>
+        <field>Account$Strategic_Account__c</field>
+    </columns>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>Assigned_Sales_Rep__c</relatedTable>
+        <relatedTableJoinColumn>Account__c</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>My Assigned Accounts_RS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Assigned_Sales_Rep__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Active_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

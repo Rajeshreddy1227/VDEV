@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Customer_Profile</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account_Alias_DBA__c</fullName>
+        <description>DBA or Nickname for the Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DBA or Nickname for the Account</inlineHelpText>
+        <label>Account Alias (DBA)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commodities_Hauled__c</fullName>
+        <externalId>false</externalId>
+        <label>Commodities Hauled</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.Name</field>
+                <operation>equals</operation>
+                <value>Customer</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer Profiles</relationshipLabel>
+        <relationshipName>Customer_Profiles</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Daycab__c</fullName>
+        <externalId>false</externalId>
+        <label>% Daycab</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.Name</field>
+                <operation>equals</operation>
+                <value>Dealer</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer Profiles (Dealer Account)</relationshipLabel>
+        <relationshipName>Customer_Profiles1</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>FE_Current__c</fullName>
+        <externalId>false</externalId>
+        <label>FE Current</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FE_Goal__c</fullName>
+        <externalId>false</externalId>
+        <label>FE Goal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Key Account</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Logged_In_User_Matching_Dealer_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Dealer_Account__r.Dealer_Code__c  = $User.Dealer_Code__c</formula>
+        <label>Logged In User Matching Dealer Code?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Miles_Driven__c</fullName>
+        <externalId>false</externalId>
+        <label>Miles Driven</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Potential_Volume__c</fullName>
+        <externalId>false</externalId>
+        <label>Potential Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Make</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RSL_Cruise__c</fullName>
+        <externalId>false</externalId>
+        <label>RSL Cruise</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RSL_Pedal__c</fullName>
+        <externalId>false</externalId>
+        <label>RSL Pedal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Repair_shop_owned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Repair shop owned?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Target_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sales Target Account</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Make</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CST &gt;10L</fullName>
+                    <default>false</default>
+                    <label>CST &gt;10L</label>
+                </value>
+                <value>
+                    <fullName>CST &lt;10L</fullName>
+                    <default>false</default>
+                    <label>CST &lt;10L</label>
+                </value>
+                <value>
+                    <fullName>LH</fullName>
+                    <default>false</default>
+                    <label>LH</label>
+                </value>
+                <value>
+                    <fullName>LCOE</fullName>
+                    <default>false</default>
+                    <label>LCOE</label>
+                </value>
+                <value>
+                    <fullName>RH</fullName>
+                    <default>false</default>
+                    <label>RH</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sleeper__c</fullName>
+        <externalId>false</externalId>
+        <label>% Sleeper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Trade_Cycle__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Cycle</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Trades__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Trades</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Trailer_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>Trailer Types</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Trailers__c</fullName>
+        <externalId>false</externalId>
+        <label>Trailers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Drop Deck</fullName>
+                    <default>false</default>
+                    <label>Drop Deck</label>
+                </value>
+                <value>
+                    <fullName>Enclosed Car Carrier</fullName>
+                    <default>false</default>
+                    <label>Enclosed Car Carrier</label>
+                </value>
+                <value>
+                    <fullName>End Dump</fullName>
+                    <default>false</default>
+                    <label>End Dump</label>
+                </value>
+                <value>
+                    <fullName>Flatbed</fullName>
+                    <default>false</default>
+                    <label>Flatbed</label>
+                </value>
+                <value>
+                    <fullName>Lowboy</fullName>
+                    <default>false</default>
+                    <label>Lowboy</label>
+                </value>
+                <value>
+                    <fullName>Reefer</fullName>
+                    <default>false</default>
+                    <label>Reefer</label>
+                </value>
+                <value>
+                    <fullName>Specialty</fullName>
+                    <default>false</default>
+                    <label>Specialty</label>
+                </value>
+                <value>
+                    <fullName>Van</fullName>
+                    <default>false</default>
+                    <label>Van</label>
+                </value>
+                <value>
+                    <fullName>Walking Floor</fullName>
+                    <default>false</default>
+                    <label>Walking Floor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Truck_Body__c</fullName>
+        <externalId>false</externalId>
+        <label>Truck Body</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Concrete Pumper</fullName>
+                    <default>false</default>
+                    <label>Concrete Pumper</label>
+                </value>
+                <value>
+                    <fullName>Crane</fullName>
+                    <default>false</default>
+                    <label>Crane</label>
+                </value>
+                <value>
+                    <fullName>Dump</fullName>
+                    <default>false</default>
+                    <label>Dump</label>
+                </value>
+                <value>
+                    <fullName>Refuse</fullName>
+                    <default>false</default>
+                    <label>Refuse</label>
+                </value>
+                <value>
+                    <fullName>Tow</fullName>
+                    <default>false</default>
+                    <label>Tow</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vocation_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Vocation 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agriculture / Farm</fullName>
+                    <default>false</default>
+                    <label>Agriculture / Farm</label>
+                </value>
+                <value>
+                    <fullName>Beverage Processing &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Beverage Processing &amp; Distribution</label>
+                </value>
+                <value>
+                    <fullName>Bus Transporation</fullName>
+                    <default>false</default>
+                    <label>Bus Transporation</label>
+                </value>
+                <value>
+                    <fullName>Construction</fullName>
+                    <default>false</default>
+                    <label>Construction</label>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Emergency Vehicles</fullName>
+                    <default>false</default>
+                    <label>Emergency Vehicles</label>
+                </value>
+                <value>
+                    <fullName>Food Processing &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Food Processing &amp; Distribution</label>
+                </value>
+                <value>
+                    <fullName>Forestry / Lumber Products</fullName>
+                    <default>false</default>
+                    <label>Forestry / Lumber Products</label>
+                </value>
+                <value>
+                    <fullName>General Freight</fullName>
+                    <default>false</default>
+                    <label>General Freight</label>
+                </value>
+                <value>
+                    <fullName>General Freight / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>General Freight / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Government / Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Government / Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Landscaping / Horticulture</fullName>
+                    <default>false</default>
+                    <label>Landscaping / Horticulture</label>
+                </value>
+                <value>
+                    <fullName>Lease / Finance</fullName>
+                    <default>false</default>
+                    <label>Lease / Finance</label>
+                </value>
+                <value>
+                    <fullName>Lease / Manufacturer Sponsored</fullName>
+                    <default>false</default>
+                    <label>Lease / Manufacturer Sponsored</label>
+                </value>
+                <value>
+                    <fullName>Lease / Rental</fullName>
+                    <default>false</default>
+                    <label>Lease / Rental</label>
+                </value>
+                <value>
+                    <fullName>Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Mining / Quarring</fullName>
+                    <default>false</default>
+                    <label>Mining / Quarring</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Moving And Storage</fullName>
+                    <default>false</default>
+                    <label>Moving And Storage</label>
+                </value>
+                <value>
+                    <fullName>Petroleum</fullName>
+                    <default>false</default>
+                    <label>Petroleum</label>
+                </value>
+                <value>
+                    <fullName>Petroleum / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Petroleum / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Road / Highway Maintenance</fullName>
+                    <default>false</default>
+                    <label>Road / Highway Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Sanitation / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Sanitation / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Sanitation / Refuse</fullName>
+                    <default>false</default>
+                    <label>Sanitation / Refuse</label>
+                </value>
+                <value>
+                    <fullName>SERVICES</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+                <value>
+                    <fullName>Specialized / Heavy Hauling</fullName>
+                    <default>false</default>
+                    <label>Specialized / Heavy Hauling</label>
+                </value>
+                <value>
+                    <fullName>Unclassified</fullName>
+                    <default>false</default>
+                    <label>Unclassified</label>
+                </value>
+                <value>
+                    <fullName>Utility Services</fullName>
+                    <default>false</default>
+                    <label>Utility Services</label>
+                </value>
+                <value>
+                    <fullName>Vehicle Transporter</fullName>
+                    <default>false</default>
+                    <label>Vehicle Transporter</label>
+                </value>
+                <value>
+                    <fullName>Wholesale / Retail</fullName>
+                    <default>false</default>
+                    <label>Wholesale / Retail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vocation_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Vocation 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agriculture / Farm</fullName>
+                    <default>false</default>
+                    <label>Agriculture / Farm</label>
+                </value>
+                <value>
+                    <fullName>Beverage Processing &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Beverage Processing &amp; Distribution</label>
+                </value>
+                <value>
+                    <fullName>Bus Transporation</fullName>
+                    <default>false</default>
+                    <label>Bus Transporation</label>
+                </value>
+                <value>
+                    <fullName>Construction</fullName>
+                    <default>false</default>
+                    <label>Construction</label>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Emergency Vehicles</fullName>
+                    <default>false</default>
+                    <label>Emergency Vehicles</label>
+                </value>
+                <value>
+                    <fullName>Food Processing &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Food Processing &amp; Distribution</label>
+                </value>
+                <value>
+                    <fullName>Forestry / Lumber Products</fullName>
+                    <default>false</default>
+                    <label>Forestry / Lumber Products</label>
+                </value>
+                <value>
+                    <fullName>General Freight</fullName>
+                    <default>false</default>
+                    <label>General Freight</label>
+                </value>
+                <value>
+                    <fullName>General Freight / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>General Freight / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Government / Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Government / Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Landscaping / Horticulture</fullName>
+                    <default>false</default>
+                    <label>Landscaping / Horticulture</label>
+                </value>
+                <value>
+                    <fullName>Lease / Finance</fullName>
+                    <default>false</default>
+                    <label>Lease / Finance</label>
+                </value>
+                <value>
+                    <fullName>Lease / Manufacturer Sponsored</fullName>
+                    <default>false</default>
+                    <label>Lease / Manufacturer Sponsored</label>
+                </value>
+                <value>
+                    <fullName>Lease / Rental</fullName>
+                    <default>false</default>
+                    <label>Lease / Rental</label>
+                </value>
+                <value>
+                    <fullName>Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Mining / Quarring</fullName>
+                    <default>false</default>
+                    <label>Mining / Quarring</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Moving And Storage</fullName>
+                    <default>false</default>
+                    <label>Moving And Storage</label>
+                </value>
+                <value>
+                    <fullName>Petroleum</fullName>
+                    <default>false</default>
+                    <label>Petroleum</label>
+                </value>
+                <value>
+                    <fullName>Petroleum / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Petroleum / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Road / Highway Maintenance</fullName>
+                    <default>false</default>
+                    <label>Road / Highway Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Sanitation / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Sanitation / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Sanitation / Refuse</fullName>
+                    <default>false</default>
+                    <label>Sanitation / Refuse</label>
+                </value>
+                <value>
+                    <fullName>SERVICES</fullName>
+                    <default>false</default>
+                    <label>SERVICES</label>
+                </value>
+                <value>
+                    <fullName>Specialized / Heavy Hauling</fullName>
+                    <default>false</default>
+                    <label>Specialized / Heavy Hauling</label>
+                </value>
+                <value>
+                    <fullName>Unclassified</fullName>
+                    <default>false</default>
+                    <label>Unclassified</label>
+                </value>
+                <value>
+                    <fullName>Utility Services</fullName>
+                    <default>false</default>
+                    <label>Utility Services</label>
+                </value>
+                <value>
+                    <fullName>Vehicle Transporter</fullName>
+                    <default>false</default>
+                    <label>Vehicle Transporter</label>
+                </value>
+                <value>
+                    <fullName>Wholesale / Retail</fullName>
+                    <default>false</default>
+                    <label>Wholesale / Retail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Warranty_Coverage__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Coverage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Customer Profile</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Customer_Profiles</fullName>
+        <columns>NAME</columns>
+        <columns>Application__c</columns>
+        <columns>Commodities_Hauled__c</columns>
+        <columns>FE_Current__c</columns>
+        <columns>FE_Goal__c</columns>
+        <columns>Key_Account__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Logged_In_User_Matching_Dealer_Code__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Customer Profiles</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CP-{000000}</displayFormat>
+        <label>Customer Profile Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Customer Profiles</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account_Alias_DBA__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Application__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Commodities_Hauled__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Dealer_Account__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Alias_DBA__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Commodities_Hauled__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Key_Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>FE_Current__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>FE_Goal__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Potential_Volume__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Primary_Make__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Account_Alias_DBA__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Commodities_Hauled__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Customer_Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FE_Current__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FE_Goal__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Key_Account__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Account_Alias_DBA__c</searchFilterFields>
+        <searchFilterFields>Vocation_1__c</searchFilterFields>
+        <searchFilterFields>Vocation_2__c</searchFilterFields>
+        <searchResultsAdditionalFields>Customer_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Key_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sales_Target_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Application__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Commodities_Hauled__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Alias_DBA__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vocation_1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vocation_2__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

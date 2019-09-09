@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>VDA Assets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>VDA Assets</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- AssetRelatedList --></label>
+        <name>AssetRelatedList</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Access</value>
+        </caseValues>
+        <name>asset_access</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Access Level</value>
+        </caseValues>
+        <name>asset_access_level</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Using Customer</value>
+        </caseValues>
+        <name>asset_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Contact</value>
+        </caseValues>
+        <name>asset_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Currency</value>
+        </caseValues>
+        <name>asset_currency</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Custom Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset Custom Fields</value>
+        </caseValues>
+        <name>asset_custom_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Data</value>
+        </caseValues>
+        <name>asset_data</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Description</value>
+        </caseValues>
+        <name>asset_description</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Detail Link</value>
+        </caseValues>
+        <name>asset_detail_link</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Division</value>
+        </caseValues>
+        <name>asset_division</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Edit</value>
+        </caseValues>
+        <name>asset_edit</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset  Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset Fields</value>
+        </caseValues>
+        <name>asset_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset History</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset History</value>
+        </caseValues>
+        <name>asset_history</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset History ID</value>
+        </caseValues>
+        <name>asset_history_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset ID</value>
+        </caseValues>
+        <name>asset_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Information</value>
+        </caseValues>
+        <name>asset_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Install Date</value>
+        </caseValues>
+        <name>asset_installdate</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Internal VDA Asset</value>
+        </caseValues>
+        <name>asset_isinternal</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Level</value>
+        </caseValues>
+        <name>asset_level</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset Names</value>
+        </caseValues>
+        <name>asset_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Owner</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset Owners</value>
+        </caseValues>
+        <name>asset_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Owner Alias</value>
+        </caseValues>
+        <name>asset_owner_alias</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent VDA Asset</value>
+        </caseValues>
+        <name>asset_parent</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent VDA Asset ID</value>
+        </caseValues>
+        <name>asset_parent_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Price</value>
+        </caseValues>
+        <name>asset_price</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Product</value>
+        </caseValues>
+        <name>asset_product</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Selling Dealer</value>
+        </caseValues>
+        <name>asset_providedby_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Selling Dealer Code</value>
+        </caseValues>
+        <name>asset_providedby_account_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Purchase Date</value>
+        </caseValues>
+        <name>asset_purchasedate</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Quantity</value>
+        </caseValues>
+        <name>asset_quantity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset Record Types</value>
+        </caseValues>
+        <name>asset_record_type</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Root VDA Asset</value>
+        </caseValues>
+        <name>asset_root</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Root VDA Asset ID</value>
+        </caseValues>
+        <name>asset_root_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Serial Number</value>
+        </caseValues>
+        <name>asset_serialnumber</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Serviced By</value>
+        </caseValues>
+        <name>asset_servicedby_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Serviced By ID</value>
+        </caseValues>
+        <name>asset_servicedby_account_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Status</value>
+        </caseValues>
+        <name>asset_status</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset Usage End Date</value>
+        </caseValues>
+        <name>asset_usageenddate</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>VDA Asset View</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>VDA Asset Views</value>
+        </caseValues>
+        <name>asset_view</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <help><!-- Axle Configuration --></help>
+        <label><!-- Axle Configuration --></label>
+        <name>Axle_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>Mack</masterLabel>
+            <translation><!-- Mack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volvo</masterLabel>
+            <translation><!-- Volvo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Buying Customer ID --></label>
+        <name>Buying_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buying Customer --></label>
+        <name>Buying_Customer__c</name>
+        <relationshipLabel><!-- Buying Customer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CTD Id --></label>
+        <name>CTD_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cab --></label>
+        <name>Cab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chassis ID --></label>
+        <name>Chassis_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chassis Number --></label>
+        <name>Chassis_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chassis Series --></label>
+        <name>Chassis_Series__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country of Operation --></label>
+        <name>Country_of_Operation__c</name>
+        <picklistValues>
+            <masterLabel>CAN</masterLabel>
+            <translation><!-- CAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Engine Liters --></help>
+        <label><!-- Engine Liters --></label>
+        <name>Engine_Liters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Engine Manufacturer --></help>
+        <label><!-- Engine Manufacturer --></label>
+        <name>Engine_Manufacturer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Engine Model --></help>
+        <label><!-- Engine Model --></label>
+        <name>Engine_Model__c</name>
+    </fields>
+    <fields>
+        <help><!-- Engine Type --></help>
+        <label><!-- Engine Type --></label>
+        <name>Engine_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Front Axle --></help>
+        <label><!-- Front Axle --></label>
+        <name>Front_Axle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fuel --></help>
+        <label><!-- Fuel --></label>
+        <name>Fuel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Liters Size Over Under --></help>
+        <label><!-- Liters Size Over Under --></label>
+        <name>Liters_Size_Over_Under__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manufacturer GVW Class --></help>
+        <label><!-- Manufacturer GVW Class --></label>
+        <name>Manufacturer_GVW_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Type --></label>
+        <name>Marketing_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Model Year --></help>
+        <label><!-- Model Year --></label>
+        <name>Model_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- OEM --></label>
+        <name>OEM__c</name>
+        <picklistValues>
+            <masterLabel>Mack</masterLabel>
+            <translation><!-- Mack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volvo</masterLabel>
+            <translation><!-- Volvo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Rear Axle --></help>
+        <label><!-- Rear Axle --></label>
+        <name>Rear_Axle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Report Month --></help>
+        <label><!-- Report Month --></label>
+        <name>Report_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Report Year --></help>
+        <label><!-- Report Year --></label>
+        <name>Report_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Date --></label>
+        <name>Retail_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Segment No Liters --></help>
+        <label><!-- Segment No Liters --></label>
+        <name>Segment_No_Liters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Segment --></help>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller Dealer CTDI ID --></label>
+        <name>Seller_Dealer_CTDI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller Dealer Code --></label>
+        <name>Seller_Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Dealer CTDI ID --></label>
+        <name>Ship_To_Dealer_CTDI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Dealer Code --></label>
+        <name>Ship_To_Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Dealer --></label>
+        <name>Ship_To_Dealer__c</name>
+        <relationshipLabel><!-- Ship To Dealer (VDA Assets) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unit Number --></label>
+        <name>Unit_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Using Customer ID --></label>
+        <name>Using_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- VDA Flag --></label>
+        <name>VDA_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated On --></label>
+        <name>VDA_Last_Updated_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>VIN__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vehicle Make Model --></help>
+        <label><!-- Vehicle Make Model --></label>
+        <name>Vehicle_Make_Model__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vehicle Make --></help>
+        <label><!-- Vehicle Make --></label>
+        <name>Vehicle_Make__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vehicle Model --></help>
+        <label><!-- Vehicle Model --></label>
+        <name>Vehicle_Model__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vehicle Type --></help>
+        <label><!-- Vehicle Type --></label>
+        <name>Vehicle_Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Asset Layout</layout>
+        <sections>
+            <label><!-- Polk --></label>
+            <section>Polk</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Purchase Date is Required --></errorMessage>
+        <name>Purchase_Date_is_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

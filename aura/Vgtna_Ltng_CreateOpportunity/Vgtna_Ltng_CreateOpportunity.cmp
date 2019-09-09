@@ -1,0 +1,66 @@
+<aura:component implements="force:appHostable,force:hasRecordId,flexipage:availableForAllPageTypes,force:lightningQuickAction,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,lightning:actionOverride" controller="Vgtna_OppRecordTypeSelectorController" access="global">
+    
+    <!-- ltng:require styles="/resource/SLDS103/assets/styles/salesforce-lightning-design-system-ltng.css" / -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" access="public"/>
+    <aura:attribute name="recordTypes" type="String[]" access="public"/>
+    <aura:attribute name="userInfo" type="user"/>  
+    <aura:attribute name="user" type="User"/>  
+    <aura:attribute access="private" name="error" type="String" default=""/>
+    <aura:attribute name="source" type="String"/>
+    <aura:attribute name="account" type="Account"/>
+     <!-- accountRecordId="{!v.recordId}"  -->
+    <aura:attribute name="accountRecordId" type="Id" required="true" default=""/>
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <aura:attribute name="isOpen" type="boolean" default="true"/>
+
+    
+    <div class="slds">
+        
+        <div >
+            <aura:if isTrue="{!v.isOpen}">
+            <!-- modal body starts here -->
+            <div tabindex="-1" aria-labelledby="header43" aria-hidden="false" id="newClientSectionId" role="dialog" class="slds-modal slds-fade-in-open" style="display:block;">
+                <div class="slds-backdrop slds-backdrop--open">
+                    <div class="slds-modal__container">
+                        <div class="slds-modal__header">
+                            <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close">
+                                <button class="slds-button slds-button--neutral" onclick="{!c.hideModal}">X</button>  
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="header43" class="slds-text-heading--medium">{!$Label.c.Vgtna_CDB_New_Opportunity}</h2>
+                        </div>
+                        <div class="slds-modal__content slds-p-around--medium">
+                            <B>{!$Label.c.Vgtna_CDB_Select_RT} : </B>
+                            <br/>
+                            <div style="margin-left:30%">
+                                <aura:iteration items="{!v.recordTypes}" var="rt">
+                                    <ol class="slds-list--vertical slds-list--vertical-space">
+                                        <input type="radio" value="{!rt.Name}" name="recordTypeRadio" id="{!rt.Id}" style="margin-right: 5px;" />{!rt.Name}
+                                    </ol>   
+                                </aura:iteration> 
+                            </div>
+                            
+                                <aura:if isTrue="{! !empty(v.error)}"> 
+                                    <div class="slds-box slds-theme--error">
+                                        <ui:outputText aura:Id="outputTextId" value="{!v.error}"/>
+                                	 </div>
+                                    </aura:if>
+                             
+                            	
+                        </div>
+                      
+                        
+                        <div class="slds-modal__footer">
+                            <button class="slds-button slds-button_neutral" onclick="{!c.hideModal}">{!$Label.c.Vgtna_CDB_Cancel_Button}</button>
+                            <button class="slds-button slds-button--brand" onclick="{!c.createRecord}">{!$Label.c.Vgtna_CDB_Next_Button}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- <button class="slds-button slds-button--><!--neutral" onclick="{!c.showModal}">Open Modal</button>-->
+        </aura:if>
+         </div>
+    </div>
+    
+</aura:component>

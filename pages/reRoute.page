@@ -1,0 +1,30 @@
+<apex:page docType="html-5.0" standardController="Account" >   
+<apex:includeScript value="/lightning/lightning.out.js" />
+   <!-- <apex:includeScript value="{!URLFOR($Resource.MobilePack_jQuery,'jquery-1.9.1.min.js')}"/> -->
+<apex:includeScript value="/soap/ajax/32.0/apex.js"/>    
+    <apex:includeLightning />   
+    <div id="rerouteId"></div>    
+ <script type="text/javascript">
+    console.log('entered');
+        // if ((typeof sforce != 'undefined') && sforce && (!!sforce.one)){
+        // if(sforce&&sforce.one){
+        //   if(confirm("Hello")){
+        //   sforce.one.navigateToSObject('0012g000001o154AAA', 'detail');
+    var cmp;
+        $Lightning.use("c:VGTNA_Ltng_rerouteAccountApp", function() {  
+    $Lightning.createComponent("c:VGTNA_Ltng_rerouteAccount",
+    { 
+      // Set Lightning Component Attributes Property before creating Lightning Component In Visualforce page 
+      recordId:"{!$CurrentPage.parameters.Id}"      
+    },
+   "rerouteId",
+    function(component) {
+        cmp = component;
+     // component.set("v.recordId" , '{!$CurrentPage.parameters.Id}');
+     // console.log('Component created  {!$CurrentPage.parameters.Id} ');
+    });
+ });
+                 //   }}}   
+ </script>
+
+</apex:page>

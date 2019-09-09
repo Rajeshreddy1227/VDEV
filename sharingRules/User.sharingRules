@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Parker_Management_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Parker Management Group</label>
+        <sharedTo>
+            <portalRole>PARKERPartnerManager</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <portalRoleAndSubordinates>PARKERPartnerExecutive</portalRoleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_Mack_Users_Internally</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Mack Users Internally</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mack_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Mack_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_Volvo_Users_Internally</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Volvo Users Internally</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Volvo_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Volvo_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

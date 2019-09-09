@@ -1,0 +1,63 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" 
+                controller="Vgtna_FetchMgmtGrpUsers" access="global" >
+   <!--<ltng:require styles="{!$Resource.quickActionStyle}"/>-->
+    <!-- attributes -->
+    <aura:attribute name="OptyTeamMember" type="OpportunityTeamMember[]" />
+    <aura:attribute name="myData" type="OpportunityTeamMember[]" />
+    <aura:attribute name="mycolumns" type="List[]"/>
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="selectedUsers" type="List"/>
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this }" action="{!c.init }"/>
+    <div>
+    <aura:html tag="style"> 
+        .slds-modal__container {
+     min-width: 70vw;
+    }    </aura:html>
+<lightning:card title="Add Opportunity Team">
+    <aura:set attribute="actions">
+            <lightning:button variant="brand" label="Add" title="Add" onclick="{!c.addSelectedUsers}"/>
+           <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{!c.handleCancel}"/>
+        </aura:set>
+    <header class="slds-modal__header"></header>
+<!--<div class="slds-scrollable_y" style="height:100%;width:500px">--><div>
+        <table>
+        <tr>
+            <td>                    
+                <h1>Selected Rows: {! v.selectedRowsCount }</h1>
+                <div onkeyup="{!c.filterKeyChange}">
+                    <lightning:input class="slds-grid slds-size_1-of-9 slds-p-left_medium slds-p-right_xxx-small" 
+                                     style="width:30%;" name="input1" aura:id="filter"
+                                     placeholder="Search and press Enter"></lightning:input>
+                </div>
+            </td>
+            
+        </tr>
+        </table>
+        <lightning:datatable 
+                  columns="{!v.mycolumns }"  
+                  data="{!v.OptyTeamMember }" 
+                  keyField="Id"
+            	  onrowselection="{!c.updateSelectedText }"
+                  hideCheckBoxColumn="false"/>       
+    </div>  
+ <footer>
+		<div class="modal-footer slds-modal__footer" style="padding: 0.50rem 1rem;">
+           <lightning:button variant="brand" label="Add" title="Add" onclick="{!c.addSelectedUsers}"/>
+           <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{!c.handleCancel}"/>	
+        </div>
+    </footer>
+       
+  </lightning:card></div>
+  
+
+  <!--      <aura:set attribute="footer">
+            <br></br>
+               <br></br><br></br>
+                   <lightning:button variant="brand" label="Add" title="Add" onclick="{!c.addSelectedUsers}"/>
+           <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{!c.handleCancel}"/>
+            
+    </aura:set>	-->
+      <!--  </div>	-->
+</aura:component>

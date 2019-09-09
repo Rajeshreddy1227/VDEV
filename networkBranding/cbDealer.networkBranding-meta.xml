@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkBranding xmlns="http://soap.sforce.com/2006/04/metadata">
+    <loginFooterText>salesforce.com</loginFooterText>
+    <loginPrimaryColor>#000000</loginPrimaryColor>
+    <loginQuaternaryColor>#EDEDED</loginQuaternaryColor>
+    <loginRightFrameUrl>https://www.macktrucks.com/-/media/images/hero-images/nascar18.jpg</loginRightFrameUrl>
+    <network>Dealer</network>
+    <primaryColor>#1797C0</primaryColor>
+    <primaryComplementColor>#FFFFFF</primaryComplementColor>
+    <quaternaryColor>#B1BAC1</quaternaryColor>
+    <quaternaryComplementColor>#222222</quaternaryComplementColor>
+    <secondaryColor>#51606E</secondaryColor>
+    <staticLogoImageUrl>https://vignette.wikia.nocookie.net/globaltvindonesia/images/3/34/{expid}_trucks_logo_detail.png</staticLogoImageUrl>
+    <tertiaryColor>#DDE4E9</tertiaryColor>
+    <tertiaryComplementColor>#222222</tertiaryComplementColor>
+    <zeronaryColor>#51606E</zeronaryColor>
+    <zeronaryComplementColor>#FFFFFF</zeronaryComplementColor>
+</NetworkBranding>

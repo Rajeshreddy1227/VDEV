@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>None</contactAccessLevel>
+    <description>Mack Corporate Support</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Mack Corporate Support User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>Mack_Vice_President</parentRole>
+</Role>

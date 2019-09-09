@@ -1,0 +1,49 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" controller="vgtna_RemoveAccountTeamInternal">
+	<aura:handler name="init" action="{!c.getAccountTeam}" value="{!this}" />
+    <aura:attribute name = "AccountTeam" Type="List"/>
+    <aura:attribute name = "showTeamList" Type="Boolean" default = "true"/>
+    <aura:attribute name = "recordId" Type="String"/>
+    <aura:if isTrue="{!v.showTeamList}">    
+    <lightning:card title="AccountTeam">
+        <p class="slds-p-horizontal_small">
+            <aura:iteration items="{!v.AccountTeam}" var="AccTeam">
+                <lightning:recordViewForm recordId="{!AccTeam.Id}" objectApiName="AccountTeamMember">
+                    <div class="slds-box slds-theme_default">
+                        <lightning:input type="checkbox" value="{!AccTeam.Id}" label="Delete" aura:id="deleteMember" />
+                       <lightning:outputField fieldName="UserId" variant="label-hidden"/>
+                        <lightning:outputField fieldName="TeamMemberRole" />
+                        <!--	<lightning:outputField fieldName="Id" />	-->
+                    </div>
+                </lightning:recordViewForm>
+                <br /> 
+            </aura:iteration>
+        </p>
+            <aura:set attribute="actions">
+            <!-- Delete button added -->
+            <lightning:button variant="destructive" label="Delete" onclick="{!c.deleteAccTeam}" />
+            </aura:set>
+        
+        <!-- MODAL FOOTER -->
+		<div class="modal-footer slds-modal__footer slds-size_1-of-1">
+            <div class="forceChangeRecordTypeFooter">
+                <ui:button class="slds-button slds-button--brand" label="Cancel" press="{! c.cancel}" /> 
+                <lightning:button variant="destructive" label="Delete" onclick="{!c.deleteAccTeam}" />
+            </div>
+        </div>
+        
+   </lightning:card>
+     <aura:set attribute="else">            
+       <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+          <span class="slds-assistive-text">error</span>
+          <span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small" title="Description of icon when needed">
+          </span>
+          <h2>You Do not have access to delete Account Team.           
+          </h2>
+          <div class="slds-notify__close">           
+              <span class="slds-assistive-text">Close</span>
+  		</div>
+		</div>             
+    </aura:set>
+    </aura:if>
+      <!-- <footer class="slds-modal__footer">-->
+</aura:component>

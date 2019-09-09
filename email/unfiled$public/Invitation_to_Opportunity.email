@@ -1,0 +1,8 @@
+Hello,
+
+You have been invited to collaborate on the opportunity, {!Opportunity.Name}, related to {!Account.Name}.
+
+Please click here to view more information: {!Opportunity.Link}
+
+Regards,
+{!Opportunity.OwnerFullName}

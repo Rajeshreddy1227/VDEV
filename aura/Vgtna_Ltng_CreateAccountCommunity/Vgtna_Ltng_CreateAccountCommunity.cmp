@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="test" type="boolean"/>
+     
+    <aura:if isTrue="{!v.test}">
+        
+         <c:Vgtna_CustomerAccountForm recType ="{!$Label.c.Vgtna_Customer_Account_RecorTypeId}" source="Community"/>
+        <aura:set attribute="else">
+            <button class="slds-button slds-button--brand" onclick="{!c.navigateCustomerAccount}">{!$Label.c.Vgtna_CDB_Community_Button}</button>
+        </aura:set>
+	</aura:if>
+   
+</aura:component>

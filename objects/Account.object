@@ -1,0 +1,5362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Vgtna_Ltng_CreateAccount</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Vgtna_Ltng_CreateAccount</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Customer_Account_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Corporate_Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <label>Corporate Account Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>Customer_Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Party_ID__c</fields>
+        <fields>Phone</fields>
+        <fields>Website</fields>
+        <fields>BillingAddress</fields>
+        <fields>ParentId</fields>
+        <label>Customer Account Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>Dealer_Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Sales_Target__c</fields>
+        <fields>BillingAddress</fields>
+        <label>Dealer Account Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Alias_DBA_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Alias (DBA)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Alias_DBA__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>DBA or Nickname for the Account</inlineHelpText>
+        <label>Account Alias (DBA)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Active_Date__c</fullName>
+        <description>Date Dealership was activated</description>
+        <externalId>false</externalId>
+        <label>Active Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Alternate_County__c</fullName>
+        <externalId>false</externalId>
+        <label>Alternate County</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Annual_Miles_Per_Vehicle__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Miles Per Vehicle</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <description>Corporate Sales Rep FIeld</description>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Volvo</fullName>
+                    <default>false</default>
+                    <label>Volvo</label>
+                </value>
+                <value>
+                    <fullName>Mack</fullName>
+                    <default>false</default>
+                    <label>Mack</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CTDI_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Represents the rooftop</description>
+        <externalId>true</externalId>
+        <label>CTDI ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Certified_Location__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is this location certified</description>
+        <externalId>false</externalId>
+        <label>Certified Location</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ChannelProgramLevelName</fullName>
+    </fields>
+    <fields>
+        <fullName>ChannelProgramName</fullName>
+    </fields>
+    <fields>
+        <fullName>Class_8_Fleet_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Class 8 Fleet Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commodities__c</fullName>
+        <externalId>false</externalId>
+        <label>Commodities</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Crash_Reports__c</fullName>
+        <externalId>false</externalId>
+        <label>Crash Reports</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Current_NATLG_Member__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this dealer a current North American Truck Leasing Group Member?</inlineHelpText>
+        <label>Current NATLG Member</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF 
+(Logged_In_User_Mack__c, Mack_Customer_Type__c, Volvo_Customer_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DAB_Last_Updated_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Updated On</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DD_RDD__c</fullName>
+        <externalId>false</externalId>
+        <label>Regional Development Director</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_City__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_County__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B County</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Employees__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Employees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Global_Ultimate_Business_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Global Ultimate Business Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Legal_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Legal Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Line_of_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Line of Business</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>D_B_Sales_Volume__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Sales Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>D_B_State_Province_Abbrv__c</fullName>
+        <description>State/Province Code</description>
+        <externalId>false</externalId>
+        <label>D&amp;B State/Province</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Year_Started__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Year Started</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>D&amp;B Zip/Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_U_N_S_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>D-U-N-S Number</label>
+        <length>9</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Daycab_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>% Daycab</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Daycab__c</fullName>
+        <externalId>false</externalId>
+        <label>% Daycab</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Brand__c</fullName>
+        <description>Determines Brand based on Dealer Code</description>
+        <externalId>false</externalId>
+        <formula>If(ISBLANK(Dealer_Code__c), &apos;&apos;, IF(ISNUMBER(LEFT(Dealer_Code__c, 1)),&apos;Volvo&apos;, &apos;Mack&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dealer Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dealer_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Dealer Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Dealer_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Dealer_Type__c</fullName>
+        <description>Dealer Type</description>
+        <externalId>false</externalId>
+        <label>Dealer Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full Line</fullName>
+                    <default>false</default>
+                    <label>Full Line</label>
+                </value>
+                <value>
+                    <fullName>Satellite</fullName>
+                    <default>false</default>
+                    <label>Satellite</label>
+                </value>
+                <value>
+                    <fullName>Parts Only</fullName>
+                    <default>false</default>
+                    <label>Parts Only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>District__c</fullName>
+        <externalId>false</externalId>
+        <label>District</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engine_Manufacturers__c</fullName>
+        <description>Engine Manufacturers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Engine Manufacturers</inlineHelpText>
+        <label>Engine Manufacturers</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>FE_Current_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Current Fuel Efficiency</inlineHelpText>
+        <label>FE Current</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FE_Current__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Current Fuel Efficiency</inlineHelpText>
+        <label>FE Current</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FE_Goal_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Target Fuel Efficiency</inlineHelpText>
+        <label>FE Goal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FE_Goal__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Target Fuel Efficiency</inlineHelpText>
+        <label>FE Goal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fleet_Name__c</fullName>
+        <description>Fleet Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fleet Name</inlineHelpText>
+        <label>Fleet Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fleet_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Fleet Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Fleet_Size_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Fleet Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fleet_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Fleet Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fleet_Type__c</fullName>
+        <description>Fleet Type</description>
+        <externalId>false</externalId>
+        <label>Fleet Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fleetseek_Last_Updated_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Updated On</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>From_Lead_Conversion_Do_not_Map_in_Loads__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hidden field to understand that new account record is bing created from a Lead Conversion process so a validation rule can prevent it.</description>
+        <externalId>false</externalId>
+        <label>From Lead Conversion (do not display)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasActivity__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(LastActivityDate),&quot;No&quot;,&quot;Yes&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HasActivity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Inspections__c</fullName>
+        <externalId>false</externalId>
+        <label>Inspections</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsExcludedFromRealign</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsPartner</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Is_Internally_Viewable_Conquest__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( (CONTAINS($Profile.Name, &apos;Volvo&apos;) &amp;&amp; Volvo_Customer_Type__c = &apos;Conquest&apos;) || (CONTAINS($Profile.Name, &apos;Mack&apos;) &amp;&amp; Mack_Customer_Type__c = &apos;Conquest&apos;), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Internally Viewable Conquest</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Internally_Viewable_Retention__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( (CONTAINS($Profile.Name, &apos;Volvo&apos;) &amp;&amp; Volvo_Customer_Type__c = &apos;Retention&apos;) || (CONTAINS($Profile.Name, &apos;Mack&apos;) &amp;&amp; Mack_Customer_Type__c = &apos;Retention&apos;), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Internally Viewable Retention</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Viewable_Conquest_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((Mack_Customer_Type__c = &apos;Conquest&apos; &amp;&amp; TEXT($User.Dealer_Brand__c) = &apos;Mack&apos;) || (Volvo_Customer_Type__c = &apos;Conquest&apos; &amp;&amp; TEXT($User.Dealer_Brand__c) = &apos;Volvo&apos;), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Viewable Conquest Account</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Viewable_Retention_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+(Volvo_Customer_Type__c = &apos;Retention&apos;)
+&amp;&amp; 
+(TEXT($User.Dealer_Brand__c) = &apos;Volvo&apos;)
+||
+(Volvo_Customer_Type__c = &apos;Retention&apos;)
+&amp;&amp; 
+(TEXT($User.Dealer_Brand__c) = &apos;Mack&apos;)
+, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Viewable Retention Account</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Last_Mack_Registration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Mack Registration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Volvo_Registration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Volvo Registration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Logged_In_User_Mack__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT($User.Dealer_Brand__c) = &apos;Mack&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Logged In User Mack</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Logged_In_User_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( $User.Dealer_Brand__c) = &apos;Volvo&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Logged In User Volvo</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MCN__c</fullName>
+        <externalId>false</externalId>
+        <label>MCN</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mack_Customer_Type__c</fullName>
+        <description>The system shall dynamically flag a Customer Account with a Customer Type as &apos;Conquest&apos; or &apos;Retention&apos; so that the logged in User can identify the Account they are viewing.</description>
+        <externalId>false</externalId>
+        <formula>IF (
+  AND(
+    (TEXT($User.Dealer_Brand__c)==&quot;Mack&quot; ||$Profile.Name = &quot;Mack Sales Rep&quot;),
+    OR(
+         ISBLANK(Last_Mack_Registration_Date__c),
+         Last_Mack_Registration_Date__c &gt;= TODAY() + 365*5
+       )
+  )
+,&quot;Conquest&quot;,
+
+IF (
+  AND(
+    (TEXT($User.Dealer_Brand__c)==&quot;Mack&quot; ||$Profile.Name = &quot;Mack Sales Rep&quot;),
+    Last_Mack_Registration_Date__c &lt; TODAY() + 365*5
+       )
+,&quot;Retention&quot;,
+&apos;&apos;
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The system shall dynamically flag a Customer Account with a Customer Type as &apos;Conquest&apos; or &apos;Retention&apos; so that the logged in User can identify the Account they are viewing.</inlineHelpText>
+        <label>Mack Customer Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mack_Dealer_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Mack Dealer Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mack_National_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mack National Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mack_Sales_Target_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this account a target account for a dealer&apos;s sales plan?</inlineHelpText>
+        <label>Mack Dealer Planned Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mack_VDA_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Mack VDA Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MergeStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>MergeStatus</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Miles_Driven_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Miles Driven</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Miles_Driven__c</fullName>
+        <externalId>false</externalId>
+        <label>Miles Driven</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NACM_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>NACM ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>POLK_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>POLK ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <inlineHelpText>Use this field to assign the Parent Account or Headquarters</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Dealer_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Parent Dealer Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Account__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Dealer code to receive credit for opportunity</inlineHelpText>
+        <label>Assigned Dealer</label>
+        <length>8</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parts_DPM__c</fullName>
+        <externalId>false</externalId>
+        <label>Parts DPM</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parts_RPD__c</fullName>
+        <externalId>false</externalId>
+        <label>Parts RPD</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Party_ID_CreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Party ID Created Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Party_ID_LastModifiedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Party ID Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Party_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Party ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Polk_Active_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Polk Active Indicator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Polk_Fleet_Mix_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Polk Fleet Mix Volvo</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Polk_Last_Updated_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Updated On</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Polk_Local_Fleet_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Polk Local Fleet Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Polk_National_Fleet_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Polk National Fleet Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_County__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary County</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Make_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Make</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Make</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RSL_Cruise__c</fullName>
+        <externalId>false</externalId>
+        <label>RSL Cruise</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RSL_Pedal__c</fullName>
+        <externalId>false</externalId>
+        <label>RSL Pedal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>Region of Dealership</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Central</fullName>
+                    <default>false</default>
+                    <label>Central</label>
+                </value>
+                <value>
+                    <fullName>Northeast</fullName>
+                    <default>false</default>
+                    <label>Northeast</label>
+                </value>
+                <value>
+                    <fullName>Southeast</fullName>
+                    <default>false</default>
+                    <label>Southeast</label>
+                </value>
+                <value>
+                    <fullName>Southwest</fullName>
+                    <default>false</default>
+                    <label>Southwest</label>
+                </value>
+                <value>
+                    <fullName>Western</fullName>
+                    <default>false</default>
+                    <label>Western</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Registration_Carrier_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Registration Carrier Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Canadian Government</fullName>
+                    <default>false</default>
+                    <label>Canadian Government</label>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Finance Lease</fullName>
+                    <default>false</default>
+                    <label>Finance Lease</label>
+                </value>
+                <value>
+                    <fullName>For Hire</fullName>
+                    <default>false</default>
+                    <label>For Hire</label>
+                </value>
+                <value>
+                    <fullName>Full Service Lease</fullName>
+                    <default>false</default>
+                    <label>Full Service Lease</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Local Government (U.S.Only)</fullName>
+                    <default>false</default>
+                    <label>Local Government (U.S.Only)</label>
+                </value>
+                <value>
+                    <fullName>Manufacturer Sponsored Lease</fullName>
+                    <default>false</default>
+                    <label>Manufacturer Sponsored Lease</label>
+                </value>
+                <value>
+                    <fullName>Private</fullName>
+                    <default>false</default>
+                    <label>Private</label>
+                </value>
+                <value>
+                    <fullName>State Government (U.S. Only)</fullName>
+                    <default>false</default>
+                    <label>State Government (U.S. Only)</label>
+                </value>
+                <value>
+                    <fullName>U.S. Government</fullName>
+                    <default>false</default>
+                    <label>U.S. Government</label>
+                </value>
+                <value>
+                    <fullName>Utilities / Communications</fullName>
+                    <default>false</default>
+                    <label>Utilities / Communications</label>
+                </value>
+                <value>
+                    <fullName>Vehicle Manufacturer</fullName>
+                    <default>false</default>
+                    <label>Vehicle Manufacturer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Registration_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>If 
+(Logged_In_User_Mack__c, TEXT(Last_Mack_Registration_Date__c), TEXT(Last_Volvo_Registration_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Registration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registration_Vocation__c</fullName>
+        <externalId>false</externalId>
+        <label>Registration Vocation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agriculture / Farm</fullName>
+                    <default>false</default>
+                    <label>Agriculture / Farm</label>
+                </value>
+                <value>
+                    <fullName>Beverage Processing &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Beverage Processing &amp; Distribution</label>
+                </value>
+                <value>
+                    <fullName>Bus Transporation</fullName>
+                    <default>false</default>
+                    <label>Bus Transporation</label>
+                </value>
+                <value>
+                    <fullName>Construction</fullName>
+                    <default>false</default>
+                    <label>Construction</label>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Emergency Vehicles</fullName>
+                    <default>false</default>
+                    <label>Emergency Vehicles</label>
+                </value>
+                <value>
+                    <fullName>Food Processing &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Food Processing &amp; Distribution</label>
+                </value>
+                <value>
+                    <fullName>Forestry / Lumber Products</fullName>
+                    <default>false</default>
+                    <label>Forestry / Lumber Products</label>
+                </value>
+                <value>
+                    <fullName>General Freight</fullName>
+                    <default>false</default>
+                    <label>General Freight</label>
+                </value>
+                <value>
+                    <fullName>General Freight / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>General Freight / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Government / Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Government / Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Landscaping / Horticulture</fullName>
+                    <default>false</default>
+                    <label>Landscaping / Horticulture</label>
+                </value>
+                <value>
+                    <fullName>Lease / Finance</fullName>
+                    <default>false</default>
+                    <label>Lease / Finance</label>
+                </value>
+                <value>
+                    <fullName>Lease / Manufacturer Sponsored</fullName>
+                    <default>false</default>
+                    <label>Lease / Manufacturer Sponsored</label>
+                </value>
+                <value>
+                    <fullName>Lease / Rental</fullName>
+                    <default>false</default>
+                    <label>Lease / Rental</label>
+                </value>
+                <value>
+                    <fullName>Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Mining / Quarring</fullName>
+                    <default>false</default>
+                    <label>Mining / Quarring</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Moving And Storage</fullName>
+                    <default>false</default>
+                    <label>Moving And Storage</label>
+                </value>
+                <value>
+                    <fullName>Petroleum</fullName>
+                    <default>false</default>
+                    <label>Petroleum</label>
+                </value>
+                <value>
+                    <fullName>Petroleum / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Petroleum / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Road / Highway Maintenance</fullName>
+                    <default>false</default>
+                    <label>Road / Highway Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Sanitation / Hazardous Materials</fullName>
+                    <default>false</default>
+                    <label>Sanitation / Hazardous Materials</label>
+                </value>
+                <value>
+                    <fullName>Sanitation / Refuse</fullName>
+                    <default>false</default>
+                    <label>Sanitation / Refuse</label>
+                </value>
+                <value>
+                    <fullName>SERVICES</fullName>
+                    <default>false</default>
+                    <label>SERVICES</label>
+                </value>
+                <value>
+                    <fullName>Specialized / Heavy Hauling</fullName>
+                    <default>false</default>
+                    <label>Specialized / Heavy Hauling</label>
+                </value>
+                <value>
+                    <fullName>Unclassified</fullName>
+                    <default>false</default>
+                    <label>Unclassified</label>
+                </value>
+                <value>
+                    <fullName>Utility Services</fullName>
+                    <default>false</default>
+                    <label>Utility Services</label>
+                </value>
+                <value>
+                    <fullName>Vehicle Transporter</fullName>
+                    <default>false</default>
+                    <label>Vehicle Transporter</label>
+                </value>
+                <value>
+                    <fullName>Wholesale / Retail</fullName>
+                    <default>false</default>
+                    <label>Wholesale / Retail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Repair_Shop_Owned_Volvo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Repair Shop Owned</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Repair_Shop_Owned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Repair Shop Owned</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Restrict_Rep_Self_Assign__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Restrict Rep Self Assign</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Safety_Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Safety Rating</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_DSM__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales DSM</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_RVP__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales RVP</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Target_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT($User.Dealer_Brand__c) = &apos;Mack&apos;, Mack_Sales_Target_Account__c, 
+IF(TEXT($User.Dealer_Brand__c) = &apos;Volvo&apos;, Volvo_Sales_Target_Account__c, 
+FALSE))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Is this account a target account for a dealer&apos;s sales plan?</inlineHelpText>
+        <label>Sales Target Account</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Target</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Make_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Make</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Make</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Service_DSM__c</fullName>
+        <externalId>false</externalId>
+        <label>Service DSM</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_RSD__c</fullName>
+        <externalId>false</externalId>
+        <label>Service RSD</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sleeper_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>% Sleeper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Sleeper__c</fullName>
+        <externalId>false</externalId>
+        <label>% Sleeper</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Strategic_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Strategic Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SurvivingAccountId__c</fullName>
+        <externalId>false</externalId>
+        <label>SurvivingAccountId</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SurvivingPartyId__c</fullName>
+        <externalId>false</externalId>
+        <label>SurvivingPartyId</label>
+        <length>23</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Total_Drivers_With_CDL__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Drivers With CDL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Number_Of_Drivers__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number Of Drivers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Tractors_Leased__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Tractors Leased</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Tractors_Owned__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Tractors Owned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Tractors__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Tractors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Trailers_Leased__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Trailers Leased</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Trailers_Owned__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Trailers Owned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Trailers__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Trailers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Trucks_Leased__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Trucks Leased</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Trucks_Owned__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Trucks Owned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Trucks__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Trucks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Vehicles_Leased__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Vehicles Leased</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Vehicles_Owned__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Vehicles Owned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Vehicles__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Fleet Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trade_Cycle_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Cycle</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Trade_Cycle__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Cycle</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Trades_Volvo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Trades</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Trades__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Trades</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Trailer_Types_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Trailer Types</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Trailer_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>Trailer Types</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Trailers__c</fullName>
+        <description>Trailers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Trailers</inlineHelpText>
+        <label>Trailers</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Truck_Manufacturers__c</fullName>
+        <description>Truck Manufacturers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Truck Manufacturers</inlineHelpText>
+        <label>Truck Manufacturers</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Truck_Years__c</fullName>
+        <description>Truck Years</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Truck Years</inlineHelpText>
+        <label>Truck Years</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>USDOT__c</fullName>
+        <externalId>false</externalId>
+        <label>USDOT</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>US_CAN_States__c</fullName>
+        <description>This is a tech create field to reference global picklist values  using getDescribe call as they are not available via api today. Hidden for all except sys admins.</description>
+        <externalId>false</externalId>
+        <label>US CAN States</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Global_State_Picklist</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Maintenance__c</fullName>
+        <description>Vehicle Maintenance</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Vehicle Maintenance</inlineHelpText>
+        <label>Vehicle Maintenance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Volvo_Customer_Type__c</fullName>
+        <description>The system shall dynamically flag a Customer Account with a Customer Type as &apos;Conquest&apos; or &apos;Retention&apos; so that the logged in User can identify the Account they are viewing.</description>
+        <externalId>false</externalId>
+        <formula>IF (
+  AND(
+    (TEXT($User.Dealer_Brand__c)==&quot;Volvo&quot; ||$Profile.Name = &quot;Volvo Sales Rep&quot;),
+
+    OR(
+         ISBLANK(Last_Volvo_Registration_Date__c),
+         (  NOT(ISNUMBER(TEXT(Polk_Fleet_Mix_Volvo__c))) &amp;&amp; Polk_Fleet_Mix_Volvo__c &lt; 0.25),
+         Last_Volvo_Registration_Date__c &gt;= TODAY() + 365*3
+
+       )
+  )
+,&quot;Conquest&quot;,
+
+IF (
+  AND(
+    (TEXT($User.Dealer_Brand__c)==&quot;Volvo&quot; ||$Profile.Name = &quot;Volvo Sales Rep&quot;),
+    OR(
+        (Polk_Fleet_Mix_Volvo__c &gt;= 0.25 ),
+         Last_Volvo_Registration_Date__c &lt; TODAY() + 365*3
+       )
+   )
+,&quot;Retention&quot;,
+&apos;&apos;
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The system shall dynamically flag a Customer Account with a Customer Type as &apos;Conquest&apos; or &apos;Retention&apos; so that the logged in User can identify the Account they are viewing.</inlineHelpText>
+        <label>Volvo Customer Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Volvo_Dealer_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Volvo Dealer Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Volvo_National_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Volvo National Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Volvo_Sales_Target_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this account a target account for a dealer&apos;s sales plan?</inlineHelpText>
+        <label>Volvo Sales Target Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Volvo_VDA_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Volvo VDA Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty_Coverage_Volvo__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Coverage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Coverage__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Coverage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>X2019_Market_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>2019 Market Size</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year_EST__c</fullName>
+        <externalId>false</externalId>
+        <label>Year EST</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zip__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT ( BillingPostalCode , 5)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Zip</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isBrand__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Brand__c) = TEXT($User.Dealer_Brand__c),True,False)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isBrand</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isDealerAccount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Dealer_Code__c = $User.Dealer_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isDealerAccount</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isDealerCode__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Mack_Dealer_Code__c = $User.Dealer_Code__c,TRUE,
+IF(Volvo_Dealer_Code__c = $User.Dealer_Code__c,TRUE,
+FALSE))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isDealerCode</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isDealerRegion__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Region__c) = TEXT($User.Region__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isDealerRegion</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>Canadian_Dealers</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Dealer</value>
+        </filters>
+        <filters>
+            <field>PARENT_NAME</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>ACCOUNT.ADDRESS1_COUNTRY_CODE</field>
+            <operation>equals</operation>
+            <value>CA</value>
+        </filters>
+        <label>Canadian Dealers</label>
+        <sharedTo>
+            <group>CRM_Admins</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Conquest_Accounts_Internal</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>MyTerritory</filterScope>
+        <filters>
+            <field>Is_Internally_Viewable_Conquest__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Conquest Accounts</label>
+        <sharedTo>
+            <group>Corporate_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Mack_Customer_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <columns>Strategic_Account__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>Mack Customer Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Mack_Corporate_Support_User</role>
+            <role>Mack_Vice_President</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Mack_Dealers</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>Sales_Target__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Region__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Dealer</value>
+        </filters>
+        <filters>
+            <field>Brand__c</field>
+            <operation>equals</operation>
+            <value>Mack</value>
+        </filters>
+        <label>Mack Dealers</label>
+        <sharedTo>
+            <role>Director_Mack_Vocational_Fleet_Sales</role>
+            <role>Mack_Corporate_Support_User</role>
+            <role>Mack_National_Accounts_Manager</role>
+            <role>Mack_Vice_President</role>
+            <role>Mack_Vocational_National_Accounts_Manager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Mack_National_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Mack_National_Account__c</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Mack_National_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>Mack National Accounts</label>
+        <sharedTo>
+            <role>Mack_Corporate_Support_User</role>
+            <role>Mack_National_Accounts_Vice_President</role>
+            <role>Mack_Senior_Vice_President</role>
+            <role>Mack_Vice_President</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Mack_Strategic_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <columns>Strategic_Account__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <filters>
+            <field>Strategic_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Mack Strategic Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>CEO</role>
+            <role>Mack_Corporate_Support_User</role>
+            <role>Mack_Senior_Vice_President</role>
+            <role>Mack_Vice_President</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Team_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <columns>Strategic_Account__c</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>My &quot;Account Team&quot; Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Canada_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>Canada_Volvo_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Central_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Central_Volvo_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Northeast_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Northeast_Volvo_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Southeast_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Southeast_Volvo_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Southwest_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Southwest_Volvo_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Western_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Western_Volvo_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Dealer_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>Primary_County__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>MyTerritory</filterScope>
+        <filters>
+            <field>isDealerCode__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Dealer Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allPartnerUsers></allPartnerUsers>
+            <group>Dealer_Sales_Executives</group>
+            <group>Dealer_Sales_Managers</group>
+            <group>Dealer_Sales_Reps</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_District_s_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>Strategic_Account__c</columns>
+        <columns>Mack_Sales_Target_Account__c</columns>
+        <columns>Volvo_Sales_Target_Account__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <filterScope>MyTerritory</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>My District&apos;s Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Mack_District_Sales_Managers</group>
+            <group>Volvo_District_Sales_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_District_s_Dealers</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Sales_Target__c</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Dealer</value>
+        </filters>
+        <label>My District&apos;s Dealers</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Mack_District_Sales_Managers</group>
+            <group>Volvo_District_Sales_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_National_Accounts</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Volvo_National_Account__c</columns>
+        <columns>Mack_National_Account__c</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <filters>
+            <field>Mack_National_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Volvo_National_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My National Accounts</label>
+        <sharedTo>
+            <group>Mack_National_Accounts_Managers</group>
+            <group>Volvo_National_Accounts_Managers</group>
+            <role>Mack_Vocational_National_Accounts_Manager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Region_s_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <columns>Strategic_Account__c</columns>
+        <filterScope>MyTeamTerritory</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>My Region&apos;s Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Mack_RVP_s</group>
+            <group>Mack_Regional_Fleet_Managers</group>
+            <group>Volvo_RVP_s</group>
+            <group>Volvo_Regional_Fleet_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Region_s_Dealers</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Sales_Target__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Dealer</value>
+        </filters>
+        <filters>
+            <field>isDealerRegion__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Region&apos;s Dealers</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Mack_RVP_s</group>
+            <group>Mack_Regional_Fleet_Managers</group>
+            <group>Volvo_RVP_s</group>
+            <group>Volvo_Regional_Fleet_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Regional_Fleet_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <columns>Strategic_Account__c</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>My Regional Fleet Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Mack_Regional_Fleet_Managers</group>
+            <group>Volvo_Regional_Fleet_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Sales_Plan_Accounts_Mack</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>Mack_Sales_Target_Account__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <filters>
+            <field>Mack_Sales_Target_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Mack Dealer Planned Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Mack_District_Sales_Managers</group>
+            <role>Canada_Mack_District_Sales_Manager</role>
+            <role>US_Central_Mack_District_Sales_Manager</role>
+            <role>US_Northeast_Mack_District_Sales_Manager</role>
+            <role>US_Southeast_Mack_District_Sales_Manager</role>
+            <role>US_Southwest_Mack_District_Sales_Manager</role>
+            <role>US_Western_Mack_District_Sales_Manager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Sales_Plan_Accounts_Volvo</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <columns>Volvo_Sales_Target_Account__c</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <filters>
+            <field>Volvo_Sales_Target_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Sales Plan Accounts - Volvo</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Volvo_District_Sales_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Strategic_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>Strategic_Account__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Mack_Customer_Type__c</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <filters>
+            <field>Strategic_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Strategic Accounts</label>
+        <sharedTo>
+            <role>Mack_Corporate_Support_User</role>
+            <roleAndSubordinatesInternal>Canada_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Central_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Northeast_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Southeast_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Southwest_Mack_Vice_President</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>US_Western_Mack_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Team_s_National_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>Mack_National_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Team&apos;s National Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Director_Mack_Vocational_Fleet_Sales</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Team_s_Strategic_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>MyTeamTerritory</filterScope>
+        <filters>
+            <field>Strategic_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Team&apos;s Strategic Accounts</label>
+        <sharedTo>
+            <group>CRM_Admins</group>
+            <group>Mack_RVP_s</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Vocational_Customer_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>My Vocational Customer Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Volvo_Vocational_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Vocational_Dealer_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Dealer</value>
+        </filters>
+        <label>My Vocational Dealer Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Volvo_Vocational_Sales_Manager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Retention_Accounts_Internal</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>MyTerritory</filterScope>
+        <filters>
+            <field>Is_Internally_Viewable_Retention__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Retention Accounts</label>
+        <sharedTo>
+            <group>Corporate_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Volvo_Customer_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Volvo_National_Account__c</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>Volvo Customer Accounts</label>
+        <sharedTo>
+            <role>Volvo_Senior_Vice_President</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Volvo_National_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Volvo_National_Account__c</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Volvo_National_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <label>Volvo National Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Volvo_National_Accounts_Manager</role>
+            <role>Volvo_National_Accounts_Vice_President</role>
+            <role>Volvo_Senior_Vice_President</role>
+            <role>Volvo_Vice_President</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Volvo_Sales_Plan_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Party_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Volvo_Customer_Type__c</columns>
+        <columns>Region__c</columns>
+        <columns>Volvo_Sales_Target_Account__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Customer</value>
+        </filters>
+        <filters>
+            <field>Volvo_Sales_Target_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Volvo Sales Plan Accounts</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Volvo_Senior_Vice_President</role>
+            <role>Volvo_Vice_President</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>XL_L_US_Canada_Dealers</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>X2019_Market_Size__c</columns>
+        <columns>Sales_Target__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Dealer</value>
+        </filters>
+        <filters>
+            <field>Brand__c</field>
+            <operation>equals</operation>
+            <value>Mack</value>
+        </filters>
+        <filters>
+            <field>X2019_Market_Size__c</field>
+            <operation>equals</operation>
+            <value>A+</value>
+        </filters>
+        <filters>
+            <field>X2019_Market_Size__c</field>
+            <operation>equals</operation>
+            <value>A</value>
+        </filters>
+        <label>XL/L US &amp; Canada Dealers</label>
+        <sharedTo>
+            <role>Mack_Corporate_Support_User</role>
+            <role>Mack_Senior_Vice_President</role>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Corporate</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Corporate_Account_Compact_Layout</compactLayoutAssignment>
+        <description>Accounts Record Type for Corporate</description>
+        <label>Corporate</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Predictive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turn- In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Brand__c</picklist>
+            <values>
+                <fullName>Mack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volvo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dealer_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dealer_Type__c</picklist>
+            <values>
+                <fullName>Full Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture%2FFarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beverage Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FCrane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FDump</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FReady Mix%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FRoll-Off</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FVacuum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction_Concrete_Pump%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forestry%2FLumber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government%2FMunicipal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscaping%2FHorticulture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease%2FFinance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining%2FQuarring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving and Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation%2FHazardous Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation%2FRefuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialized%2FHeavy Hauling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Towing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesale%2FRetail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northeast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southeast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southwest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Western</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registration_Carrier_Type__c</picklist>
+            <values>
+                <fullName>Canadian Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>For Hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Service Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Government %28U%2ES%2EOnly%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturer Sponsored Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Government %28U%2ES%2E Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>U%2ES%2E Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities %2F Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Manufacturer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registration_Vocation__c</picklist>
+            <values>
+                <fullName>Agriculture %2F Farm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beverage Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bus Transporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency Vehicles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forestry %2F Lumber Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government %2F Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscaping %2F Horticulture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Manufacturer Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining %2F Quarring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving And Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road %2F Highway Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation %2F Refuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialized %2F Heavy Hauling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unclassified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Transporter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesale %2F Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>US_CAN_States__c</picklist>
+            <values>
+                <fullName>Alabama</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alaska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alberta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Samoa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arkansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>British Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colorado</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connecticut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delaware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>District of Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federated Micronesia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Florida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Idaho</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kentucky</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Louisiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manitoba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maryland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Massachusetts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michigan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mississippi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missouri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nevada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Brunswick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Hampshire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Jersey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Mexico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newfoundland and Labrador</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Mariana Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northwest Territories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nova Scotia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nunavut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ohio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oklahoma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ontario</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oregon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Palau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pennsylvania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince Edward Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Puerto Rico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quebec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhode Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saskatchewan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tennessee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Virgin Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States Minor Outlying Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utah</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vermont</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Washington</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wisconsin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyoming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yukon Territories</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Customer</fullName>
+        <active>true</active>
+        <description>Account Record Type for Customers</description>
+        <label>Customer</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Predictive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Brand__c</picklist>
+            <values>
+                <fullName>Mack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volvo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dealer_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dealer_Type__c</picklist>
+            <values>
+                <fullName>Full Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture%2FFarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beverage Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FCrane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FDump</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FReady Mix%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FRoll-Off</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction%2FVacuum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction_Concrete_Pump%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forestry%2FLumber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government%2FMunicipal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscaping%2FHorticulture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease%2FFinance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining%2FQuarring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving and Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation%2FHazardous Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation%2FRefuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialized%2FHeavy Hauling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Towing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesale%2FRetail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northeast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southeast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southwest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Western</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registration_Carrier_Type__c</picklist>
+            <values>
+                <fullName>Canadian Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>For Hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Service Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Government %28U%2ES%2EOnly%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturer Sponsored Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Government %28U%2ES%2E Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>U%2ES%2E Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities %2F Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Manufacturer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registration_Vocation__c</picklist>
+            <values>
+                <fullName>Agriculture %2F Farm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beverage Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bus Transporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency Vehicles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forestry %2F Lumber Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government %2F Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscaping %2F Horticulture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Manufacturer Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining %2F Quarring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving And Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road %2F Highway Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation %2F Refuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialized %2F Heavy Hauling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unclassified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Transporter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesale %2F Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>US_CAN_States__c</picklist>
+            <values>
+                <fullName>Alabama</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alaska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alberta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Samoa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arkansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>British Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colorado</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connecticut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delaware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>District of Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federated Micronesia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Florida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Idaho</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kentucky</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Louisiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manitoba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maryland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Massachusetts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michigan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mississippi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missouri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nevada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Brunswick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Hampshire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Jersey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Mexico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newfoundland and Labrador</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Mariana Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northwest Territories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nova Scotia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nunavut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ohio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oklahoma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ontario</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oregon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Palau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pennsylvania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince Edward Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Puerto Rico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quebec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhode Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saskatchewan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tennessee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Virgin Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States Minor Outlying Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utah</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vermont</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Washington</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wisconsin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyoming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yukon Territories</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Dealer</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Dealer_Account_Compact_Layout</compactLayoutAssignment>
+        <description>Account Record Type for Dealers</description>
+        <label>Dealer</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Brand__c</picklist>
+            <values>
+                <fullName>Mack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volvo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dealer_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dealer_Type__c</picklist>
+            <values>
+                <fullName>Full Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satellite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture%2FFarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beverage Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction_Concrete_Pump%C2%A0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forestry%2FLumber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government%2FMunicipal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscaping%2FHorticulture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease%2FFinance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining%2FQuarring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving and Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation%2FHazardous Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation%2FRefuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialized%2FHeavy Hauling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Towing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesale%2FRetail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northeast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southeast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southwest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Western</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registration_Carrier_Type__c</picklist>
+            <values>
+                <fullName>Canadian Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>For Hire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Service Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Government %28U%2ES%2EOnly%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturer Sponsored Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Government %28U%2ES%2E Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>U%2ES%2E Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities %2F Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Manufacturer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registration_Vocation__c</picklist>
+            <values>
+                <fullName>Agriculture %2F Farm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beverage Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bus Transporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency Vehicles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Processing %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forestry %2F Lumber Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Freight %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government %2F Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscaping %2F Horticulture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Manufacturer Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lease %2F Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining %2F Quarring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving And Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road %2F Highway Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation %2F Hazardous Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanitation %2F Refuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialized %2F Heavy Hauling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unclassified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Transporter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesale %2F Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>US_CAN_States__c</picklist>
+            <values>
+                <fullName>Alabama</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alaska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alberta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Samoa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arkansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>British Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colorado</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connecticut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delaware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>District of Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federated Micronesia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Florida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Idaho</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kentucky</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Louisiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manitoba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maryland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Massachusetts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michigan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mississippi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missouri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nevada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Brunswick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Hampshire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Jersey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Mexico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newfoundland and Labrador</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Mariana Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northwest Territories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nova Scotia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nunavut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ohio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oklahoma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ontario</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oregon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Palau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pennsylvania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince Edward Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Puerto Rico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quebec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhode Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saskatchewan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tennessee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Virgin Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States Minor Outlying Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utah</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vermont</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Washington</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wisconsin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyoming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yukon Territories</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.TYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Mack_VDA_Count__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Volvo_VDA_Count__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>CreateCallList</excludedStandardButtons>
+        <excludedStandardButtons>DiscoveryGetAccountsAction</excludedStandardButtons>
+        <excludedStandardButtons>DataDotComGetAccountsMultiAddAction</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Party_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_CITY</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>Party_ID__c</lookupFilterFields>
+        <lookupFilterFields>Dealer_Code__c</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.ADDRESS1_CITY</lookupFilterFields>
+        <lookupFilterFields>Account_Alias_DBA__c</lookupFilterFields>
+        <lookupFilterFields>Account_Alias_DBA_Volvo__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.TYPE</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_STREET</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_CITY</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_ZIP</searchFilterFields>
+        <searchFilterFields>Alternate_County__c</searchFilterFields>
+        <searchFilterFields>Primary_County__c</searchFilterFields>
+        <searchFilterFields>Party_ID__c</searchFilterFields>
+        <searchFilterFields>Account_Alias_DBA__c</searchFilterFields>
+        <searchFilterFields>Account_Alias_DBA_Volvo__c</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Party_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STATE_CODE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_ZIP</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Mack_VDA_Count__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Volvo_VDA_Count__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Account_Merged</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( 
+AND(MergeStatus__c =&apos;Merged&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos; ,
+$Profile.Name &lt;&gt; $Label.Vgtna_System_Integrator_Profile_Name)
+, true, false)</errorConditionFormula>
+        <errorMessage>Account is Not Editable. This is Merged.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Name_Cannot_Be_Changed</fullName>
+        <active>true</active>
+        <description>For All Account Record types - Account Name cannot be changed except by System Admin and System Integrator profiles</description>
+        <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISCHANGED( Name ), 
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; $Label.Vgtna_System_Integrator_Profile_Name
+)</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Account Name cannot be changed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>New_Account_from_Lead_Conversion_stopped</fullName>
+        <active>true</active>
+        <description>Prevents new Account records from being created during lead conversion.  Lead Field mapping sets this value to true.  Stopping only on new Account creation during lead conversion.</description>
+        <errorConditionFormula>AND(
+ISNEW(),
+  From_Lead_Conversion_Do_not_Map_in_Loads__c,
+  RecordType.Name = &apos;Customer&apos;
+)</errorConditionFormula>
+        <errorMessage>New Account Record creation is not allowable during Lead Conversion.  Please create a new Account from Quick Create or Account Management so that a Party ID can be assigned and select &apos;Choose Existing&apos; Account during Lead Conversion</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Party_ID_Required_NewCustomerAccount</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISNEW(), RecordType.DeveloperName=&apos;Customer&apos;, ISBLANK(Party_ID__c))</errorConditionFormula>
+        <errorMessage>Party ID missing. Please use the standard create Customer Account process first.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Party_ID_cannot_be_changed</fullName>
+        <active>true</active>
+        <description>Party ID once assigned cannot be changed unless you are a System Admin.</description>
+        <errorConditionFormula>AND(NOT(ISNEW()), RecordType.DeveloperName=&apos;Customer&apos;, $Profile.Name &lt;&gt; &apos;System Administrator&apos;,NOT(ISBLANK( PRIORVALUE(Party_ID__c ))),ISCHANGED( Party_ID__c ))</errorConditionFormula>
+        <errorDisplayField>Party_ID__c</errorDisplayField>
+        <errorMessage>Party ID once assigned cannot be changed.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>custom_Profile_details</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>custom1 Profile details</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://vgtna--dev0.lightning.force.com/lightning/r/Customer_Profile__c/a043B000006JsY9QAK/view</url>
+    </webLinks>
+    <webLinks>
+        <fullName>custom_Profile_details2</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>custom2 Profile details2</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>https://vgtna--dev0.lightning.force.com/lightning/r/Customer_Profile__c/a043B000006JsY9QAK/view</url>
+    </webLinks>
+</CustomObject>

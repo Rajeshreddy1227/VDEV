@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Geocode Accuracy</value>
+        </caseValues>
+        <name>billing_accuracy_geocode_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Address</value>
+        </caseValues>
+        <name>billing_address_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary City</value>
+        </caseValues>
+        <name>billing_city_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Country</value>
+        </caseValues>
+        <name>billing_country_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Country Code</value>
+        </caseValues>
+        <name>billing_country_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Latitude</value>
+        </caseValues>
+        <name>billing_latitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Longitude</value>
+        </caseValues>
+        <name>billing_longitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary State/Province</value>
+        </caseValues>
+        <name>billing_state_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary State/Province Code</value>
+        </caseValues>
+        <name>billing_state_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Street</value>
+        </caseValues>
+        <name>billing_street_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Primary Zip/Postal Code</value>
+        </caseValues>
+        <name>billing_zip_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Comments</value>
+        </caseValues>
+        <name>description_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Geocode Accuracy</value>
+        </caseValues>
+        <name>shipping_accuracy_geocode_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Address</value>
+        </caseValues>
+        <name>shipping_address_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate City</value>
+        </caseValues>
+        <name>shipping_city_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Country</value>
+        </caseValues>
+        <name>shipping_country_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Country Code</value>
+        </caseValues>
+        <name>shipping_country_code_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Latitude</value>
+        </caseValues>
+        <name>shipping_latitude_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Longitude</value>
+        </caseValues>
+        <name>shipping_longitude_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate State/Province</value>
+        </caseValues>
+        <name>shipping_state_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate State/Province Code</value>
+        </caseValues>
+        <name>shipping_state_code_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Street</value>
+        </caseValues>
+        <name>shipping_street_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Alternate Zip/Postal Code</value>
+        </caseValues>
+        <name>shipping_zip_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Alias (DBA) --></label>
+        <name>Account_Alias_DBA_Volvo__c</name>
+    </fields>
+    <fields>
+        <help><!-- DBA or Nickname for the Account --></help>
+        <label><!-- Account Alias (DBA) --></label>
+        <name>Account_Alias_DBA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Date --></label>
+        <name>Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate County --></label>
+        <name>Alternate_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Miles Per Vehicle --></label>
+        <name>Annual_Miles_Per_Vehicle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>Mack</masterLabel>
+            <translation><!-- Mack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volvo</masterLabel>
+            <translation><!-- Volvo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CTDI ID --></label>
+        <name>CTDI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certified Location --></label>
+        <name>Certified_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class 8 Fleet Size --></label>
+        <name>Class_8_Fleet_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commodities --></label>
+        <name>Commodities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crash Reports --></label>
+        <name>Crash_Reports__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this dealer a current North American Truck Leasing Group Member? --></help>
+        <label><!-- Current NATLG Member --></label>
+        <name>Current_NATLG_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated On --></label>
+        <name>DAB_Last_Updated_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Development Director --></label>
+        <name>DD_RDD__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B City --></label>
+        <name>D_B_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Country --></label>
+        <name>D_B_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B County --></label>
+        <name>D_B_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Employees --></label>
+        <name>D_B_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Global Ultimate Business Name --></label>
+        <name>D_B_Global_Ultimate_Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Legal Name --></label>
+        <name>D_B_Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Line of Business --></label>
+        <name>D_B_Line_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Phone --></label>
+        <name>D_B_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Sales Volume --></label>
+        <name>D_B_Sales_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B State/Province --></label>
+        <name>D_B_State_Province_Abbrv__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Street --></label>
+        <name>D_B_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Year Started --></label>
+        <name>D_B_Year_Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Zip/Postal Code --></label>
+        <name>D_B_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- D-U-N-S Number --></label>
+        <name>D_U_N_S_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Daycab --></label>
+        <name>Daycab_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Daycab --></label>
+        <name>Daycab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Brand --></label>
+        <name>Dealer_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Code --></label>
+        <name>Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Status --></label>
+        <name>Dealer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dealer Type --></label>
+        <name>Dealer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Full Line</masterLabel>
+            <translation><!-- Full Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts Only</masterLabel>
+            <translation><!-- Parts Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satellite</masterLabel>
+            <translation><!-- Satellite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Engine Manufacturers --></help>
+        <label><!-- Engine Manufacturers --></label>
+        <name>Engine_Manufacturers__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current Fuel Efficiency --></help>
+        <label><!-- FE Current --></label>
+        <name>FE_Current_Volvo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current Fuel Efficiency --></help>
+        <label><!-- FE Current --></label>
+        <name>FE_Current__c</name>
+    </fields>
+    <fields>
+        <help><!-- Target Fuel Efficiency --></help>
+        <label><!-- FE Goal --></label>
+        <name>FE_Goal_Volvo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Target Fuel Efficiency --></help>
+        <label><!-- FE Goal --></label>
+        <name>FE_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fleet Name --></help>
+        <label><!-- Fleet Name --></label>
+        <name>Fleet_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Phone --></label>
+        <name>Fleet_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Size --></label>
+        <name>Fleet_Size_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Size --></label>
+        <name>Fleet_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Type --></label>
+        <name>Fleet_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated On --></label>
+        <name>Fleetseek_Last_Updated_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Lead Conversion (do not display) --></label>
+        <name>From_Lead_Conversion_Do_not_Map_in_Loads__c</name>
+    </fields>
+    <fields>
+        <label><!-- HasActivity --></label>
+        <name>HasActivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inspections --></label>
+        <name>Inspections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Internally Viewable Conquest --></label>
+        <name>Is_Internally_Viewable_Conquest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Internally Viewable Retention --></label>
+        <name>Is_Internally_Viewable_Retention__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Viewable Conquest Account --></label>
+        <name>Is_Viewable_Conquest_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Viewable Retention Account --></label>
+        <name>Is_Viewable_Retention_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Mack Registration Date --></label>
+        <name>Last_Mack_Registration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Volvo Registration Date --></label>
+        <name>Last_Volvo_Registration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logged In User Mack --></label>
+        <name>Logged_In_User_Mack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logged In User Volvo --></label>
+        <name>Logged_In_User_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- MCN --></label>
+        <name>MCN__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system shall dynamically flag a Customer Account with a Customer Type as &apos;Conquest&apos; or &apos;Retention&apos; so that the logged in User can identify the Account they are viewing. --></help>
+        <label><!-- Mack Customer Type --></label>
+        <name>Mack_Customer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mack Dealer Code --></label>
+        <name>Mack_Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mack National Account --></label>
+        <name>Mack_National_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this account a target account for a dealer&apos;s sales plan? --></help>
+        <label><!-- Mack Dealer Planned Account --></label>
+        <name>Mack_Sales_Target_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mack VDA Count --></label>
+        <name>Mack_VDA_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- MergeStatus --></label>
+        <name>MergeStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miles Driven --></label>
+        <name>Miles_Driven_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miles Driven --></label>
+        <name>Miles_Driven__c</name>
+    </fields>
+    <fields>
+        <label><!-- NACM ID --></label>
+        <name>NACM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- POLK ID --></label>
+        <name>POLK_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Dealer Code --></label>
+        <name>Parent_Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dealer code to receive credit for opportunity --></help>
+        <label><!-- Assigned Dealer --></label>
+        <name>Partner_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts DPM --></label>
+        <name>Parts_DPM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts RPD --></label>
+        <name>Parts_RPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party ID Created Date --></label>
+        <name>Party_ID_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party ID Last Modified Date --></label>
+        <name>Party_ID_LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party ID --></label>
+        <name>Party_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polk Active Indicator --></label>
+        <name>Polk_Active_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polk Fleet Mix Volvo --></label>
+        <name>Polk_Fleet_Mix_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated On --></label>
+        <name>Polk_Last_Updated_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polk Local Fleet Size --></label>
+        <name>Polk_Local_Fleet_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polk National Fleet Size --></label>
+        <name>Polk_National_Fleet_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary County --></label>
+        <name>Primary_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Make --></label>
+        <name>Primary_Make_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Make --></label>
+        <name>Primary_Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSL Cruise --></label>
+        <name>RSL_Cruise__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSL Pedal --></label>
+        <name>RSL_Pedal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast</masterLabel>
+            <translation><!-- Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwest</masterLabel>
+            <translation><!-- Southwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Western</masterLabel>
+            <translation><!-- Western --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Registration Carrier Type --></label>
+        <name>Registration_Carrier_Type__c</name>
+        <picklistValues>
+            <masterLabel>Canadian Government</masterLabel>
+            <translation><!-- Canadian Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer</masterLabel>
+            <translation><!-- Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Lease</masterLabel>
+            <translation><!-- Finance Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>For Hire</masterLabel>
+            <translation><!-- For Hire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Service Lease</masterLabel>
+            <translation><!-- Full Service Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Government (U.S.Only)</masterLabel>
+            <translation><!-- Local Government (U.S.Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturer Sponsored Lease</masterLabel>
+            <translation><!-- Manufacturer Sponsored Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Government (U.S. Only)</masterLabel>
+            <translation><!-- State Government (U.S. Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U.S. Government</masterLabel>
+            <translation><!-- U.S. Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities / Communications</masterLabel>
+            <translation><!-- Utilities / Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Manufacturer</masterLabel>
+            <translation><!-- Vehicle Manufacturer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Registration Date --></label>
+        <name>Registration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Vocation --></label>
+        <name>Registration_Vocation__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture / Farm</masterLabel>
+            <translation><!-- Agriculture / Farm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beverage Processing &amp; Distribution</masterLabel>
+            <translation><!-- Beverage Processing &amp; Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bus Transporation</masterLabel>
+            <translation><!-- Bus Transporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer</masterLabel>
+            <translation><!-- Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Vehicles</masterLabel>
+            <translation><!-- Emergency Vehicles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Processing &amp; Distribution</masterLabel>
+            <translation><!-- Food Processing &amp; Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forestry / Lumber Products</masterLabel>
+            <translation><!-- Forestry / Lumber Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Freight</masterLabel>
+            <translation><!-- General Freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Freight / Hazardous Materials</masterLabel>
+            <translation><!-- General Freight / Hazardous Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government / Miscellaneous</masterLabel>
+            <translation><!-- Government / Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazardous Materials</masterLabel>
+            <translation><!-- Hazardous Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landscaping / Horticulture</masterLabel>
+            <translation><!-- Landscaping / Horticulture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease / Finance</masterLabel>
+            <translation><!-- Lease / Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease / Manufacturer Sponsored</masterLabel>
+            <translation><!-- Lease / Manufacturer Sponsored --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease / Rental</masterLabel>
+            <translation><!-- Lease / Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining / Quarring</masterLabel>
+            <translation><!-- Mining / Quarring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moving And Storage</masterLabel>
+            <translation><!-- Moving And Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petroleum</masterLabel>
+            <translation><!-- Petroleum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petroleum / Hazardous Materials</masterLabel>
+            <translation><!-- Petroleum / Hazardous Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Road / Highway Maintenance</masterLabel>
+            <translation><!-- Road / Highway Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICES</masterLabel>
+            <translation><!-- SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sanitation / Hazardous Materials</masterLabel>
+            <translation><!-- Sanitation / Hazardous Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sanitation / Refuse</masterLabel>
+            <translation><!-- Sanitation / Refuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialized / Heavy Hauling</masterLabel>
+            <translation><!-- Specialized / Heavy Hauling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unclassified</masterLabel>
+            <translation><!-- Unclassified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility Services</masterLabel>
+            <translation><!-- Utility Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Transporter</masterLabel>
+            <translation><!-- Vehicle Transporter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale / Retail</masterLabel>
+            <translation><!-- Wholesale / Retail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repair Shop Owned --></label>
+        <name>Repair_Shop_Owned_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Shop Owned --></label>
+        <name>Repair_Shop_Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restrict Rep Self Assign --></label>
+        <name>Restrict_Rep_Self_Assign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Safety Rating --></label>
+        <name>Safety_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales DSM --></label>
+        <name>Sales_DSM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales RVP --></label>
+        <name>Sales_RVP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this account a target account for a dealer&apos;s sales plan? --></help>
+        <label><!-- Sales Target Account --></label>
+        <name>Sales_Target_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Target --></label>
+        <name>Sales_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Make --></label>
+        <name>Secondary_Make_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Make --></label>
+        <name>Secondary_Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service DSM --></label>
+        <name>Service_DSM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RSD --></label>
+        <name>Service_RSD__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Sleeper --></label>
+        <name>Sleeper_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Sleeper --></label>
+        <name>Sleeper__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strategic Account --></label>
+        <name>Strategic_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- SurvivingAccountId --></label>
+        <name>SurvivingAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SurvivingPartyId --></label>
+        <name>SurvivingPartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Drivers With CDL --></label>
+        <name>Total_Drivers_With_CDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number Of Drivers --></label>
+        <name>Total_Number_Of_Drivers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Tractors Leased --></label>
+        <name>Total_Tractors_Leased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Tractors Owned --></label>
+        <name>Total_Tractors_Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Tractors --></label>
+        <name>Total_Tractors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trailers Leased --></label>
+        <name>Total_Trailers_Leased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trailers Owned --></label>
+        <name>Total_Trailers_Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trailers --></label>
+        <name>Total_Trailers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trucks Leased --></label>
+        <name>Total_Trucks_Leased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trucks Owned --></label>
+        <name>Total_Trucks_Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trucks --></label>
+        <name>Total_Trucks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Vehicles Leased --></label>
+        <name>Total_Vehicles_Leased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Vehicles Owned --></label>
+        <name>Total_Vehicles_Owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Fleet Size --></label>
+        <name>Total_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Cycle --></label>
+        <name>Trade_Cycle_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Cycle --></label>
+        <name>Trade_Cycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trades --></label>
+        <name>Trades_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trades --></label>
+        <name>Trades__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trailer Types --></label>
+        <name>Trailer_Types_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trailer Types --></label>
+        <name>Trailer_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trailers --></help>
+        <label><!-- Trailers --></label>
+        <name>Trailers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Truck Manufacturers --></help>
+        <label><!-- Truck Manufacturers --></label>
+        <name>Truck_Manufacturers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Truck Years --></help>
+        <label><!-- Truck Years --></label>
+        <name>Truck_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- USDOT --></label>
+        <name>USDOT__c</name>
+    </fields>
+    <fields>
+        <label><!-- US CAN States --></label>
+        <name>US_CAN_States__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vehicle Maintenance --></help>
+        <label><!-- Vehicle Maintenance --></label>
+        <name>Vehicle_Maintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system shall dynamically flag a Customer Account with a Customer Type as &apos;Conquest&apos; or &apos;Retention&apos; so that the logged in User can identify the Account they are viewing. --></help>
+        <label><!-- Volvo Customer Type --></label>
+        <name>Volvo_Customer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volvo Dealer Code --></label>
+        <name>Volvo_Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volvo National Account --></label>
+        <name>Volvo_National_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this account a target account for a dealer&apos;s sales plan? --></help>
+        <label><!-- Volvo Sales Target Account --></label>
+        <name>Volvo_Sales_Target_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volvo VDA Count --></label>
+        <name>Volvo_VDA_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Coverage --></label>
+        <name>Warranty_Coverage_Volvo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Coverage --></label>
+        <name>Warranty_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2019 Market Size --></label>
+        <name>X2019_Market_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year EST --></label>
+        <name>Year_EST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- isBrand --></label>
+        <name>isBrand__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDealerAccount --></label>
+        <name>isDealerAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDealerCode --></label>
+        <name>isDealerCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDealerRegion --></label>
+        <name>isDealerRegion__c</name>
+    </fields>
+    <layouts>
+        <layout>Customer Account Layout - Dealer</layout>
+        <sections>
+            <label><!-- Dun &amp; Bradstreet (D&amp;B) --></label>
+            <section>Dun &amp; Bradstreet (D&amp;B)</section>
+        </sections>
+        <sections>
+            <label><!-- Fleetseek --></label>
+            <section>Fleetseek</section>
+        </sections>
+        <sections>
+            <label><!-- Polk --></label>
+            <section>Polk</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Account Layout - Internal</layout>
+        <sections>
+            <label><!-- Dun &amp; Bradstreet (D&amp;B) --></label>
+            <section>Dun &amp; Bradstreet (D&amp;B)</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet Details --></label>
+            <section>Fleet Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fleetseek --></label>
+            <section>Fleetseek</section>
+        </sections>
+        <sections>
+            <label><!-- Polk --></label>
+            <section>Polk</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dealer Account Layout</layout>
+        <sections>
+            <label><!-- Corporate Team --></label>
+            <section>Corporate Team</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Plan Details --></label>
+            <section>Sales Plan Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Opportunity --></label>
+        <name>Create_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Customer Account Profile Details --></label>
+        <name>Customer_Account_Profile_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Remove Account Team --></label>
+        <name>Remove_Account_Team</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Accounts Record Type for Corporate --></description>
+        <label><!-- Corporate --></label>
+        <name>Corporate</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Account Record Type for Customers --></description>
+        <label><!-- Customer --></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Account Record Type for Dealers --></description>
+        <label><!-- Dealer --></label>
+        <name>Dealer</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Account is Not Editable. This is Merged. --></errorMessage>
+        <name>Account_Merged</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name cannot be changed. --></errorMessage>
+        <name>Account_Name_Cannot_Be_Changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New Account Record creation is not allowable during Lead Conversion.  Please create a new Account from Quick Create or Account Management so that a Party ID can be assigned and select &apos;Choose Existing&apos; Account during Lead Conversion --></errorMessage>
+        <name>New_Account_from_Lead_Conversion_stopped</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Party ID missing. Please use the standard create Customer Account process first. --></errorMessage>
+        <name>Party_ID_Required_NewCustomerAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Party ID once assigned cannot be changed. --></errorMessage>
+        <name>Party_ID_cannot_be_changed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- custom_Profile_details --></label>
+        <name>custom_Profile_details</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- custom_Profile_details2 --></label>
+        <name>custom_Profile_details2</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Test_Email</name>
+        <subject><!-- Test Email --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

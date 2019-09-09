@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- GTNA --></label>
+        <name>GTNA</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Mack --></label>
+        <name>Mack</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Volvo --></label>
+        <name>Volvo</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Customer Profile External User Access denied Message --></label>
+        <name>Customer_Profile_External_User_Access_denied_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Customer Profile Internal User Message --></label>
+        <name>Customer_Profile_Internal_User_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Account Name --></label>
+        <name>Vgtna_CDB_Account_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Callout Status --></label>
+        <name>Vgtna_CDB_Callout_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Cancel Button --></label>
+        <name>Vgtna_CDB_Cancel_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB City --></label>
+        <name>Vgtna_CDB_City</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Code 500 --></label>
+        <name>Vgtna_CDB_Code_500</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Community Button --></label>
+        <name>Vgtna_CDB_Community_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Confirm Box Message --></label>
+        <name>Vgtna_CDB_Confirm_Box_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Country --></label>
+        <name>Vgtna_CDB_Country</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Duplicate Message --></label>
+        <name>Vgtna_CDB_Duplicate_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Error returning no response --></label>
+        <name>Vgtna_CDB_Error_returning_no_response</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Form Details Header --></label>
+        <name>Vgtna_CDB_Form_Details_Header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Form Header --></label>
+        <name>Vgtna_CDB_Form_Header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Form Mandatory Check --></label>
+        <name>Vgtna_CDB_Form_Mandatory_Check</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Insufficient Privilege Error --></label>
+        <name>Vgtna_CDB_Insufficient_Privilege_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB New Account --></label>
+        <name>Vgtna_CDB_New_Account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna_CDB_New_Opportunity --></label>
+        <name>Vgtna_CDB_New_Opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Next Button --></label>
+        <name>Vgtna_CDB_Next_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB PartyID --></label>
+        <name>Vgtna_CDB_PartyID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Postal Code --></label>
+        <name>Vgtna_CDB_Postal_Code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Previous Button --></label>
+        <name>Vgtna_CDB_Previous_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB RT Error --></label>
+        <name>Vgtna_CDB_RT_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Save Button --></label>
+        <name>Vgtna_CDB_Save_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Select RT --></label>
+        <name>Vgtna_CDB_Select_RT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB State --></label>
+        <name>Vgtna_CDB_State</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB Street --></label>
+        <name>Vgtna_CDB_Street</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna CDB force record selection --></label>
+        <name>Vgtna_CDB_force_record_selection</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Create Lead Community --></label>
+        <name>Vgtna_Create_Lead_Community</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Customer Account RecorTypeId --></label>
+        <name>Vgtna_Customer_Account_RecorTypeId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Dealer Community URL --></label>
+        <name>Vgtna_Dealer_Community_URL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Ignore Errors Button --></label>
+        <name>Vgtna_Ignore_Errors_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna_Mack_OEM --></label>
+        <name>Vgtna_Mack_OEM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Master RT --></label>
+        <name>Vgtna_Master_RT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna New Lead --></label>
+        <name>Vgtna_New_Lead</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna_Oppo_Community_Button --></label>
+        <name>Vgtna_Oppo_Community_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna_Other_OEM --></label>
+        <name>Vgtna_Other_OEM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Prod Org ID --></label>
+        <name>Vgtna_Prod_Org_ID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Response 400 Code 1 --></label>
+        <name>Vgtna_Response_400_Code_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Response 400 Code 2 --></label>
+        <name>Vgtna_Response_400_Code_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Response 400 Code 3 --></label>
+        <name>Vgtna_Response_400_Code_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Response 400 Code 4 --></label>
+        <name>Vgtna_Response_400_Code_4</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Response 400 Code 5 --></label>
+        <name>Vgtna_Response_400_Code_5</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Response 400 Code 6 --></label>
+        <name>Vgtna_Response_400_Code_6</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna System Integrator Profile Name --></label>
+        <name>Vgtna_System_Integrator_Profile_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Toggle Validation Message --></label>
+        <name>Vgtna_Toggle_Validation_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Try Again Button --></label>
+        <name>Vgtna_Try_Again_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Unhandled Error Response --></label>
+        <name>Vgtna_Unhandled_Error_Response</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vgtna Volvo OEM --></label>
+        <name>Vgtna_Volvo_OEM</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Activities --></label>
+        <name>Activities</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows>
+            <fullName>Account_Type_For_Activities_Tasks-1</fullName>
+        </flows>
+        <fullName>Account_Type_For_Activities_Tasks</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Account_Record_Type_For_Activities-1</fullName>
+        </flows>
+        <fullName>Account_Record_Type_For_Activities</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Opportunity_Custom_Fields-1</fullName>
+        </flows>
+        <fullName>Update_Opportunity_Custom_Fields</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Email_Notification_to_creator_upon_Task_completion-1</fullName>
+        </flows>
+        <fullName>Email_Notification_to_creator_upon_Task_completion</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Notify_Opportunity_Team_Member-1</fullName>
+        </flows>
+        <fullName>Notify_Opportunity_Team_Member</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Email_Notification_to_Lead_Queue_Users-1</fullName>
+        </flows>
+        <fullName>Email_Notification_to_Lead_Queue_Users</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Account_Type_For_Activities-1</fullName>
+        </flows>
+        <fullName>Account_Type_For_Activities</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Assigned_Sales_Reps_Owner_Update-5</fullName>
+        </flows>
+        <fullName>Assigned_Sales_Reps_Owner_Update</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Account_Assignment-2</fullName>
+        </flows>
+        <fullName>Account_Assignment</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Account_Type_For_Activities_Events-5</fullName>
+        </flows>
+        <fullName>Account_Type_For_Activities_Events</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>UpdateLeadStatua-1</fullName>
+        </flows>
+        <fullName>UpdateLeadStatua</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Process_Last_Registration_Date-1</fullName>
+        </flows>
+        <fullName>Process_Last_Registration_Date</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_End_Date_Event-3</fullName>
+        </flows>
+        <fullName>Update_End_Date_Event</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Lead_Status_From_Task-1</fullName>
+        </flows>
+        <fullName>Update_Lead_Status_From_Task</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Lead_Status_From_Event-1</fullName>
+        </flows>
+        <fullName>Update_Lead_Status_From_Event</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>I_Accept</name>
+            </choices>
+            <fullName>Vgtna_Ltng_GDPR_Flow-1</fullName>
+            <screens>
+                <fields>
+                    <name>GDPRAcknowledgment</name>
+                </fields>
+                <fields>
+                    <name>I_Accept_Field</name>
+                </fields>
+                <name>GDPR_Screen</name>
+            </screens>
+        </flows>
+        <fullName>Vgtna_Ltng_GDPR_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Lead_Status_from_EmailMessage-1</fullName>
+        </flows>
+        <fullName>Update_Lead_Status_from_EmailMessage</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Vgtna_Ltng_InviteAcctTeam_Flow-1</fullName>
+        </flows>
+        <fullName>Vgtna_Ltng_InviteAcctTeam_Flow</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Follow Up --></label>
+        <name>Follow_Up</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>New_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>SFDCTEST</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- AORs --></description>
+        <label><!-- AORs --></label>
+        <name>AORs</name>
+        <sections>
+            <label><!-- AORs --></label>
+            <name>AORs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- ASR with Accounts BA --></description>
+        <label><!-- ASR with Accounts BA --></label>
+        <name>ASR_with_Accounts_BA</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Assigned Sales Reps --></label>
+            <name>Assigned Sales Reps</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Account Assigned Sales Rep --></description>
+        <label><!-- Account Assigned Sales Rep --></label>
+        <name>Account_Assigned_Sales_Rep</name>
+        <sections>
+            <label><!-- ASR --></label>
+            <name>ASR</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Assigned Sales Rep Dealer Code --></label>
+                <name>Assigned Sales Rep Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Assigned Sales Reps Dealer Brand --></label>
+                <name>Assigned Sales Reps Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Assigned Sales Reps Dual Branded? --></label>
+                <name>Assigned Sales Reps Dual Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Sales Rep Profile --></label>
+                <name>Sales Rep Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Sales Rep Role --></label>
+                <name>Sales Rep Role</name>
+            </columns>
+            <label><!-- Assigned Sales Reps --></label>
+            <name>Assigned Sales Reps</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Customer Account Dealer Code --></label>
+                <name>Customer Account Dealer Code</name>
+            </columns>
+            <label><!-- Customer Accounts --></label>
+            <name>Customer Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Dealer Accounts --></label>
+            <name>Dealer Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Dealer Manager --></label>
+                <name>Dealer Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Manager Brand --></label>
+                <name>Dealer Manager Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Manager Dealer Code --></label>
+                <name>Dealer Manager Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Manager Full Name  --></label>
+                <name>Dealer Manager Full Name </name>
+            </columns>
+            <label><!-- Dealer Manager --></label>
+            <name>Dealer Manager</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts And Opportunities --></description>
+        <label><!-- Accounts And Opportunities --></label>
+        <name>Accounts_And_Opportunities</name>
+        <sections>
+            <columns>
+                <label><!-- Dealer Sales Objective --></label>
+                <name>Dealer Sales Objective</name>
+            </columns>
+            <label><!-- Assigned Dealer --></label>
+            <name>Assigned Dealer</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Accounts --></label>
+            <name>Customer Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Trucks in Pipeline --></label>
+                <name>Trucks in Pipeline</name>
+            </columns>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts With Activities --></description>
+        <label><!-- Accounts With Activities --></label>
+        <name>Accounts_With_Activities</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Activities  --></label>
+            <name>Customer Activities </name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts With Activities Custom --></description>
+        <label><!-- Accounts With Activities Custom --></label>
+        <name>Accounts_With_Activities_Custom</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts With Opportunities --></description>
+        <label><!-- Accounts With Opportunities --></label>
+        <name>Accounts_With_Opportunities</name>
+        <sections>
+            <label><!-- Account Formula --></label>
+            <name>Account Formula</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts With Users --></description>
+        <label><!-- Accounts With Users --></label>
+        <name>Accounts_With_Users</name>
+        <sections>
+            <columns>
+                <label><!-- Created By: Full Name --></label>
+                <name>Created By: Full Name</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Profile --></label>
+                <name>Created By: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Role --></label>
+                <name>Created By: Role</name>
+            </columns>
+            <label><!-- Account Created By (User) --></label>
+            <name>Account Created By (User)</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Owner: Full Name --></label>
+                <name>Owner: Full Name</name>
+            </columns>
+            <columns>
+                <label><!-- Owner: Profile --></label>
+                <name>Owner: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Owner: Role --></label>
+                <name>Owner: Role</name>
+            </columns>
+            <label><!-- Account Owner (User) --></label>
+            <name>Account Owner (User)</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts With or Without Activities --></description>
+        <label><!-- Accounts With or Without Activities --></label>
+        <name>Accounts_With_or_Without_Activities</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts to Customer Profile --></description>
+        <label><!-- Accounts to Customer Profile --></label>
+        <name>Accounts_to_Customer_Profile</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Profiles (Dealer Account) --></label>
+            <name>Customer Profiles (Dealer Account)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts w/ASR Custom --></description>
+        <label><!-- Accounts w/ASR Custom --></label>
+        <name>Accounts_w_ASR_Custom</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Assigned Sales Reps --></label>
+            <name>Assigned Sales Reps</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with ACR --></description>
+        <label><!-- Accounts with ACR --></label>
+        <name>Accounts_with_ACR</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contact Relationships --></label>
+            <name>Contact Relationships</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Asset Details --></description>
+        <label><!-- Accounts with Asset Details --></label>
+        <name>Accounts_with_Asset_Details</name>
+        <sections>
+            <label><!-- Assets --></label>
+            <name>Assets</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Opportunities Custom --></description>
+        <label><!-- Accounts with Opportunities Custom --></label>
+        <name>Accounts_with_Opportunities_Custom</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Regional Fleet Managers --></description>
+        <label><!-- Accounts with Regional Fleet Managers --></label>
+        <name>Accounts_with_Regional_Fleet_Managers</name>
+        <sections>
+            <label><!-- Account Team --></label>
+            <name>Account Team</name>
+        </sections>
+        <sections>
+            <label><!-- Account Team User Info --></label>
+            <name>Account Team User Info</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Territory Object --></description>
+        <label><!-- Accounts with Territory Object --></label>
+        <name>Accounts_with_Territory_Object</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!--  Parent Territory Dealer Code --></label>
+                <name> Parent Territory Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Parent Territory Name --></label>
+                <name>Parent Territory Name</name>
+            </columns>
+            <columns>
+                <label><!-- Territory : Dealer Code --></label>
+                <name>Territory : Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Brand --></label>
+                <name>Territory Brand</name>
+            </columns>
+            <label><!-- Territories --></label>
+            <name>Territories</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Sales Reps --></label>
+                <name>Sales Reps</name>
+            </columns>
+            <columns>
+                <label><!-- User Dealer Brand --></label>
+                <name>User Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- User Dealer Code --></label>
+                <name>User Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- User Dealer Manager --></label>
+                <name>User Dealer Manager</name>
+            </columns>
+            <columns>
+                <label><!-- User Profile --></label>
+                <name>User Profile</name>
+            </columns>
+            <label><!-- User Details --></label>
+            <name>User Details</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activities Custom --></description>
+        <label><!-- Activities Custom --></label>
+        <name>Activities_Custom</name>
+        <sections>
+            <columns>
+                <label><!-- Due Date --></label>
+                <name>Due Date</name>
+            </columns>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Activities Custom --></label>
+            <name>Activities Custom</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activities w/Users --></description>
+        <label><!-- Activities w/Users --></label>
+        <name>Activities_w_Users</name>
+        <sections>
+            <label><!-- Activities (Created By) --></label>
+            <name>Activities (Created By)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activities with Due Date --></description>
+        <label><!-- Activities with Due Date --></label>
+        <name>Activities_with_Due_Date</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Activities --></label>
+            <name>Customer Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activities with Leads Custom --></description>
+        <label><!-- Activities with Leads Custom --></label>
+        <name>Activities_with_Leads_Custom</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activities with User Setup --></description>
+        <label><!-- Activities with User Setup --></label>
+        <name>Activities_with_User_Setup</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- User Manager --></label>
+            <name>User Manager</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- All Accounts AND Assigned Sales Reps --></description>
+        <label><!-- All Accounts AND Assigned Sales Reps --></label>
+        <name>All_Accounts_AND_Assigned_Sales_Reps</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Assigned Sales Reps --></label>
+            <name>Assigned Sales Reps</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- All Dealers Accounts With Opportunities --></description>
+        <label><!-- All Dealers Accounts With Opportunities --></label>
+        <name>All_Dealers_Accounts_With_Opportunities</name>
+        <sections>
+            <columns>
+                <label><!-- Dealer Account --></label>
+                <name>Dealer Account</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Sales Objective --></label>
+                <name>Dealer Sales Objective</name>
+            </columns>
+            <label><!-- Dealer Accounts --></label>
+            <name>Dealer Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Customer Account --></label>
+                <name>Customer Account</name>
+            </columns>
+            <columns>
+                <label><!-- Trucks in Pipeline --></label>
+                <name>Trucks in Pipeline</name>
+            </columns>
+            <label><!-- Dealer Assigned Opportunities --></label>
+            <name>Dealer Assigned Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Created By: Dealer Brand --></label>
+                <name>Created By: Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Dealer Code --></label>
+                <name>Created By: Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Dual Branded? --></label>
+                <name>Created By: Dual Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Profile --></label>
+                <name>Created By: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Region --></label>
+                <name>Created By: Region</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Role --></label>
+                <name>Created By: Role</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: User Type --></label>
+                <name>Created By: User Type</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Created By --></label>
+                <name>Opportunity Created By</name>
+            </columns>
+            <label><!-- Opportunity Created By (User) --></label>
+            <name>Opportunity Created By (User)</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Dealer Manager --></label>
+                <name>Dealer Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner --></label>
+                <name>Opportunity Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dealer Brand --></label>
+                <name>Opportunity Owner: Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dealer Code --></label>
+                <name>Opportunity Owner: Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dual Branded? --></label>
+                <name>Opportunity Owner: Dual Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Profile --></label>
+                <name>Opportunity Owner: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Region --></label>
+                <name>Opportunity Owner: Region</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Role --></label>
+                <name>Opportunity Owner: Role</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: User Type --></label>
+                <name>Opportunity Owner: User Type</name>
+            </columns>
+            <label><!-- Opportunity Owner (User) --></label>
+            <name>Opportunity Owner (User)</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Parent Territory --></label>
+                <name>Parent Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Account Access Level --></label>
+                <name>Territory Account Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Contact Access Level --></label>
+                <name>Territory Contact Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Dealer Code --></label>
+                <name>Territory Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Forecast Manager --></label>
+                <name>Territory Forecast Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Label --></label>
+                <name>Territory Label</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Opportunity Access Level --></label>
+                <name>Territory Opportunity Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory: Territory Name --></label>
+                <name>Territory: Territory Name</name>
+            </columns>
+            <label><!-- Opportunity Territory --></label>
+            <name>Opportunity Territory</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- All Dealers and Opportunities --></description>
+        <label><!-- All Dealers and Opportunities --></label>
+        <name>All_Dealers_and_Opportunities</name>
+        <sections>
+            <columns>
+                <label><!-- Dealer Account --></label>
+                <name>Dealer Account</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Sales Objective --></label>
+                <name>Dealer Sales Objective</name>
+            </columns>
+            <label><!-- Dealer Accounts --></label>
+            <name>Dealer Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Customer Account --></label>
+                <name>Customer Account</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Assigned : Strategic Accounts  --></label>
+                <name>Dealer Assigned : Strategic Accounts </name>
+            </columns>
+            <columns>
+                <label><!-- Trucks in Pipeline --></label>
+                <name>Trucks in Pipeline</name>
+            </columns>
+            <label><!-- Dealer Assigned Opportunities --></label>
+            <name>Dealer Assigned Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Created By: Dealer Brand --></label>
+                <name>Created By: Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Dealer Code --></label>
+                <name>Created By: Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Dual Branded? --></label>
+                <name>Created By: Dual Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Profile --></label>
+                <name>Created By: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Region --></label>
+                <name>Created By: Region</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Role --></label>
+                <name>Created By: Role</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: User Type --></label>
+                <name>Created By: User Type</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Created By --></label>
+                <name>Opportunity Created By</name>
+            </columns>
+            <label><!-- Opportunity Created By (User) --></label>
+            <name>Opportunity Created By (User)</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Dealer Manager --></label>
+                <name>Dealer Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner --></label>
+                <name>Opportunity Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dealer Brand --></label>
+                <name>Opportunity Owner: Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dealer Code --></label>
+                <name>Opportunity Owner: Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dual Branded? --></label>
+                <name>Opportunity Owner: Dual Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Profile --></label>
+                <name>Opportunity Owner: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Region --></label>
+                <name>Opportunity Owner: Region</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Role --></label>
+                <name>Opportunity Owner: Role</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: User Type --></label>
+                <name>Opportunity Owner: User Type</name>
+            </columns>
+            <label><!-- Opportunity Owner (User) --></label>
+            <name>Opportunity Owner (User)</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Parent Territory --></label>
+                <name>Parent Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Account Access Level --></label>
+                <name>Territory Account Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Contact Access Level --></label>
+                <name>Territory Contact Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Dealer Code --></label>
+                <name>Territory Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Forecast Manager --></label>
+                <name>Territory Forecast Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Label --></label>
+                <name>Territory Label</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Opportunity Access Level --></label>
+                <name>Territory Opportunity Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory: Territory Name --></label>
+                <name>Territory: Territory Name</name>
+            </columns>
+            <label><!-- Opportunity Territory --></label>
+            <name>Opportunity Territory</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- All Dealers and Opportunities (Products) --></description>
+        <label><!-- All Dealers and Opportunities (Products) --></label>
+        <name>All_Dealers_and_Opportunities_Products</name>
+        <sections>
+            <columns>
+                <label><!-- Dealer Account --></label>
+                <name>Dealer Account</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Sales Objective --></label>
+                <name>Dealer Sales Objective</name>
+            </columns>
+            <label><!-- Dealer Accounts --></label>
+            <name>Dealer Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Customer Account --></label>
+                <name>Customer Account</name>
+            </columns>
+            <columns>
+                <label><!-- Trucks in Pipeline --></label>
+                <name>Trucks in Pipeline</name>
+            </columns>
+            <label><!-- Dealer Assigned Opportunities --></label>
+            <name>Dealer Assigned Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Created By: Dealer Brand --></label>
+                <name>Created By: Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Dealer Code --></label>
+                <name>Created By: Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Dual Branded? --></label>
+                <name>Created By: Dual Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Profile --></label>
+                <name>Created By: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Region --></label>
+                <name>Created By: Region</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Role --></label>
+                <name>Created By: Role</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: User Type --></label>
+                <name>Created By: User Type</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Created By --></label>
+                <name>Opportunity Created By</name>
+            </columns>
+            <label><!-- Opportunity Created By (User) --></label>
+            <name>Opportunity Created By (User)</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Dealer Manager --></label>
+                <name>Dealer Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner --></label>
+                <name>Opportunity Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dealer Brand --></label>
+                <name>Opportunity Owner: Dealer Brand</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dealer Code --></label>
+                <name>Opportunity Owner: Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Dual Branded? --></label>
+                <name>Opportunity Owner: Dual Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Profile --></label>
+                <name>Opportunity Owner: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Region --></label>
+                <name>Opportunity Owner: Region</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: Role --></label>
+                <name>Opportunity Owner: Role</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity Owner: User Type --></label>
+                <name>Opportunity Owner: User Type</name>
+            </columns>
+            <label><!-- Opportunity Owner (User) --></label>
+            <name>Opportunity Owner (User)</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Parent Territory --></label>
+                <name>Parent Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Account Access Level --></label>
+                <name>Territory Account Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Contact Access Level --></label>
+                <name>Territory Contact Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Dealer Code --></label>
+                <name>Territory Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Forecast Manager --></label>
+                <name>Territory Forecast Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Label --></label>
+                <name>Territory Label</name>
+            </columns>
+            <columns>
+                <label><!-- Territory Opportunity Access Level --></label>
+                <name>Territory Opportunity Access Level</name>
+            </columns>
+            <columns>
+                <label><!-- Territory: Territory Name --></label>
+                <name>Territory: Territory Name</name>
+            </columns>
+            <label><!-- Opportunity Territory --></label>
+            <name>Opportunity Territory</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Assigned Sales Reps --></description>
+        <label><!-- Assigned Sales Reps --></label>
+        <name>Assigned_Sales_Reps</name>
+        <sections>
+            <label><!-- Assigned Sales Reps --></label>
+            <name>Assigned Sales Reps</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Assigned Sales Reps with Account Custom --></description>
+        <label><!-- Assigned Sales Reps with Account Custom --></label>
+        <name>Assigned_Sales_Reps_with_Account_Custom</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Assigned Sales Reps --></label>
+            <name>Assigned Sales Reps</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with Activity History --></description>
+        <label><!-- Leads with Activity History --></label>
+        <name>Leads_with_Activity_History</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities From Key Accounts --></description>
+        <label><!-- Opportunities From Key Accounts --></label>
+        <name>Opportunities_From_Key_Accounts</name>
+        <sections>
+            <label><!-- Customer Profiles --></label>
+            <name>Customer Profiles</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities With Activity --></description>
+        <label><!-- Opportunities With Activity --></label>
+        <name>Opportunities_With_Activity</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities With Dealer Users --></description>
+        <label><!-- Opportunities With Dealer Users --></label>
+        <name>Opportunities_With_Dealer_Users</name>
+        <sections>
+            <columns>
+                <label><!-- Customer Account --></label>
+                <name>Customer Account</name>
+            </columns>
+            <columns>
+                <label><!-- Trucks in Pipeline --></label>
+                <name>Trucks in Pipeline</name>
+            </columns>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Dealer Branded? --></label>
+                <name>Dealer Branded?</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Code --></label>
+                <name>Dealer Code</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Full Name --></label>
+                <name>Dealer Full Name</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Manager --></label>
+                <name>Dealer Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Profile --></label>
+                <name>Dealer Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Region --></label>
+                <name>Dealer Region</name>
+            </columns>
+            <columns>
+                <label><!-- Dealer Role --></label>
+                <name>Dealer Role</name>
+            </columns>
+            <label><!-- Opportunity Owner --></label>
+            <name>Opportunity Owner</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunity Assigned Dealer Account Teams --></description>
+        <label><!-- Opportunity Assigned Dealer Account Teams --></label>
+        <name>Opportunity_Assigned_Dealer_Account_Teams</name>
+        <sections>
+            <label><!-- Account Team --></label>
+            <name>Account Team</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Partners --></label>
+            <name>Partners</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Report with Dashboard --></description>
+        <label><!-- Report with Dashboard --></label>
+        <name>Report_with_Dashboard</name>
+        <sections>
+            <label><!-- Dashboard Components --></label>
+            <name>Dashboard Components</name>
+        </sections>
+        <sections>
+            <label><!-- Reports --></label>
+            <name>Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Territory Models --></description>
+        <label><!-- Territory Models --></label>
+        <name>Territory_Models</name>
+        <sections>
+            <label><!-- Territory Models --></label>
+            <name>Territory Models</name>
+        </sections>
+    </reportTypes>
+</Translations>

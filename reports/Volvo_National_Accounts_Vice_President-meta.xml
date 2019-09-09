@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Volvo_National_Accounts_Vice_President</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>Volvo National Accounts Vice President</name>
+</ReportFolder>

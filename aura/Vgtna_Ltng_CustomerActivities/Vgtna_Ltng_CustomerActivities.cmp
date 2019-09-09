@@ -1,0 +1,64 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,forceCommunity:layout" access="global" controller="Vgtna_FetchCustomerActivities">
+    <!-- attributes -->
+    <aura:attribute name="recordId" type="String"></aura:attribute>
+    <aura:attribute name="mydata" type="Vgtna_FetchCustomerActivities.wrapActivity[]"></aura:attribute>
+    <aura:attribute name="mycolumns" type="List"></aura:attribute>
+    <aura:attribute name="noResults" type="String"></aura:attribute>
+    <aura:attribute name="Location" type="String"></aura:attribute>
+    <aura:attribute name="prevPage" type="String"></aura:attribute>
+    <aura:attribute name="showViewAll" type="Boolean"></aura:attribute>
+    <aura:attribute name="internalShowViewAll" type="Boolean"></aura:attribute>
+    <aura:attribute name="loggedInUser" type="User"/>
+    <aura:attribute name="sortedBy" type="String" default="Duedate"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"></aura:handler>
+
+    <article aura:id="gridContainer" class="slds-card slds-card_boundary">
+        <lightning:card title="Activities" iconName="standard:task">
+            <!--<aura:set attribute="actions">
+                <lightning:button variant="Neutral" label="New Task" onclick="{! c.createNewActivity }" />
+            </aura:set>-->
+             
+            <aura:set attribute="actions">
+                <aura:if isTrue="{!v.showViewAll == false || v.showViewAll == 'false' || v.Location == 'activitiestab'}"> 
+                    <lightning:button variant="Neutral" label="Export" onclick="{! c.downloadCsv }" />
+                    <lightning:button variant="Neutral" label="New Task" onclick="{! c.createNewActivity }" />
+                    <lightning:button variant="Neutral" label="Log a Call" onclick="{! c.logaCall }" />
+                	<lightning:button variant="Neutral" label="New Event" onclick="{! c.createNewEvent }" />
+                	<lightning:button variant="Neutral" label="Send Email" onclick="{! c.sendEmail }" />
+                </aura:if>
+            </aura:set>
+            <aura:if isTrue="{!v.showViewAll == false || v.showViewAll == 'false'}">
+                
+            <div class="slds-m-top_small slds-m-left_small">
+            	<a onclick="{!c.previousPage}"><b>{!v.prevPage}</b></a>
+            </div>
+        </aura:if>
+            <aura:set attribute="footer">
+                <aura:if isTrue="{!v.showViewAll &amp;&amp; v.Location != 'activitiestab'}">
+                	<a onclick="{!c.viewAll}">View All</a>
+                </aura:if>
+            </aura:set>
+            <div class="slds-card__header slds-grid">
+                <aura:if isTrue="{!not(empty(v.mydata))}" >
+                    <!-- the container element determine the height of the datatable -->
+                    <lightning:datatable keyField="id"
+                            data="{! v.mydata }"
+                            columns="{! v.mycolumns }"
+                            hideCheckboxColumn="true"
+                            onsort="{!c.updateColumnSorting}"
+                    		sortedBy="{!v.sortedBy}" 
+                            sortedDirection="{!v.sortedDirection}"
+                            sortable="true">
+                    </lightning:datatable>
+                </aura:if>
+                <aura:if isTrue="{!empty(v.mydata)}" >
+                    <p>{!v.noResults}</p>
+                </aura:if>
+            </div>
+        </lightning:card>
+    </article>
+    <div aura:id="popupEmail" ></div>
+</aura:component>
+    <!-- Doc Code End-->

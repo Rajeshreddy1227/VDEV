@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Customer_Account_Sharing_with_internal_users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>None</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Customer Accounts are shared in &quot;Read only&quot; mode with all internal users.</description>
+        <label>Customer Account Sharing with internal users</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Customer_Account_Sharing_with_partner_users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>None</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Customer Accounts are shared &quot;read only&quot; with all partner users</description>
+        <label>Customer Account Sharing with partner users</label>
+        <sharedTo>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Mack_Corporate_Accounts_with_internal_Mack_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share Mack Corporate Accounts with internal Mack Users</description>
+        <label>Share Mack Corporate Accounts with internal Mack Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mack_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>equals</operation>
+            <value>Mack</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Mack_Dealer_Accounts_with_internal_Mack_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share Mack Dealer Accounts with internal Mack Users</description>
+        <label>Share Mack Dealer Accounts with internal Mack Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mack_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>equals</operation>
+            <value>Mack</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Volvo_Corporate_Accounts_with_internal_Volvo_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share Volvo Corporate Accounts with internal Volvo Users</description>
+        <label>Share Volvo Corporate Accounts with internal Volvo Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Volvo_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>equals</operation>
+            <value>Volvo</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Volvo_Dealer_Accounts_with_internal_Volvo_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share Volvo Dealer Accounts with internal Volvo Users</description>
+        <label>Share Volvo Dealer Accounts with internal Volvo Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Volvo_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dealer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Brand__c</field>
+            <operation>equals</operation>
+            <value>Volvo</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

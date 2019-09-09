@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account Name</value>
+        </caseValues>
+        <name>company_lead</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Lead Industry</value>
+        </caseValues>
+        <name>industry_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Dealer Lead Rating</value>
+        </caseValues>
+        <name>rating_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- ActualAccount --></label>
+        <name>Account_on_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture/Farm</masterLabel>
+            <translation><!-- Agriculture/Farm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulk Haul – Dry &amp; Liquid</masterLabel>
+            <translation><!-- Bulk Haul – Dry &amp; Liquid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concrete Mixer</masterLabel>
+            <translation><!-- Concrete Mixer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crane</masterLabel>
+            <translation><!-- Crane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dump Truck</masterLabel>
+            <translation><!-- Dump Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flatbed</masterLabel>
+            <translation><!-- Flatbed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logging</masterLabel>
+            <translation><!-- Logging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining/Quarry</masterLabel>
+            <translation><!-- Mining/Quarry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moving</masterLabel>
+            <translation><!-- Moving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oversized Load</masterLabel>
+            <translation><!-- Oversized Load --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petroleum &amp; Oil</masterLabel>
+            <translation><!-- Petroleum &amp; Oil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plow</masterLabel>
+            <translation><!-- Plow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refuse</masterLabel>
+            <translation><!-- Refuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sewer &amp; Septic</masterLabel>
+            <translation><!-- Sewer &amp; Septic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL / LTL</masterLabel>
+            <translation><!-- TL / LTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temperature Controlled / Reefer</masterLabel>
+            <translation><!-- Temperature Controlled / Reefer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urban Distribution</masterLabel>
+            <translation><!-- Urban Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Transporter</masterLabel>
+            <translation><!-- Vehicle Transporter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>anker</masterLabel>
+            <translation><!-- anker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attended Tradeshow Event --></label>
+        <name>Attended_Tradeshow_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attended Webinar --></label>
+        <name>Attended_Webinar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>Mack</masterLabel>
+            <translation><!-- Mack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volvo</masterLabel>
+            <translation><!-- Volvo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DealerAccountName --></label>
+        <name>DealerAccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Code --></label>
+        <name>Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Contact ID --></label>
+        <name>Eloqua_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag for Map to Account (do not display) --></label>
+        <name>Flag_for_Map_to_Account_do_not_map_load__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Size --></label>
+        <name>Fleet_Size__c</name>
+        <picklistValues>
+            <masterLabel>1-5</masterLabel>
+            <translation><!-- 1-5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100+</masterLabel>
+            <translation><!-- 100+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11-50</masterLabel>
+            <translation><!-- 11-50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51-100</masterLabel>
+            <translation><!-- 51-100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6-10</masterLabel>
+            <translation><!-- 6-10 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture/Farm</masterLabel>
+            <translation><!-- Agriculture/Farm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beverage Processing &amp; Distribution</masterLabel>
+            <translation><!-- Beverage Processing &amp; Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction/Concrete Pump</masterLabel>
+            <translation><!-- Construction/Concrete Pump --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction/Crane</masterLabel>
+            <translation><!-- Construction/Crane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction/Dump</masterLabel>
+            <translation><!-- Construction/Dump --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction/Ready Mix</masterLabel>
+            <translation><!-- Construction/Ready Mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction/Roll-Off</masterLabel>
+            <translation><!-- Construction/Roll-Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction/Vacuum</masterLabel>
+            <translation><!-- Construction/Vacuum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer</masterLabel>
+            <translation><!-- Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Processing &amp; Distribution</masterLabel>
+            <translation><!-- Food Processing &amp; Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forestry/Lumber</masterLabel>
+            <translation><!-- Forestry/Lumber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Freight</masterLabel>
+            <translation><!-- General Freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government/Municipal</masterLabel>
+            <translation><!-- Government/Municipal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazardous Materials</masterLabel>
+            <translation><!-- Hazardous Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landscaping/Horticulture</masterLabel>
+            <translation><!-- Landscaping/Horticulture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease/Finance</masterLabel>
+            <translation><!-- Lease/Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining/Quarring</masterLabel>
+            <translation><!-- Mining/Quarring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moving and Storage</masterLabel>
+            <translation><!-- Moving and Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petroleum</masterLabel>
+            <translation><!-- Petroleum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sanitation/Hazardous Material</masterLabel>
+            <translation><!-- Sanitation/Hazardous Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sanitation/Refuse</masterLabel>
+            <translation><!-- Sanitation/Refuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialized/Heavy Hauling</masterLabel>
+            <translation><!-- Specialized/Heavy Hauling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Towing</masterLabel>
+            <translation><!-- Towing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility Services</masterLabel>
+            <translation><!-- Utility Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale/Retail</masterLabel>
+            <translation><!-- Wholesale/Retail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unqualified Reason Detail --></label>
+        <name>Lead_Invalid_Unqualified_Leads_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Invalid/Unqualified Reason --></label>
+        <name>Lead_Invalid_Unqualified_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Did Not Buy</masterLabel>
+            <translation><!-- Did Not Buy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance term/Customer Credit</masterLabel>
+            <translation><!-- Finance term/Customer Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Time/Availability</masterLabel>
+            <translation><!-- Lead Time/Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operating Cost/Reliability</masterLabel>
+            <translation><!-- Operating Cost/Reliability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts &amp; Service Support</masterLabel>
+            <translation><!-- Parts &amp; Service Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Offering/Feature</masterLabel>
+            <translation><!-- Product Offering/Feature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Response Time</masterLabel>
+            <translation><!-- Quote Response Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship to Competitor</masterLabel>
+            <translation><!-- Relationship to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade In/Residual Value</masterLabel>
+            <translation><!-- Trade In/Residual Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty</masterLabel>
+            <translation><!-- Warranty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Record Type Name --></label>
+        <name>Lead_Record_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maps to the Eloqua Lead Score --></help>
+        <label><!-- Lead Score --></label>
+        <name>Lead_Score__c</name>
+        <picklistValues>
+            <masterLabel>A1</masterLabel>
+            <translation><!-- A1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A2</masterLabel>
+            <translation><!-- A2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A3</masterLabel>
+            <translation><!-- A3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A4</masterLabel>
+            <translation><!-- A4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B1</masterLabel>
+            <translation><!-- B1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2</masterLabel>
+            <translation><!-- B2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B3</masterLabel>
+            <translation><!-- B3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B4</masterLabel>
+            <translation><!-- B4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C1</masterLabel>
+            <translation><!-- C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2</masterLabel>
+            <translation><!-- C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3</masterLabel>
+            <translation><!-- C3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4</masterLabel>
+            <translation><!-- C4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D1</masterLabel>
+            <translation><!-- D1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D2</masterLabel>
+            <translation><!-- D2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D3</masterLabel>
+            <translation><!-- D3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D4</masterLabel>
+            <translation><!-- D4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Source Detail --></label>
+        <name>Lead_Source_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Unqualified Comments --></label>
+        <name>Lead_Unqualified_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Unqualified Reason --></label>
+        <name>Lead_Unqualified_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Already Bought</masterLabel>
+            <translation><!-- Already Bought --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Already Quoted</masterLabel>
+            <translation><!-- Already Quoted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Buying</masterLabel>
+            <translation><!-- Not Buying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Business</masterLabel>
+            <translation><!-- Out of Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer Account Unique Identifier --></help>
+        <label><!-- Party ID --></label>
+        <name>Party_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Truck</masterLabel>
+            <translation><!-- New Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trailer</masterLabel>
+            <translation><!-- Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Truck</masterLabel>
+            <translation><!-- Used Truck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Interest --></label>
+        <name>Product_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Anthem</masterLabel>
+            <translation><!-- Anthem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Granite</masterLabel>
+            <translation><!-- Granite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LR</masterLabel>
+            <translation><!-- LR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pinnacle</masterLabel>
+            <translation><!-- Pinnacle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services &amp; Support</masterLabel>
+            <translation><!-- Services &amp; Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TerraPro</masterLabel>
+            <translation><!-- TerraPro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAH</masterLabel>
+            <translation><!-- VAH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VHD</masterLabel>
+            <translation><!-- VHD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VNL</masterLabel>
+            <translation><!-- VNL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VNR</masterLabel>
+            <translation><!-- VNR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VNX</masterLabel>
+            <translation><!-- VNX --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Sub-Category --></label>
+        <name>Product_Sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Probability --></label>
+        <name>Purchase_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Timeframe --></label>
+        <name>Purchase_Timeframe__c</name>
+        <picklistValues>
+            <masterLabel>3 to 6 months</masterLabel>
+            <translation><!-- 3 to 6 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 to 90 days</masterLabel>
+            <translation><!-- 30 to 90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 months to 1 year</masterLabel>
+            <translation><!-- 6 months to 1 year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 days</masterLabel>
+            <translation><!-- Within 30 days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast</masterLabel>
+            <translation><!-- Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwest</masterLabel>
+            <translation><!-- Southwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Western</masterLabel>
+            <translation><!-- Western --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>CST &lt;10L</masterLabel>
+            <translation><!-- CST &lt;10L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CST &gt;10L</masterLabel>
+            <translation><!-- CST &gt;10L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LCOE</masterLabel>
+            <translation><!-- LCOE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH</masterLabel>
+            <translation><!-- LH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH</masterLabel>
+            <translation><!-- RH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SurvivingAccount --></label>
+        <name>SurvivingAccount__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Truck Configuration URL --></label>
+        <name>Truck_Configuration_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Comments --></label>
+        <name>User_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- isBrand --></label>
+        <name>isBrand__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDealerCode --></label>
+        <name>isDealerCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- isExecutiveGroup --></label>
+        <name>isExecutiveGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- isRegion --></label>
+        <name>isRegion__c</name>
+    </fields>
+    <layouts>
+        <layout>Mack Lead Layout</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Qualification --></label>
+            <section>Lead Qualification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Other Lead Layout</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Qualification --></label>
+            <section>Lead Qualification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Volvo Lead Layout</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Qualification --></label>
+            <section>Lead Qualification</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Mack --></label>
+        <name>Mack</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Volvo --></label>
+        <name>Volvo</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please find the correct Account and add the Party ID to the Lead --></errorMessage>
+        <name>Party_ID_Required_before_Converting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If &apos;Lead Type&apos; = Predictive, this value cannot be changed by any end user. --></errorMessage>
+        <name>Predictive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either Phone OR Email must be provided to save a Lead. --></errorMessage>
+        <name>Required_Fields_to_Save_Lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please leave Salutation as &quot;None&quot; --></errorMessage>
+        <name>Salutation_is_not_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If lead &quot;Unqualified&quot; status is &apos;other&apos; it is mandatory to fill out the Unqualified Reason Detail --></errorMessage>
+        <name>Unqualified_Reason_Detail</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Unqualified is selected, then Unqualified Reason is required --></errorMessage>
+        <name>Unqualified_message_needed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LeadActivityOverview --></label>
+        <name>LeadActivityOverview</name>
+    </webLinks>
+</CustomObjectTranslation>

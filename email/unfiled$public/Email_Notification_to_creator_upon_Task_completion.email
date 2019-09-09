@@ -1,0 +1,8 @@
+Dear {!Task.CreatedBy},
+
+"{!Task.Subject}" has been completed by {!Task.Task_Owner_Name__c} on {!Task.LastModifiedDate}.
+
+Click on the link to access the task directly: {!Task.Link}
+
+Regards,
+Salesforce.

@@ -1,0 +1,4 @@
+<design:component>
+	
+    <design:attribute name="Location" label="Location" description="Location where the component is placed"/>
+</design:component>

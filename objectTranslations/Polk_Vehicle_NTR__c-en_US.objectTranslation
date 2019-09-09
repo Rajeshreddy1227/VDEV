@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Polk Vehicle (NTR)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Polk Vehicles (NTR)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Polk Vehicles (NTR) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Axle Configuration --></label>
+        <name>Axle_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cab --></label>
+        <name>Cab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Liters --></label>
+        <name>Engine_Liters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Manufacturer --></label>
+        <name>Engine_Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Model --></label>
+        <name>Engine_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Type --></label>
+        <name>Engine_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Front Axle --></label>
+        <name>Front_Axle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fuel --></label>
+        <name>Fuel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liters Size Over Under --></label>
+        <name>Liters_Size_Over_Under__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer GVW Class --></label>
+        <name>Manufacturer_GVW_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>Model_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rear Axle --></label>
+        <name>Rear_Axle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Month --></label>
+        <name>Report_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Year --></label>
+        <name>Report_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- VDA Flag --></label>
+        <name>VDA_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Make Model --></label>
+        <name>Vehicle_Make_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Make --></label>
+        <name>Vehicle_Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Model --></label>
+        <name>Vehicle_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Type --></label>
+        <name>Vehicle_Type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

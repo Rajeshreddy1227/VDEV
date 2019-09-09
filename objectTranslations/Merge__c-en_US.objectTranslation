@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Merge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Merge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- SurvivorAccountId --></label>
+        <name>SurvivorAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SurvivorPartyId --></label>
+        <name>SurvivorPartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- VictimAccountId --></label>
+        <name>VictimAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- VictimPartyId --></label>
+        <name>VictimPartyId__c</name>
+    </fields>
+    <layouts>
+        <layout>Merge Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,422 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="Vgtna_RecordTypeSelectorController" access="global" >
+    <aura:attribute name="recType" type="String"/>
+    <aura:attribute name="source" type="String"/>
+     <aura:attribute name="picklistValues" type="String[]" />  
+    <aura:attribute name="statepicklistValues" type="String[]" />
+     
+    <aura:attribute name="ListOfResponse" type="List"/>
+    <aura:attribute name="DuplicateResponse" type="List"/>
+    <aura:attribute name="Response400" type="List"/>
+    <aura:attribute name="CallOutState" type="String"/>
+     <aura:attribute name="isCallOutMade" type="boolean" default="false"/>
+    <aura:attribute access="private" name="error" type="String" default=""/>
+    
+    <aura:attribute access="private" name="Response400Code1" type="String" default=""/>
+    <aura:attribute access="private" name="Response400Code2" type="String" default=""/>
+    <aura:attribute access="private" name="Response400Code3" type="String" default=""/>
+    <aura:attribute access="private" name="Response400Code4" type="String" default=""/>
+    <aura:attribute access="private" name="Response400Code5" type="String" default=""/>
+    <aura:attribute access="private" name="Response400Code6" type="String" default=""/>
+    
+    <aura:attribute access="private" name="unhandledResponse" type="String" default=""/>
+    <aura:attribute name="isResponse400" type="boolean" default="false"/>
+    <aura:attribute name="disableTryAgain" type="boolean" default="true"/>
+    <aura:attribute name="isIgnoreErrors" type="boolean" default="false"/>
+    
+    <aura:attribute access="private" name="duplicateWarning" type="String" default=""/>
+    
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+ 
+    <!-- Mock response columns start-->
+    <aura:attribute name="mydata" type="Object"/>
+    <aura:attribute name="mycolumns" type="List"/>
+    <!-- Mock response columns end -->
+    
+    <aura:attribute name="newAcc" type="Account"
+     default="{ 'sobjectType': 'Account',
+                     'Name': '',
+                   }"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" access="public"/>
+    
+    
+      <div class="slds">
+        
+        <div >
+            <!-- modal body starts here -->
+            <div tabindex="-1" aria-labelledby="header43" aria-hidden="false" id="newClientSectionId" role="dialog" class="slds-modal slds-fade-in-open" style="display:block;">
+                <div class="slds-backdrop slds-backdrop--open">
+                    <div class="slds-modal__container slds-modal_large">
+                        <div class="slds-modal__header">
+                            <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close">
+                                <button class="slds-button slds-button--neutral" onclick="{!c.hideModal}">X</button>  
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="header43" class="slds-text-heading--medium">{!$Label.c.Vgtna_CDB_Form_Header}</h2>
+                        </div>
+                        <div class="slds-modal__content slds-p-around--medium">
+                            
+                            <!--loading spinner start... style=Brand Medium (blue dots)-->
+                                 <aura:if isTrue="{!v.Spinner}">
+                                    <div aura:id="spinnerId" class="slds-spinner_container">
+                                       <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                                         <span class="slds-assistive-text">Loading</span>
+                                         <div class="slds-spinner__dot-a"></div>
+                                         <div class="slds-spinner__dot-b"></div>
+                                       </div>
+                                    </div>
+                                 </aura:if>
+                              <!-- Loading spinner end-->
+                                   
+                     <aura:if isTrue="{!v.isCallOutMade}">
+                         <div class="slds-modal__content slds-scrollable">
+                            <h3 class="slds-section-title--divider slds-scrollable">{!$Label.c.Vgtna_CDB_Callout_Status}: {!v.CallOutState}</h3>
+                            <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+                            
+                                <aura:if isTrue="{! !empty(v.error)}"> 
+                                    <div class="slds-box slds-theme--error">
+                                        <ui:outputText aura:Id="outputRadioTextId" value="{!v.error}"/>
+                                	 </div>
+                                    </aura:if>
+                               
+                                <aura:if isTrue="{!v.CallOutState == 'SUCCESS'}"> 
+                                   
+                                    <aura:if isTrue="{! !empty(v.unhandledResponse)}"> 
+                                    <div class="slds-box slds-theme--error">
+                                        <ui:outputText aura:Id="unhandledrespTextId" value="{!v.unhandledResponse}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{! !empty(v.duplicateWarning)}"> 
+                                    <div class="slds-box slds-theme--warning">
+                                        <ui:outputText aura:Id="duplicateWarningTextId" value="{!v.duplicateWarning}"/>
+                                	 </div>
+                                    </aura:if><p/>
+                                
+                                <table class="slds-table slds-max-medium-table_stacked-horizontal slds-table_cell-buffer slds-table_striped slds-scrollable slds-scrollable_x">
+                                <thead>          
+                                    <tr class="slds-line-height_reset"> 
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title=""> </div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Party ID">{!$Label.c.Vgtna_CDB_PartyID}</div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Name">{!$Label.c.Vgtna_CDB_Account_Name}</div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Address">{!$Label.c.Vgtna_CDB_Street}</div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="City">{!$Label.c.Vgtna_CDB_City}</div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="State/Province">{!$Label.c.Vgtna_CDB_State}</div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Postal Code">{!$Label.c.Vgtna_CDB_Postal_Code}</div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Country">{!$Label.c.Vgtna_CDB_Country}</div>
+                                        </th>
+                                       <!-- <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="FMVName">FMVName</div>
+                                        </th>-->
+                                      <!-- <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="FMVID">FMVID</div>
+                                        </th>-->
+                               		   <!--<th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Alias">Alias</div>
+                                        </th>-->
+                                        
+                                       <!-- <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="US Dot ID">US Dot ID</div>
+                                        </th>-->
+                                       <!-- <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Party ID">Assist Names</div>
+                                        </th>-->
+                                        
+                                    </tr>
+                                    
+                                    
+                                </thead>
+                                
+                                
+                                <tbody>
+                                    <aura:iteration items="{!v.ListOfResponse}" var="res">
+                                        <tr class="slds-hint-parent">
+                                           
+                                            <th class="slds-cell-wrap slds-scrollable" scope="row"><input type="radio" value="{!res.partyID}" name="accRealRecordRadio" id="{!res.name}" /></th>
+                                          	<td class="slds-cell-wrap slds-scrollable">{!res.partyID}</td> 
+                                            <td class="slds-cell-wrap slds-scrollable">{!res.name}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!res.address}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!res.city}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!res.stateProv}</td>                
+                                            <td class="slds-cell-wrap slds-scrollable">{!res.zipCode}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!res.country}</td> 
+                                            
+                                            <!--  <td class="slds-cell-wrap slds-scrollable">{!res.FMVName}</td>  -->                    
+			                                <!--<td class="slds-cell-wrap slds-scrollable">{!res.FMVID}</td>-->
+                                           <!-- <td class="slds-cell-wrap slds-scrollable">{!res.alias}</td> -->
+                                           <!-- <td class="slds-cell-wrap slds-scrollable">{!res.usDotId}</td>-->
+                                           <!-- <td class="slds-cell-wrap slds-scrollable">{!res.AssistNames}</td>-->
+                                        </tr>
+                                    </aura:iteration>
+                                </tbody>
+                            </table>
+                                        <aura:set attribute="else">
+                                           	<table class="slds-table slds-max-medium-table_stacked-horizontal slds-table_cell-buffer slds-table_striped slds-scrollable slds-scrollable_x">
+                                <thead>          
+                                   <tr class="slds-line-height_reset"> 
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title=""> </div>
+                                        </th>
+                                       <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Party ID">{!$Label.c.Vgtna_CDB_PartyID}</div>
+                                        </th>
+                                       <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Name">{!$Label.c.Vgtna_CDB_Account_Name}</div>
+                                        </th>
+                                       <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Address">{!$Label.c.Vgtna_CDB_Street}</div>
+                                        </th>
+                                       <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="City">{!$Label.c.Vgtna_CDB_City}</div>
+                                        </th>
+                                       <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="State/Province">{!$Label.c.Vgtna_CDB_State}</div>
+                                        </th>
+                                       <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Postal Code">{!$Label.c.Vgtna_CDB_Postal_Code}</div>
+                                        </th>
+                                        <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Country">{!$Label.c.Vgtna_CDB_Country}</div>
+                                        </th>
+                                       
+                                        <!--<th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="FMVName">FMVName</div>
+                                        </th>-->                                                              
+                                       <!-- <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="FMVID">FMVID</div>
+                                        </th>-->                                                                                
+                                        <!--<th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Alias">Alias</div>
+                                        </th>-->                                        
+                                        <!--<th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="US Dot ID">US Dot ID</div>
+                                        </th>-->
+                                       <!-- <th class="slds-text-title_caps slds-cell-wrap slds-scrollable" scope="col">
+                                            <div class="slds-truncate" title="Party ID">Assist Names</div>
+                                        </th>-->
+                                        
+                                    </tr>
+                                    
+                                    
+                                </thead>
+                                
+                                
+                                <tbody>
+                                    <aura:iteration items="{!v.mydata}" var="rt">
+                                        <tr class="slds-hint-parent">
+                                           
+                                            <th class="slds-cell-wrap slds-scrollable" scope="row"><input type="radio" value="{!rt.partyID}" name="accRecordRadio" id="{!rt.Name}" /></th>
+                                            <td class="slds-cell-wrap slds-scrollable">{!rt.partyID}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!rt.Name}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!rt.BillingStreet}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!rt.BillingCity}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!rt.BillingState}</td>                
+                                            <td class="slds-cell-wrap slds-scrollable">{!rt.BillingPostalCode}</td>
+                                            <td class="slds-cell-wrap slds-scrollable">{!rt.BillingCountry}</td>
+                                            
+                                            <!--<td class="slds-cell-wrap slds-scrollable">{!rt.FMVName}</td> -->                                                                                                                                                           
+                                            <!-- <td class="slds-cell-wrap slds-scrollable">{!rt.FMVID}</td>-->
+		                                    <!--<td class="slds-cell-wrap slds-scrollable">{!rt.alias}</td>-->                                            
+                                            <!-- <td class="slds-cell-wrap slds-scrollable">{!rt.usDotId}</td>-->
+                                        </tr>
+                                    </aura:iteration>
+                                </tbody>
+                            </table> 
+                                        </aura:set>
+                                 </aura:if>
+                                
+      						
+                             
+                                
+                             </div>
+                           </div>
+                             <aura:set attribute="else">
+                                <div class="slds-modal__content">
+                                <h3 class="slds-section-title--divider">{!$Label.c.Vgtna_CDB_Form_Details_Header}</h3>
+                                <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+                                   
+                                    <aura:if isTrue="{! !empty(v.unhandledResponse)}"> 
+                                    <div class="slds-box slds-theme--error">
+                                        <ui:outputText aura:Id="unhandledrespTextId" value="{!v.unhandledResponse}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{! !empty(v.error)}"> 
+                                    <div class="slds-box slds-theme--error">
+                                        <ui:outputText aura:Id="outputErrorTextId" value="{!v.error}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{! !empty(v.Response400Code6)}"> 
+                                    <div class="slds-box slds-theme--warning">
+                                        <ui:outputText aura:Id="res400Code6TextId" value="{!v.Response400Code6}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                   <!-- <ui:inputText aura:id="AccountName" label="{!$Label.c.Vgtna_CDB_Account_Name}"
+                                        class="slds-input"
+                                        labelClass="slds-form-element__label"
+                                        value="{!v.newAcc.Name}"
+                                        required="true"/>-->
+                                    <lightning:input aura:id="AccountName"
+                                                        type="text"
+                                                        label="{!$Label.c.Vgtna_CDB_Account_Name}"
+                                                        name="accountname"
+                                                        onchange="{!c.checkInput}"                                                        
+                                                        value="{!v.newAcc.Name}"
+                                                        required="true"
+                                                 />
+                                    
+                                    <aura:if isTrue="{! !empty(v.Response400Code2)}"> 
+                                    <div class="slds-box slds-theme--warning">
+                                        <ui:outputText aura:Id="res400Code2TextId" value="{!v.Response400Code2}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{! !empty(v.Response400Code3)}"> 
+                                    <div class="slds-box slds-theme--warning">
+                                        <ui:outputText aura:Id="res400Code3TextId" value="{!v.Response400Code3}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{! !empty(v.Response400Code4)}"> 
+                                    <div class="slds-box slds-theme--warning">
+                                        <ui:outputText aura:Id="res400Code4TextId" value="{!v.Response400Code4}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{! !empty(v.Response400Code5)}"> 
+                                    <div class="slds-box slds-theme--warning">
+                                        <ui:outputText aura:Id="res400Code5TextId" value="{!v.Response400Code5}"/>
+                                	 </div>
+                                    </aura:if>
+                                    
+                                   <!-- <ui:inputText aura:id="AccountStreet" label="{!$Label.c.Vgtna_CDB_Street}"
+                                        class="slds-input"
+                                        labelClass="slds-form-element__label"
+                                        value="{!v.newAcc.BillingStreet}"                                        
+                                        required="true"/>-->
+                                    
+                                    <lightning:input aura:id="AccountStreet"
+                                                        type="text"
+                                                        label="{!$Label.c.Vgtna_CDB_Street}"
+                                                        name="street"
+                                                        onchange="{!c.checkInput}"                                                        
+                                                        value="{!v.newAcc.BillingStreet}"
+                                                        required="true"
+                                                 />
+                                    
+                                    <!--<ui:inputText aura:id="AccountCity" label="{!$Label.c.Vgtna_CDB_City}"
+                                        class="slds-input"
+                                        labelClass="slds-form-element__label"
+                                        value="{!v.newAcc.BillingCity}"
+                                        required="true"/>-->
+                                    <lightning:input aura:id="AccountCity"
+                                                        type="text"
+                                                        label="{!$Label.c.Vgtna_CDB_City}"
+                                                        name="city"
+                                                        onchange="{!c.checkInput}"                                                        
+                                                        value="{!v.newAcc.BillingCity}"
+                                                        required="true"
+                                                 />
+                                    
+                                    <aura:if isTrue="{! !empty(v.Response400Code1)}"> 
+                                    <div class="slds-box slds-theme--warning">
+                                        <ui:outputText aura:Id="res400Code1TextId" value="{!v.Response400Code1}"/>
+                                	 </div>
+                                    </aura:if>
+                                   
+                                    <lightning:select aura:id="AccountState" value="{!v.newAcc.BillingState}" label="{!$Label.c.Vgtna_CDB_State}" onchange="{!c.checkInput}" required="true">       
+                                       
+                                        <aura:iteration items="{!v.statepicklistValues}" var="stateitem">
+                                            <option value="{!stateitem.value}">
+                                                {!stateitem}
+                                            </option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                    
+                                    <!--<ui:inputText aura:id="AccountZip" label="{!$Label.c.Vgtna_CDB_Postal_Code}"
+                                        class="slds-input"
+                                        labelClass="slds-form-element__label"
+                                        value="{!v.newAcc.BillingPostalCode}"
+                                        required="true"/>-->
+                                    <lightning:input aura:id="AccountZip"
+                                                        type="text"
+                                                        label="{!$Label.c.Vgtna_CDB_Postal_Code}"
+                                                        name="zip"
+                                                        onchange="{!c.checkInput}"                                                        
+                                                        value="{!v.newAcc.BillingPostalCode}"
+                                                        required="true"
+                                                 />
+                                    
+                                   
+                                    <lightning:select aura:id="AccountCountry1" value="{!v.newAcc.BillingCountry}" label="{!$Label.c.Vgtna_CDB_Country}" onchange="{!c.checkInput}" required="true">       
+                                       
+                                        <aura:iteration items="{!v.picklistValues}" var="item">
+                                            <option value="{!item.value}">
+                                                {!item}
+                                            </option>
+                                        </aura:iteration>
+                                    </lightning:select>  
+                                  
+
+                                </div>
+                            
+                       		 </div>
+                             </aura:set>
+                      </aura:if>
+                            
+                        
+                        <div class="slds-modal__footer">
+                            
+                            <aura:if isTrue="{!v.isCallOutMade}">
+                                        <button class="slds-button slds-button_neutral" onclick="{!c.hideModal}">{!$Label.c.Vgtna_CDB_Cancel_Button}</button>
+                                		<button class="slds-button slds-button_neutral" onclick="{!c.goPrevious}">{!$Label.c.Vgtna_CDB_Previous_Button}</button>
+                            			<button class="slds-button slds-button--brand" onclick="{!c.saveAccount}">{!$Label.c.Vgtna_CDB_Save_Button}</button>
+                                        <aura:set attribute="else">
+                                          <!--Response code 400 scenario start-->
+                                           	<aura:if isTrue="{!v.isResponse400}">
+                                                <button class="slds-button slds-button_neutral" onclick="{!c.hideModal}">{!$Label.c.Vgtna_CDB_Cancel_Button}</button>
+                                                <button class="slds-button slds-button--brand" disabled="{!v.disableTryAgain}" onclick="{!c.makeTempCallOut}">{!$Label.c.Vgtna_Try_Again_Button}</button>
+                                                <button class="slds-button slds-button--brand" onclick="{!c.ignoreErrors}">{!$Label.c.Vgtna_Ignore_Errors_Button}</button>
+                                                
+                                                <aura:set attribute="else">
+                                                   <button class="slds-button slds-button_neutral" onclick="{!c.hideModal}">{!$Label.c.Vgtna_CDB_Cancel_Button}</button>
+                                                   <!--<button class="slds-button slds-button--><!--brand" onclick="{!c.makeCallOut}">Temp Next</button>-->
+                                                   <button class="slds-button slds-button--brand" onclick="{!c.makeTempCallOut}">{!$Label.c.Vgtna_CDB_Next_Button}</button>
+                                                  
+                                                </aura:set>
+                                        	</aura:if>
+                                          <!-- Response code 400 scenario end-->
+                                        </aura:set>
+                                    </aura:if>
+                            
+                            		
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>  
+        </div>
+     </div>
+        
+        
+  
+</aura:component>

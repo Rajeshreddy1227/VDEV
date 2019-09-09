@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Expected Order Date</value>
+        </caseValues>
+        <name>close_date_opportunity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Actual Quantity --></label>
+        <name>Actual_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>Mack</masterLabel>
+            <translation><!-- Mack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volvo</masterLabel>
+            <translation><!-- Volvo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitors --></label>
+        <name>Competitors__c</name>
+        <picklistValues>
+            <masterLabel>Kenworth</masterLabel>
+            <translation><!-- Kenworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mack</masterLabel>
+            <translation><!-- Mack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peterbilt</masterLabel>
+            <translation><!-- Peterbilt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volvo</masterLabel>
+            <translation><!-- Volvo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created By Profile --></label>
+        <name>CreatedByProfile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By Role --></label>
+        <name>CreatedByRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Custom_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>Custom_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Agreement # --></label>
+        <name>Deal_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Code Credited To --></label>
+        <name>Dealer_Code_Credited_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Code for Opportunity --></label>
+        <name>Dealer_Code_for_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Delivery Date --></label>
+        <name>Desired_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Quantity --></label>
+        <name>Estimated_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invite Sales Team --></label>
+        <name>Invite_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>LeadBrand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>LeadIndustry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>LeadSegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attended Tradeshow Event --></label>
+        <name>Lead_Attended_Tradeshow_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attended Webinar --></label>
+        <name>Lead_Attended_Webinar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Interest --></label>
+        <name>Lead_Product_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Record Type --></label>
+        <name>Lead_Record_Type__c</name>
+        <picklistValues>
+            <masterLabel>Mack</masterLabel>
+            <translation><!-- Mack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volvo</masterLabel>
+            <translation><!-- Volvo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Truck Configuration URL --></label>
+        <name>Lead_Truck_Configuration_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Comments --></label>
+        <name>Lead_User_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lost Reason Detail --></label>
+        <name>Lost_Reason_Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter Lost Reason Detail if you select Price or Other --></help>
+        <label><!-- Lost Reason --></label>
+        <name>Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Aftermarket Support</masterLabel>
+            <translation><!-- Aftermarket Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buyback Required by Customer</masterLabel>
+            <translation><!-- Buyback Required by Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Credit</masterLabel>
+            <translation><!-- Customer Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery</masterLabel>
+            <translation><!-- Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Buy</masterLabel>
+            <translation><!-- Did Not Buy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance / Leasing</masterLabel>
+            <translation><!-- Finance / Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Time</masterLabel>
+            <translation><!-- Lead Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Availability</masterLabel>
+            <translation><!-- Product Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Experience</masterLabel>
+            <translation><!-- Product Experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Operating Cost</masterLabel>
+            <translation><!-- Product Operating Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Specification</masterLabel>
+            <translation><!-- Product Specification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proximity to Dealer Location</masterLabel>
+            <translation><!-- Proximity to Dealer Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased Competitor Model</masterLabel>
+            <translation><!-- Purchased Competitor Model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased Used</masterLabel>
+            <translation><!-- Purchased Used --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship with Competitor</masterLabel>
+            <translation><!-- Relationship with Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residual Value</masterLabel>
+            <translation><!-- Residual Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Issues</masterLabel>
+            <translation><!-- Service Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade-In Value</masterLabel>
+            <translation><!-- Trade-In Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty</masterLabel>
+            <translation><!-- Warranty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Time Frame --></label>
+        <name>Order_Time_Frame__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Profile --></label>
+        <name>OwnerProfile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Role --></label>
+        <name>OwnerRole__c</name>
+    </fields>
+    <fields>
+        <help><!-- Credited Dealer for Opportunity --></help>
+        <label><!-- Assigned Dealer --></label>
+        <name>Partner_Account__c</name>
+        <relationshipLabel><!-- Dealer Assigned Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Account Party ID --></help>
+        <label><!-- Party ID --></label>
+        <name>Party_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Model Details --></label>
+        <name>Primary_Model_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Model --></label>
+        <name>Primary_Model__c</name>
+        <picklistValues>
+            <masterLabel>Anthem</masterLabel>
+            <translation><!-- Anthem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Granite</masterLabel>
+            <translation><!-- Granite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Granite MHD</masterLabel>
+            <translation><!-- Granite MHD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LR</masterLabel>
+            <translation><!-- LR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pinnacle</masterLabel>
+            <translation><!-- Pinnacle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terrapro</masterLabel>
+            <translation><!-- Terrapro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAH</masterLabel>
+            <translation><!-- VAH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VHD</masterLabel>
+            <translation><!-- VHD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VNL</masterLabel>
+            <translation><!-- VNL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VNR</masterLabel>
+            <translation><!-- VNR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VNX</masterLabel>
+            <translation><!-- VNX --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promised Delivery Date --></label>
+        <name>Promised_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Predictive Purchase Time Frame --></help>
+        <label><!-- Purchase Time Frame --></label>
+        <name>Purchase_Time_Frame__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Expiration Date --></label>
+        <name>Quote_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Valid For --></label>
+        <name>Quote_Valid_For__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSA # --></label>
+        <name>RSA_num__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSA % --></label>
+        <name>RSA_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Assistance % --></label>
+        <name>Sales_Assistance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>CST &lt;10L</masterLabel>
+            <translation><!-- CST &lt;10L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CST &gt;10L</masterLabel>
+            <translation><!-- CST &gt;10L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LCOE</masterLabel>
+            <translation><!-- LCOE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH</masterLabel>
+            <translation><!-- LH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH</masterLabel>
+            <translation><!-- RH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sleeper Cab --></label>
+        <name>Sleeper_Cab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Dealer Code --></label>
+        <name>Territory_Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Estimated price per unit --></help>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Adaptations --></label>
+        <name>Vehicle_Adaptations__c</name>
+    </fields>
+    <fields>
+        <label><!-- isBrand --></label>
+        <name>isBrand__c</name>
+    </fields>
+    <fields>
+        <label><!-- isCreatedBy --></label>
+        <name>isCreatedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDealerCode --></label>
+        <name>isDealerCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- isDealerManager --></label>
+        <name>isDealerManager__c</name>
+    </fields>
+    <fields>
+        <label><!-- isExecGroupBrandFree --></label>
+        <name>isExecGroupBrandFree__c</name>
+    </fields>
+    <fields>
+        <label><!-- isExecutiveGroup --></label>
+        <name>isExecutiveGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- isStrategicAccount --></label>
+        <name>isStrategicAccount__c</name>
+    </fields>
+    <layouts>
+        <layout>Mack Opportunity Layout - Dealer</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mack Opportunity Layout - Internal</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Other Opportunity Layout</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Volvo Opportunity Layout- Dealer</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Assistance --></label>
+            <section>Sales Assistance</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Volvo Opportunity Layout- Internal</layout>
+        <sections>
+            <label><!-- Lead Details --></label>
+            <section>Lead Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Assistance --></label>
+            <section>Sales Assistance</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Member --></label>
+        <name>AddAccountTeam</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Account Team --></label>
+        <name>Add_Account_Team</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Opportunity Team --></label>
+        <name>Add_Opportunity_Team</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Assign to Dealer --></label>
+        <name>ChangeOwner</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Mack --></label>
+        <name>Mack</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Volvo --></label>
+        <name>Volvo</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Merged Account - Unable to Save (Cancel). --></errorMessage>
+        <name>Account_Merged</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lost Reason Detail is mandatory when Lost Reason is Price or Other. --></errorMessage>
+        <name>Lost_Reason_Detail_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If opportunity is &quot;Closed Lost&quot;, &quot;Lost Reason&quot; is required. --></errorMessage>
+        <name>Lost_Reason_mandatory_for_Lost_Oppty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lost Reason and Lost Reason Detail should not be populated when Opportunity Stage is not &quot;Closed Lost&quot;. --></errorMessage>
+        <name>Lost_Reason_on_Closed_Lost_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Brand, Make and Segment are required for Quoted stage. --></errorMessage>
+        <name>Other_Mandatory_Fields_for_Quoted_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Brand, Segment and Primary Model are required for Quoted Stage. --></errorMessage>
+        <name>Volvo_Mandatory_Fields_for_Quoted_Stage</name>
+    </validationRules>
+</CustomObjectTranslation>

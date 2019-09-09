@@ -1,0 +1,4 @@
+<aura:component description="customActivityTab" implements="force:appHostable,flexipage:availableForAllPageTypes" >
+    <aura:attribute name="myLocation" type="String" default="activitiestab"/> 
+    <c:Vgtna_Ltng_CustomerActivities Location="{!v.myLocation}"/>
+</aura:component>

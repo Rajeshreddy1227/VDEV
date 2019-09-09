@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2 xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <accountAccessLevel>Read</accountAccessLevel>
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>None</contactAccessLevel>
+    <customFields>
+        <name>Brand__c</name>
+        <value xsi:nil="true"/>
+    </customFields>
+    <customFields>
+        <name>Dealer_Code__c</name>
+        <value xsi:nil="true"/>
+    </customFields>
+    <customFields>
+        <name>External_ID__c</name>
+        <value xsi:nil="true"/>
+    </customFields>
+    <customFields>
+        <name>isDealerCode__c</name>
+        <value xsi:type="xsd:boolean">true</value>
+    </customFields>
+    <name>VALLEY</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentTerritory>SW_District_51</parentTerritory>
+    <territory2Type>Area_of_Responsibility</territory2Type>
+</Territory2>

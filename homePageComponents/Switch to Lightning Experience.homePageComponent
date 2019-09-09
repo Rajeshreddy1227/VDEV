@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>Please make sure that you are on the Google Chrome browser. And above, click on the link &lt;b&gt;Switch to Lightning Experience&lt;/b&gt;. </body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

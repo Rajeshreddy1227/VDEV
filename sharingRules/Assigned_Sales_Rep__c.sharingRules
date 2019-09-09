@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Mack_Internal_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Mack Internal Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mack_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>DealerBrand__c</field>
+            <operation>equals</operation>
+            <value>Mack</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Volvo_Internal_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Volvo Internal Users</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Volvo_Senior_Vice_President</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>DealerBrand__c</field>
+            <operation>equals</operation>
+            <value>Volvo</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

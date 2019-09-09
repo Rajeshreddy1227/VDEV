@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2 xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <accountAccessLevel>Edit</accountAccessLevel>
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>None</contactAccessLevel>
+    <customFields>
+        <name>Brand__c</name>
+        <value xsi:type="xsd:string">Volvo</value>
+    </customFields>
+    <customFields>
+        <name>Dealer_Code__c</name>
+        <value xsi:type="xsd:string">5175D</value>
+    </customFields>
+    <customFields>
+        <name>External_ID__c</name>
+        <value xsi:nil="true"/>
+    </customFields>
+    <customFields>
+        <name>isDealerCode__c</name>
+        <value xsi:type="xsd:boolean">false</value>
+    </customFields>
+    <name>5175D - SHEALYS TRUCK CENTER</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentTerritory>SHEALY_SOUTHEAST_VOLVO</parentTerritory>
+    <territory2Type>Area_of_Responsibility</territory2Type>
+</Territory2>
